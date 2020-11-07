@@ -1252,6 +1252,7 @@ header .header-bottom {
     text-align: center; }
     @media (min-width: 992px) {
       .news-letter .section-wrapper .subscribe-content {
+        text-align: left;
         justify-content: space-between; } }
     .news-letter .section-wrapper .subscribe-content .content-text {
       padding-bottom: 20px; }
