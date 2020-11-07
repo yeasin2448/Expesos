@@ -1,0 +1,369 @@
+//*==== Trending area css start ====*//
+.trending-product {
+    padding: 50px 0;
+    position: relative;
+    .section-wrapper {
+        overflow: hidden;
+        .trending-slider {
+            padding: 15px 10px;
+            background: $white-color;
+        }
+    }
+}
+//*==== Trending area css ends ====*//
+
+//*==== Top Categories css start ====*//
+.top-categories {
+    padding-bottom: 60px;
+    .section-wrapper {
+        .cate-thumb {
+            overflow: hidden;
+            &:hover {
+                img {
+                    filter: grayscale(100%);
+                    transform: scale(1.1);
+                }
+            }
+            img {
+                width: 100%;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+} 
+//*==== Top Categories css ends  ====*//
+
+//*==== deal of month css start ===*//
+.deal-area {
+    .section-wrapper {
+        .deal-thumb {
+            img {
+                width: 100%;
+            }
+        }
+        .card-thumb {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+//*==== deal of month css ends ===*//
+
+//*==== special product css start ====*//
+.special-product {
+    padding: 50px 0;
+    .section-wrapper {
+        .product-item {
+            position: relative;
+            .item-thumb {
+                img {
+                    width: 100%;
+                }
+                a.btn {
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                    border-radius: 20px 0 0 20px;
+                }
+            }
+            .thumb-list {
+                position: relative;
+                ul {
+                    padding: 10px;
+                    margin: 10px;
+                    margin-top: -40px;
+                    list-style: none;
+                    @extend %flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #333;
+                    border-radius: 5px;
+                    background: $white-color;
+                    @include breakpoint(lg) {
+                        margin-top: -70px;
+                    }
+                    li {
+                        margin: 5px;
+                        img {
+                            height: 40px;
+                            width: 40px;
+                            border: 1px solid #333;
+                            @include breakpoint (lg) {
+                                height: 80px;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*==== special product css ens  ====*//
+
+//*==== offered area css start ====*//
+.offered-product {
+    position: relative;
+    .section-wrapper {
+        overflow: hidden;
+        .offered-slider {
+            background: $white-color;
+            padding: 15px 10px;
+        }
+    }
+}
+//*==== offered area css ends ====*//
+
+
+//*===== add banner css start ====*//
+.add-banner {
+    padding: 50px 0;
+    .add-banner-thumb {
+        img {
+            width: 100%;
+        }
+    }
+}
+//*===== add banner css ends  ====*//
+
+//*===== sponsore css start =====*//
+.sponsore-area {
+    padding-bottom: 50px;
+    .section-wrapper {
+        .sponsore-item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+//*===== sponsore css ends  =====*//
+
+//*===== news-letter area css start =====*//
+.news-letter {
+    .section-wrapper {
+        padding: 20px;
+        background: #3e3e3e;
+        border-bottom: 5px solid $white-color;
+        .subscribe-content {
+            @extend %flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            @include breakpoint (lg) {
+               justify-content: space-between;
+            }
+            .content-text {
+                padding-bottom: 20px;
+                @include breakpoint (lg) {
+                    padding-bottom: 0;
+                }
+                h4 {
+                    margin: 0;
+                    color: $white-color;
+                }
+                p {
+                    margin: 0;
+                    font-weight: 500;
+                    color: $white-color;
+                }
+            }
+            .content-form {
+                form {
+                    .input-group {
+                        input {
+                            width: 60%;
+                            &:focus {
+                                border-color: $white-color;
+                                &::placeholder {
+                                    color: $white-color;
+                                }
+                                ~ i {
+                                    color: $white-color;
+                                   
+                                }
+                            }
+                        }
+                        button.btn {
+                           border-radius: 0 5px 5px 0; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*===== news-letter area css start =====*//
+
+
+//*==== Footer area css start =====*//
+footer {
+    padding: 20px 0;
+    background: #3e3e3e;
+    .contact-list, .policy, .quick-links, .acount, .help {
+        h4 {
+            font-size: 18px;
+            color: $white-color;
+            text-transform: uppercase;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                padding-bottom: 5px;
+                list-style: none;
+                color: $white-color;
+            }
+            a {
+                font-size: 12px;
+                color: $white-color;
+                position: relative;
+                text-decoration: none;
+                &:hover {
+                    color: $theme-color;
+                    transform: translateX(12px);
+                    &::before {
+                        left: -12px;
+                        transform: scale(1);
+                    }
+                }
+                &::before {
+                    @extend %absolute;
+                    top: 50%;
+                    left: -15px;
+                    height: 3px;
+                    width: 10px;
+                    transform: translateY(-50%)scale(0);
+                    background: $theme-color;
+                    @include transition ($transition);
+                }
+            }
+        }
+    }
+    .contact-list {
+        h4 {
+            text-transform: capitalize;
+        }
+        ul.menu-list {
+            padding: 0;
+            margin: 0;
+            display: block;
+            list-style: none;
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: $white-color;
+                }
+            }
+        }
+        ul.media-list {
+            margin: 0;
+            margin-top: 8px;
+            @extend %flex;
+            align-items: center;
+            li {
+                list-style: none;
+                padding: 5px;
+                @include breakpoint (xl) {
+                    padding: 0 10px;
+                }
+                &:last-child {
+                   padding-right: 0;
+                }
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+            a {
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                text-align: center;
+                background: transparent;
+                text-decoration: none;
+                position: relative;
+                border-radius: 100%;
+                border: 1px solid $white-color;
+                &:hover {
+                    transform: translateX(0);
+                    &::after {
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        transform: scale(1.1);
+                    }
+                    i {
+                        color: #fff;
+                    }
+                }
+                i {
+                    z-index: 1;
+                    color: $white-color;
+                    position: relative;
+                }
+                &::before {
+                    content: none;
+                }
+                &::after {
+                    @extend %absolute;
+                    top: -10px;
+                    left: -10px;
+                    right: -10px;
+                    bottom: -10px;
+                    border-radius: 100%;
+                    transform: scale(0);
+                    background: $theme-color;
+                    transform-origin: top right bottom left;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+    .help {
+        .payment-card {
+            ul.card-list {
+                margin: 0;
+                padding: 0;
+                margin-top: 8px;
+                @extend %flex;
+                justify-content: center;
+                @include breakpoint (sm) {
+                    justify-content: flex-start;
+                }
+                li {
+                    list-style: none;
+                    padding-right: 10px;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    @include breakpoint (mobile) {
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid #707070;
+    background: #1a1a1a;
+    .section-wrapper {
+        .copy-right {
+            text-align: center;
+            p {
+                margin: 0;
+                letter-spacing: 1px;
+                font-size: 12px;
+                color: $white-color;
+                @include breakpoint (max-md) {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+//*==== Footer area css ens  =====*//
