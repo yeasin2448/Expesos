@@ -16,6 +16,11 @@
         });
     });
 
+    // all categoris button toggle
+    $(document).on('click','.collapse_toggle',function(){
+        $(".drop-relative").toggleClass("show")
+    });
+
      //menu side bar
      $('.menu-bar').on('click', function(){
         $('body,header,.menu-bar,.menu-items,.overlay').addClass('active');
@@ -169,6 +174,31 @@
 			},
 			576: {
 				slidesPerView: 3,
+			},
+			320: {
+				slidesPerView: 1,
+			}
+		},
+    });
+
+    // offered products slider
+    var swiper = new Swiper('.categori-slieder', {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        autoplay: true,
+        navigation: {
+            nextEl: '.categories-button-next',
+            prevEl: '.categories-button-prev',
+        },
+        breakpoints: {
+			1024: {
+				slidesPerView: 3,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+			576: {
+				slidesPerView: 2,
 			},
 			320: {
 				slidesPerView: 1,

@@ -2,7 +2,7 @@
 header {
     .header-top {
         display: none;
-        padding: 20px 0;
+        padding: 10px 0;
         background: #3e3e3e;
         @include breakpoint (lg) {
             display: block;
@@ -33,6 +33,7 @@ header {
                             @extend %flex;
                             align-items: center;
                             padding: 10px;
+                            height: 45px;
                             border-radius: 10px;
                             background: $white-color;
                             .list-thumb {
@@ -642,9 +643,14 @@ header {
                     left: 0;
                     width: 100%;
                     z-index: 9;
+                    opacity: 0;
+                    transform-origin: top;
                     background: $white-color;
                     @extend %shadow;
                     @include transition($transition);
+                    &.show {
+                        opacity: 1;
+                    }
                     .drop-bg {
                         .list-menu {
                             ul.drop-list {

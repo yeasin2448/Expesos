@@ -14,7 +14,7 @@
     <!-- swiper css hear -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- custom css hear -->
-    <link rel="stylesheet" href="assets/css/plane.css">
+    <link rel="stylesheet" href="assets/sass/style.css">
     
     <title>Expesos</title>
 </head>
@@ -26,7 +26,7 @@
                 <div class="container">
                     <div class="top-board">
                         <ul class="board-list">
-                            <li><a href="#" class="btn"><span>See on expesos</span></a></li>
+                            <li><a href="#" class="btn"><span>Shop on expesos</span></a></li>
                             <li>
                                 <a href="#0">
                                     <div class="list-thumb">
@@ -531,8 +531,8 @@
                 <div class="container">
                     <div class="bottom-item">
                         <div class="vertical-menu">
-                            <button type="submit" class="collapse_toggle_1 btn">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16.646" viewBox="0 0 24 16.646"><g id="Group_854" data-name="Group 854" transform="translate(5637 4874.392)"><g id="Group_22" data-name="Group 22" transform="translate(-5637 -4867.038)"><g id="Group_21" data-name="Group 21" transform="translate(0 0)"><path id="Path_14" data-name="Path 14" d="M23.031,235.318H.969a.969.969,0,1,0,0,1.939H23.031a.969.969,0,1,0,0-1.939Z" transform="translate(0 -235.318)" fill="#F8DA48"/></g></g><g id="Group_24" data-name="Group 24" transform="translate(-5637 -4874.392)"><g id="Group_23" data-name="Group 23" transform="translate(0 0)"><path id="Path_15" data-name="Path 15" d="M16.754,78.439H1.246a1,1,0,1,0,0,1.939H16.754a1,1,0,1,0,0-1.939Z" transform="translate(0 -78.439)" fill="#fff"/></g></g><g id="Group_26" data-name="Group 26" transform="translate(-5637 -4859.684)"><g id="Group_25" data-name="Group 25" transform="translate(0 0)"><path id="Path_16" data-name="Path 16" d="M11.388,392.2H.612c-.338,0-.612.434-.612.969s.274.969.612.969H11.388c.338,0,.612-.434.612-.969S11.726,392.2,11.388,392.2Z" transform="translate(0 -392.197)" fill="#fff"/></g></g></g></svg></span>
+                            <button type="submit" class="collapse_toggle btn">
+                                <span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16.646" viewBox="0 0 24 16.646"><g id="Group_854" data-name="Group 854" transform="translate(5637 4874.392)"><g id="Group_22" data-name="Group 22" transform="translate(-5637 -4867.038)"><g id="Group_21" data-name="Group 21" transform="translate(0 0)"><path id="Path_14" data-name="Path 14" d="M23.031,235.318H.969a.969.969,0,1,0,0,1.939H23.031a.969.969,0,1,0,0-1.939Z" transform="translate(0 -235.318)" fill="#F8DA48"/></g></g><g id="Group_24" data-name="Group 24" transform="translate(-5637 -4874.392)"><g id="Group_23" data-name="Group 23" transform="translate(0 0)"><path id="Path_15" data-name="Path 15" d="M16.754,78.439H1.246a1,1,0,1,0,0,1.939H16.754a1,1,0,1,0,0-1.939Z" transform="translate(0 -78.439)" fill="#fff"/></g></g><g id="Group_26" data-name="Group 26" transform="translate(-5637 -4859.684)"><g id="Group_25" data-name="Group 25" transform="translate(0 0)"><path id="Path_16" data-name="Path 16" d="M11.388,392.2H.612c-.338,0-.612.434-.612.969s.274.969.612.969H11.388c.338,0,.612-.434.612-.969S11.726,392.2,11.388,392.2Z" transform="translate(0 -392.197)" fill="#fff"/></g></g></g></svg></span>
                                 <span>All Categories</span>
                             </button>
                             <div class="drop-relative">
@@ -644,7 +644,7 @@
     <section class="banner-area">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8 col-12">
+                <div class="col-md-9 col-12">
                     <div class="banner-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" style="background-image: url(assets/images/banner/01.jpg); background-position: center; background-size: cover;">
@@ -673,7 +673,7 @@
                         <div class="swiper-button-prev swiper-button-white"></div>
                     </div>
                 </div>
-                <div class="col-4 d-none d-md-block">
+                <div class="col-3 d-none d-md-block">
                     <div class="card-slider mb-4">
                         <img src="assets/images/banner/small/01.jpg" alt="">
                     </div>
@@ -884,21 +884,44 @@
             <div class="section-header">
                 <h4>Top Categories Of The Month</h4>
             </div>
+            <!-- Add arrow -->
+            <div class="arrow">
+                <!-- Add Arrows -->
+               <div class="categories-button-next next"><span><i class="fa fa-angle-right"></i></span></div>
+               <div class="categories-button-prev prev"><span><i class="fa fa-angle-left"></i></span></div>
+           </div>
             <div class="section-wrapper">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="cate-thumb">
-                            <img src="assets/images/categories/top/01.png" alt="">
+                <div class="categori-slieder">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cate-thumb">
+                                <img src="assets/images/categories/top/01.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 mt-md-0">
-                        <div class="cate-thumb">
-                            <img src="assets/images/categories/top/02.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="cate-thumb">
+                                <img src="assets/images/categories/top/02.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 mt-lg-0">
-                        <div class="cate-thumb">
-                            <img src="assets/images/categories/top/03.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="cate-thumb">
+                                <img src="assets/images/categories/top/01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cate-thumb">
+                                <img src="assets/images/categories/top/03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cate-thumb">
+                                <img src="assets/images/categories/top/01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cate-thumb">
+                                <img src="assets/images/categories/top/02.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -949,6 +972,7 @@
                                 <ul>
                                     <li><img src="assets/images/overview/item/02.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/02.png" alt=""></li>
+                                    <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/03.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/04.png" alt=""></li>
                                 </ul>
@@ -965,6 +989,7 @@
                                 <ul>
                                     <li><img src="assets/images/overview/item/05.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/06.png" alt=""></li>
+                                    <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/07.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/08.png" alt=""></li>
                                 </ul>
@@ -983,6 +1008,7 @@
                                 <ul>
                                     <li><img src="assets/images/overview/item/02.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/02.png" alt=""></li>
+                                    <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/03.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/04.png" alt=""></li>
                                 </ul>
@@ -999,6 +1025,7 @@
                                 <ul>
                                     <li><img src="assets/images/overview/item/05.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/06.png" alt=""></li>
+                                    <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/07.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/08.png" alt=""></li>
                                 </ul>
@@ -1019,6 +1046,7 @@
                                     <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/09.png" alt=""></li>
+                                    <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                 </ul>
                             </div>
                         </div>
@@ -1031,6 +1059,7 @@
                             </div>
                             <div class="thumb-list">
                                 <ul>
+                                    <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/09.png" alt=""></li>
                                     <li><img src="assets/images/overview/item/09.png" alt=""></li>
