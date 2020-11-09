@@ -133,7 +133,7 @@
     // trending products slider
     var swiper = new Swiper('.trending-slider', {
         slidesPerView: 6,
-        spaceBetween: 30,
+        spaceBetween: 10,
         autoplay: true,
         navigation: {
             nextEl: '.trending-button-next',

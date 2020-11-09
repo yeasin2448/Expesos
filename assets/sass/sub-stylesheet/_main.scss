@@ -98,8 +98,8 @@
                             width: 40px;
                             border: 1px solid #808080;
                             @include breakpoint (lg) {
-                                height: 80px;
-                                width: 80px;
+                                height: 100px;
+                                width: 100px;
                             }
                         }
                     }
@@ -376,3 +376,184 @@ footer {
     }
 }
 //*==== Footer area css ens  =====*//
+
+//?====== product categories pages css start ======?//
+
+//*===== woman-fashion css start ====*//
+.woman-fashion {
+    padding-top: 60px;
+    .section-header {
+        h3 {
+            color: #000;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+    }
+    .section-wrapper {
+        border-radius: 5px;
+        @extend %shadow;
+        border: 1px solid #808080;
+        .fashion-thumb {
+            ul.thumb-list {
+                margin: 0;
+                padding: 0;
+                @extend %flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                li {
+                    text-align: center;
+                    margin: 12px;
+                    img {
+                        height: 100px;
+                        width: 100px;
+                        padding-bottom: 8px;
+                    }
+                    span {
+                        font-size: 12px;
+                        display: block;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}
+//*===== woman-fashion css ends  ====*//
+
+//*===== best selling css start  ====*//
+.top-categories {
+    .section-wrapper {
+        .categori-slieder {
+            &.style-one {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .cate-thumb {
+                            img {
+                                min-height: 300px;
+                                @include breakpoint (lg) {
+                                    min-height: 400px;
+                                }
+                            }
+                        }
+                        .post-item {
+                            .post-thumb {
+                                img {
+                                    max-height: 280px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*===== best selling css ends   ====*//
+
+//*===== topraning area css start =====*//
+.top-ranking {
+    padding: 50px 0;
+    .section-wrapper {
+        padding: 30px 0;
+        border: 1px solid #808080;
+        .ranking-item {
+            @include breakpoint (md) {
+                border-right: 1px solid #808080;
+            }
+            .inner-item {
+                @extend %flex;
+                align-items: center;
+                position: relative;
+                padding-left: 50px;
+                padding-bottom: 30px;
+                &:nth-child(2) {
+                    &::after {
+                        content: "02";
+                    }
+                }
+                &:nth-child(3) {
+                    &::after {
+                        content: "03";
+                    }
+                }
+                &::after {
+                    position: absolute;
+                    content: "01";
+                    top: 50%;
+                    left: 10px;
+                    font-size: 12px;
+                    height: 30px;
+                    width: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: $white-color;
+                    background: $theme-color;
+                    transform: translateY(-50%);
+                }
+                &::before {
+                    @extend %absolute;
+                    top: 50%;
+                    left: 20px;
+                    height: 10px;
+                    width: 10px;
+                    border-bottom: 10px solid $theme-color;
+                    border-top: 10px solid transparent;
+                }
+                .inner-text {
+                    padding-left: 10px;
+                    h6 {
+                        margin: 0;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+//*===== topraning area css ends  =====*//
+
+//*===== just for you css start =====*//
+.justForYou-are {
+    padding-bottom: 50px;
+    .section-wrapper {
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #808080;
+        .self-item {
+            padding: 7.5px;
+            transition: all 0.3s ease-in-out;
+            @include breakpoint (xl) {
+                padding: 7.5px;
+            }
+            @include breakpoint (lg) {
+                padding: 7.5px 0;
+            }
+            &:hover {
+                transform: translateY(-5px);
+                .item-thumb {
+                    img {
+                        filter: grayscale(100%);
+                    }
+                }
+            }
+            .item-text {
+                padding-top: 10px;
+                h6 {
+                    margin: 0;
+                    @include breakpoint (xl) {
+                        font-size: 14px;
+                    }
+                    @include breakpoint (lg) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+//*===== just for you css ensds =====*//
+
+//?====== product categories pages css ends  ======?//

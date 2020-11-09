@@ -32,6 +32,15 @@
             max-height: 259px;
         }
     }
+    &.style-one {
+        .banner-slider {
+            .swiper-wrapper {
+                .swiper-slide {
+                    min-height: 515px;
+                }
+            }
+        }
+    }
 }
 //*===== banner area End ====*//
 
