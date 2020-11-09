@@ -644,12 +644,18 @@ header {
                     width: 100%;
                     z-index: 9;
                     opacity: 0;
+                    visibility: hidden;
+                    transform: scale(0);
                     transform-origin: top;
                     background: $white-color;
                     @extend %shadow;
                     @include transition($transition);
                     &.show {
                         opacity: 1;
+                        visibility: visible;
+                        -webkit-transform: scaleY(1);
+                        -ms-transform: scaleY(1);
+                        transform: scaleY(1);
                     }
                     .drop-bg {
                         .list-menu {

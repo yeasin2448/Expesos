@@ -221,6 +221,51 @@
 			return false;
 		});
     });
+
+
+
+  // shop cart + - start here
+  var CartPlusMinus = $('.cart-plus-minus');
+  CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
+  CartPlusMinus.append('<div class="inc qtybutton">+</div>');
+  $(".qtybutton").on("click", function() {
+      var $button = $(this);
+      var oldValue = $button.parent().find("input").val();
+      if ($button.text() === "+") {
+          var newVal = parseFloat(oldValue) + 1;
+      } else {
+          // Don't allow decrementing below zero
+          if (oldValue > 0) {
+              var newVal = parseFloat(oldValue) - 1;
+          } else {
+              newVal = 1;
+          }
+      }
+      $button.parent().find("input").val(newVal);
+  });
+
+
+
+  // product view mode change js
+  $('.product-view-mode').on('click', 'a', function (e) {
+      e.preventDefault();
+      var shopProductWrap = $('.shop-product-wrap');
+      var viewMode = $(this).data('target');
+      $('.product-view-mode a').removeClass('active');
+      $(this).addClass('active');
+      shopProductWrap.removeClass('grid list').addClass(viewMode);
+  });
+
+
+
+  // model option start here
+  $('.view-modal').on('click', function () {
+      $('.modal').addClass('show');
+  });
+
+  $('.close').on('click', function () {
+      $('.modal').removeClass('show');
+  });
     
 
 })(jQuery);
