@@ -813,6 +813,7 @@ footer {
     }
   }
   //*==== shop page css ends  ===*//
+
   /*=== cart-plus-minus start here  ===*/
   .cart-plus-minus {
     border: 1px solid #dee0e4;
@@ -861,7 +862,16 @@ footer {
         top: 0;
     }
   }
+  .nav {
+    .nav-link {
+        &.active {
+            color: $white-color;
+            background: $theme-color;
+        }
+    }
+  }
   /*=== cart-plus-minus end of  ===*/
+
 //*==== shop page css ends  ===*//
 
 //?====== Product-view page css ends =====?//
@@ -966,6 +976,9 @@ footer {
                                 svg {
             
                                 }
+                            }
+                            &#heart-bit {
+                                background: #e42323;
                             }
                         }
                     }
