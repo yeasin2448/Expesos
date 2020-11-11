@@ -266,6 +266,35 @@
   $('.close').on('click', function () {
       $('.modal').removeClass('show');
   });
+
+  // model option start here
+  $(function() {
+    $('.cart-modul').on('click', function () {
+        $('.modul').addClass('show');
+    });
+    $('.close').on('click', function () {
+        $('.modul').removeClass('show');
+    });
+});
+
+// modal 3 option start hear
+$(function(){
+    $('.view-password').on('click', function () {
+        $('.modal_2').addClass('show');
+    });
+    $('.close').on('click', function () {
+        $('.modal_2').removeClass('show');
+    });
+})
+ // modal 4 option start hear
+ $(function(){
+    $('.order-modal').on('click', function () {
+        $('.modal_3').addClass('show');
+    });
+    $('.close').on('click', function () {
+        $('.modal_3').removeClass('show');
+    });
+})
     
 
 })(jQuery);
