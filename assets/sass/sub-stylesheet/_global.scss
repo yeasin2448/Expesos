@@ -37,6 +37,7 @@ Typography
 body {
     position: relative;
     overflow-x: hidden;
+    background: #f2f3f7;
 }
 body,
 button,
@@ -396,19 +397,17 @@ button.btn {
 .section-header {
     h4 {
         margin: 0;
-        font-size: 22px;
-        color: #646464;
-        padding-bottom: 20px;
+        font-size: 20px;
+        color: #000;
     }
 }
 .flex-header {
     @extend %flex;
     align-items: center;
-    padding-bottom: 20px;
     h4 {
         margin: 0;
         padding-right: 20px;
-        color: #646464;
+        color: #000;
         @include breakpoint (max-sm) {
             font-size: 18px;
         }
@@ -694,6 +693,18 @@ form {
 //? all social media
 
 
+//! destop container view
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1200px!important}}.container-fluid,.container-lg,.container-md,.container-sm,.container-xl{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container,.container-sm{max-width:540px}}@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}}@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex:1 0 100%;flex-wrap:wrap;margin-top:calc(var(--bs-gutter-y) * -1);margin-right:calc(var(--bs-gutter-x)/ -2);margin-left:calc(var(--bs-gutter-x)/ -2)}
+
+
+//!===== Internet Exporer support css =====//
+.row>* {
+    max-width: 100%;
+    padding-right: 5px!important;
+    margin-top: 10px;
+    padding-left: 5px!important;
+}
+//!===== Internet Exporer support css =====//
 
 
 

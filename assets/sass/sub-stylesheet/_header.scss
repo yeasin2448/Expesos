@@ -345,27 +345,33 @@ header {
                         padding-right: 25px;
                         &:last-child {
                             padding-right: 0;
-                            button {
+                            a {
+                                &span {
+                                    i {
+                                        font-size: 30px;
+                                        margin-right: 5px;
+                                    }
+                                }
                                 &::after {
                                     content: "0";
                                 }
                             }
                         }
                         &:nth-child(1) {
-                            button {
+                            a {
                                 &::after {
-                                    content: "07";
+                                    content: none;
                                 }
                             }
                         }
                         &:nth-child(2) {
-                            button {
+                            a {
                                 &::after {
                                     content: "13";
                                 }
                             }
                         }
-                        button {
+                        a {
                             cursor: pointer;
                             position: relative;
                             &::after {
