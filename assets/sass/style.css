@@ -1715,7 +1715,7 @@ header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-
   top: -3px;
   left: 100%;
   min-width: 500px;
-  height: 518px;
+  height: 432px;
   padding: 20px;
   z-index: 2;
   background: #fff;
@@ -1723,14 +1723,14 @@ header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-
 }
 
 header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu::after {
-  bottom: -12%;
+  bottom: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: 210px;
+  width: 210px;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: left;
-  background-image: url(../../assets/images/header/vertical.png);
+  background-image: url(../../assets/images/product-details/beats-headphones.png);
 }
 
 header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner {

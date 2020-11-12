@@ -690,7 +690,7 @@ header {
                                         top: -3px;
                                         left: 100%;
                                         min-width: 500px;
-                                        height: 518px;
+                                        height: 432px;
                                         padding: 20px;
                                         z-index: 2;
                                         background: $white-color;
@@ -698,14 +698,14 @@ header {
                                         @extend %shadow;
                                         &::after {
                                             @extend %absolute;
-                                            bottom: -12%;
+                                            bottom: 0;
                                             right: 0;
-                                            height: 100%;
-                                            width: 100%;
+                                            height: 210px;
+                                            width: 210px;
                                             background-size: auto;
                                             background-repeat: no-repeat;
                                             background-position: left;
-                                            background-image: url(../../assets/images/header/vertical.png);
+                                            background-image: url(../../assets/images/product-details/beats-headphones.png);
                                         }
                                         .menu-inner {
                                             display: flex;
