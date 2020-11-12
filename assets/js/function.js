@@ -257,78 +257,94 @@
 
 
 
-  // product view mode change js
-  $('.product-view-mode').on('click', 'a', function (e) {
-      e.preventDefault();
-      var shopProductWrap = $('.shop-product-wrap');
-      var viewMode = $(this).data('target');
-      $('.product-view-mode a').removeClass('active');
-      $(this).addClass('active');
-      shopProductWrap.removeClass('grid list').addClass(viewMode);
+    // product view mode change js
+    $('.product-view-mode').on('click', 'a', function (e) {
+        e.preventDefault();
+        var shopProductWrap = $('.shop-product-wrap');
+        var viewMode = $(this).data('target');
+        $('.product-view-mode a').removeClass('active');
+        $(this).addClass('active');
+        shopProductWrap.removeClass('grid list').addClass(viewMode);
+    });
+
+
+
+    // model option start here
+    $('.view-modal').on('click', function () {
+        $('.modal').addClass('show');
+    });
+
+    $('.close').on('click', function () {
+        $('.modal').removeClass('show');
+    });
+
+    // model option start here
+    $(function() {
+        $('.cart-modul').on('click', function () {
+            $('.modul').addClass('show');
+        });
+        $('.close').on('click', function () {
+            $('.modul').removeClass('show');
+        });
+    });
+
+    // modal 3 option start hear
+    $(function(){
+        $('.view-password').on('click', function () {
+            $('.modal_2').addClass('show');
+        });
+        $('.close').on('click', function () {
+            $('.modal_2').removeClass('show');
+        });
+    })
+    // modal 4 option start hear
+    $(function(){
+        $('.order-modal').on('click', function () {
+            $('.modal_3').addClass('show');
+        });
+        $('.close').on('click', function () {
+            $('.modal_3').removeClass('show');
+        });
+    })
+
+
+    // When any accordion title is clicked...
+  $(".accordion__title").click(function() {
+    const $accordion_wrapper = $(this).parent();
+    const $accordion_content = $(this).parent().find(".accordion__content");
+    const $accordion_open = "accordion--open";
+
+    // If this accordion is already open
+    if ($accordion_wrapper.hasClass($accordion_open)) {
+      $accordion_content.slideDown();                     // Close the content.
+      $accordion_wrapper.removeClass($accordion_open);  // Remove the accordionm--open class.
+    }
+    // If this accordion is not already open
+    else {
+      $accordion_content.slideUp();                 // Show this accordion's content.
+      $accordion_wrapper.addClass($accordion_open);   // Add the accordion--open class.
+    }
   });
 
+  // When any accordion title is clicked...
+  $(".accordion_title").click(function() {
+    const $accordion_wrapper = $(this).parent();
+    const $accordion_content = $(this).parent().find(".accordion__content");
+    const $accordion_open = "accordion--open";
 
-
-  // model option start here
-  $('.view-modal').on('click', function () {
-      $('.modal').addClass('show');
+    // If this accordion is already open
+    if ($accordion_wrapper.hasClass($accordion_open)) {
+      $accordion_content.slideUp();                     // Close the content.
+      $accordion_wrapper.removeClass($accordion_open);  // Remove the accordionm--open class.
+    }
+    // If this accordion is not already open
+    else {
+      $accordion_content.slideDown();                 // Show this accordion's content.
+      $accordion_wrapper.addClass($accordion_open);   // Add the accordion--open class.
+    }
   });
-
-  $('.close').on('click', function () {
-      $('.modal').removeClass('show');
-  });
-
-  // model option start here
-  $(function() {
-    $('.cart-modul').on('click', function () {
-        $('.modul').addClass('show');
-    });
-    $('.close').on('click', function () {
-        $('.modul').removeClass('show');
-    });
-});
-
-// modal 3 option start hear
-$(function(){
-    $('.view-password').on('click', function () {
-        $('.modal_2').addClass('show');
-    });
-    $('.close').on('click', function () {
-        $('.modal_2').removeClass('show');
-    });
-})
- // modal 4 option start hear
- $(function(){
-    $('.order-modal').on('click', function () {
-        $('.modal_3').addClass('show');
-    });
-    $('.close').on('click', function () {
-        $('.modal_3').removeClass('show');
-    });
-})
     
 
 })(jQuery);
-
- // book mark api alert
- function myFunction() {
-    window.alert("you browser don't support this feature.");
-}
-
-// clipboard notif
-function copyToClipboard(element) {
-	document.getElementById("angle").onclick = function (copyToClipboard) {
-		document.getElementById("text_change").innerHTML = "Copied" ;
-	};
-	document.getElementById("anglex").onclick = function (copyToClipboard) {
-		document.getElementById("text_changex").innerHTML = "Copied" ;
-	};
-	document.getElementById("jon").onclick = function (copyToClipboard) {
-		document.getElementById("text_jon").innerHTML = "Copied" ;
-	};
-	document.getElementById("roks").onclick = function (copyToClipboard) {
-		document.getElementById("roks_text").innerHTML = "Copied" ;
-	};
-}
 
 

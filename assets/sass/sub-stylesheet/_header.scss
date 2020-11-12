@@ -80,7 +80,9 @@ header {
                     text-decoration: none;
                     padding-right: 10px;
                     @include breakpoint (max-mobile) {
-                        width: 100px;
+                        img {
+                            width: 100px;
+                        }
                     }
                     @include breakpoint (md) {
                         font-size: 40px;
@@ -174,6 +176,7 @@ header {
                             .items-inner {
                                 position: relative;
                                 .side-logo {
+                                    position: relative;
                                     padding: 20px 0;
                                     a {
                                         font-size: 30px;
@@ -181,9 +184,10 @@ header {
                                 }
                                 .crose-bar {
                                     @extend %absolute;
-                                    top: 5px;
-                                    right: 20px; 
+                                    top: 50%;
+                                    right: 20px;
                                     z-index: 1;
+                                    transform: translateY(-50%);
                                 }
                                 .menu-list {
                                     ul.list-item {
@@ -358,7 +362,18 @@ header {
                             }
                         }
                         &:nth-child(1) {
+                            @include breakpoint (max-sm) {
+                                padding-right: 15px;
+                            }
                             a {
+                                span {
+                                    @include breakpoint (max-sm) {
+                                        display: none;
+                                    }
+                                    &.mr-2 {
+                                        display: inline-block;
+                                    }
+                                }
                                 &::after {
                                     content: none;
                                 }
@@ -645,23 +660,21 @@ header {
                 }
                 .drop-relative {
                     position: absolute;
-                    top: 100%;
+                    top: 120%;
                     left: 0;
                     width: 100%;
                     z-index: 9;
                     opacity: 0;
-                    visibility: hidden;
-                    transform: scale(0);
-                    transform-origin: top;
+                    transform: scaleX(0);
                     background: $white-color;
                     @extend %shadow;
-                    @include transition($transition);
+                    transition: top 0.5s;
                     &.show {
                         opacity: 1;
-                        visibility: visible;
-                        -webkit-transform: scaleY(1);
-                        -ms-transform: scaleY(1);
-                        transform: scaleY(1);
+                        top: 100%;
+                        -webkit-transform: scaleX(1);
+                        -ms-transform: scaleX(1);
+                        transform: scaleX(1);
                     }
                     .drop-bg {
                         .list-menu {
