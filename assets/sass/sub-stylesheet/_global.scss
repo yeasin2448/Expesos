@@ -200,7 +200,7 @@ button.btn {
     position: relative;
     .next, .prev {
        position: absolute;
-       top: -50px;
+       top: -45px;
        z-index: 9;
        text-align: center;
        cursor: pointer;
@@ -244,7 +244,6 @@ button.btn {
 
 /*==== common item css start =====*/
 .post-item {
-    padding: 10px;
     overflow: hidden;
     position: relative;
     @include transition ($transition);
@@ -399,7 +398,7 @@ button.btn {
         margin: 0;
         font-size: 20px;
         color: #000;
-        padding-bottom: 16px;
+        padding-bottom: 10px;
     }
 }
 .flex-header {
@@ -409,7 +408,7 @@ button.btn {
         margin: 0;
         padding-right: 20px;
         color: #000;
-        padding-bottom: 16px;
+        padding-bottom: 10px;
         @include breakpoint (max-sm) {
             font-size: 18px;
         }
@@ -696,14 +695,13 @@ form {
 
 
 //! destop container view
-.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1200px!important}}.container-fluid,.container-lg,.container-md,.container-sm,.container-xl{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container,.container-sm{max-width:540px}}@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}}@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex:1 0 100%;flex-wrap:wrap;margin-top:calc(var(--bs-gutter-y) * -1);margin-right:calc(var(--bs-gutter-x)/ -2);margin-left:calc(var(--bs-gutter-x)/ -2)}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1320px!important}}.container-fluid,.container-lg,.container-md,.container-sm,.container-xl{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container,.container-sm{max-width:540px}}@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}}@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex:1 0 100%;flex-wrap:wrap;margin-top:calc(var(--bs-gutter-y) * -1);margin-right:calc(var(--bs-gutter-x)/ -2);margin-left:calc(var(--bs-gutter-x)/ -2)}
 
 
 //!===== Internet Exporer support css =====//
 .row>* {
     max-width: 100%;
     padding-right: 5px!important;
-    margin-top: 10px;
     padding-left: 5px!important;
 }
 //!===== Internet Exporer support css =====//

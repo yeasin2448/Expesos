@@ -34,10 +34,34 @@
         }
     }
     &.style-one {
-        .banner-slider {
-            .swiper-wrapper {
-                .swiper-slide {
-                    min-height: 515px;
+        .banner-position {
+            @extend %flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+            background: center;
+            background-position: center;
+            background-image: url(../../assets/images/banner/04.jpg);
+            .banner-content {
+                h4 {
+                    margin: 0;
+                    color: $white-color;
+                    text-align: center;
+                }
+                ul.banner-manu {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li {
+                        margin: 5px;
+                        a {
+                            color: $white-color;
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
         }

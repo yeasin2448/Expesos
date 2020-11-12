@@ -4,10 +4,8 @@
     position: relative;
     .section-wrapper {
         overflow: hidden;
-        .trending-slider {
-            padding: 15px 10px;
-            background: $white-color;
-        }
+        padding: 10px;
+        background: $white-color;
     }
 }
 //*==== Trending area css ends ====*//
@@ -16,7 +14,7 @@
 .top-categories {
     padding-bottom: 40px;
     .section-wrapper {
-        padding: 30px;
+        padding: 10px;
         border-radius: 5px;
         background: $white-color;
         .categori-slieder {
@@ -46,7 +44,7 @@
 //*==== deal of month css start ===*//
 .deal-area {
     .section-wrapper {
-        padding: 30px;
+        padding: 10px 20px;
         border-radius: 5px;
         background: $white-color;
         .deal-thumb {
@@ -67,7 +65,7 @@
 .special-product {
     padding: 40px 0;
     .section-wrapper {
-        padding: 30px;
+        padding: 10px 20px;
         border-radius: 5px;
         background: $white-color;
         .product-item {
@@ -122,10 +120,8 @@
     position: relative;
     .section-wrapper {
         overflow: hidden;
-        .offered-slider {
-            background: $white-color;
-            padding: 15px 10px;
-        }
+        background: $white-color;
+        padding: 10px;
     }
 }
 //*==== offered area css ends ====*//
@@ -173,7 +169,6 @@
    .sponsor-wrapper {
         width: 100%;
         @extend %flex;
-        padding-bottom: 15px;
         justify-content: center;
         align-items: center;
         background: $white-color;
@@ -250,9 +245,9 @@
 
 //*===== news-letter area css start =====*//
 .news-letter {
-    padding: 20px;
+    padding: 15px 20px;
     background: #3e3e3e;
-    border-bottom: 5px solid $white-color;
+    border-bottom: 3px solid $white-color;
     .section-wrapper {
         .subscribe-content {
             @extend %flex;
@@ -495,10 +490,11 @@ footer {
         h3 {
             color: #000;
             margin: 0;
-            padding-bottom: 10px;
+            padding-bottom: 0;
         }
     }
     .section-wrapper {
+        padding: 10px;
         border-radius: 5px;
         @extend %shadow;
         background: $white-color;
@@ -566,7 +562,7 @@ footer {
 .top-ranking {
     padding: 40px 0;
     .section-wrapper {
-        padding: 30px 0;
+        padding: 15px;
         border: 1px solid #808080;
         background: $white-color;
         .ranking-item {
@@ -677,11 +673,8 @@ footer {
 
 //*==== shop page css start ===*//
 .shop-page {
-    padding: 40px 0;
+    padding: 20px 0;
     background: #ebecf1;
-    @include breakpoint (sm) {
-        padding: 80px 0;
-    }
     .col-lg-9 {
         .shop-title {
             background: $white-color;
@@ -723,7 +716,7 @@ footer {
             }
             .product-item, .product-list-item {
                 padding: 15px;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
                 display: block;
                 align-items: center;
                 background: $white-color;
@@ -753,7 +746,6 @@ footer {
                         left: 0;
                         bottom: -70px;
                         width: 100%;
-                        background: #4070ec61;
                         padding: 5px;
                         transition: all 0.3s ease-in-out;
                         a {
@@ -762,8 +754,8 @@ footer {
                             text-align: center;
                             line-height: 30px;
                             border-radius: 3px;
-                            background-color: #fff;
-                            color: #000;
+                            background-color: $theme-color;
+                            color: $white-color;
                             border: 1px solid transparent;
                             transition: all 0.3s ease-in-out;
                             &.view-modal {
@@ -1022,6 +1014,38 @@ footer {
         }
     }
     .section-wrapper {
+        .wish-content {
+            border: 1px solid $border-color;
+            background: $white-color; 
+            .item-contents  {
+                .item-text {
+                    .text-left {
+                        h6 {
+                            color: #646464;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        p {
+                            margin: 0;
+                            strong {
+                                color: #000;
+                            }
+                        }
+                    }
+                    .button-right {
+                        button {
+                            height: 38px;
+                            width: 38px;
+                            line-height: 38px;
+                            margin: 0 5px;
+                            border-radius: 100%;
+                            border: 1px solid $border-color;
+                            background: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
         .cart-content {
             border: 1px solid $border-color;
             background: $white-color;
@@ -1075,8 +1099,10 @@ footer {
                                 color: #000;
                             }
                         }
-                        .cart-plus {
-                            margin-top: 20px;
+                        .cart-plus-minus {
+                            @include breakpoint (sm) {
+                                margin-left: 0;
+                            }
                         }
                     }
                     .cart-icon {
@@ -1184,6 +1210,56 @@ footer {
                             font-weight: 700;
                             color: #000;
                         }
+                    }
+                }
+            }
+        }
+        //? review and wishlist common
+        .item-contents {
+            @extend %flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid $border-color;
+            &:hover {
+                .item-text {
+                    .text-left {
+                        h6 {
+                            a {
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .item-thumb {
+                height: 80px;
+                width: 15%;
+                img {
+                    height: 100%;
+                }
+            }
+            .item-text {
+                width: calc(100% - 15%);
+                @extend %flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .text-left {
+                    h6 {
+                        margin: 0;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
+                }
+                .text-right {
+                    margin-top: -10px;
+                    h6 {
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                    .rating {
+
                     }
                 }
             }
@@ -1852,6 +1928,112 @@ footer {
     }
 }
 //?===== faq page css ends =====?//
+
+
+//#==== loging form css start ====#//
+.login-form {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    .log-content {
+      .card {
+        .card-header {
+          .card-title {
+            h4 {
+              margin: 0;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .card-body {
+          form {
+              a.btn, button.btn {
+                  border-radius: 5px;
+              }
+          }
+      }
+      .login-footer {
+        .divider {
+          .divider-text {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            padding: 0 1rem;
+            color: #333;
+            position: relative;
+            display: inline-block;
+            &::after, &::before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              width: 100px;
+              border-top: 1px solid #aaa;
+            }
+            &::before {
+              right: 100%;
+            }
+            &::after {
+              left: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bg-authentication {
+    background-color: #EFF2F7;
+  }
+  //#==== loging form css ends  ====#//
+
+  //?=== back menu css start ===?//
+.back-menu {
+    h6 {
+      i {
+        -webkit-animation: bounce-down 1.9s infinite;
+        animation: bounce-down 1.9s infinite;
+      }
+    }
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @-webkit-keyframes bounce-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+  }
+  @keyframes bounce-down {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(20px);
+              transform: translateX(20px);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
+    }
+  }
+  //?=== back menu css ends  ===?//
 
 
 //*===== all modal css start =====*//

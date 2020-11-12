@@ -128,7 +128,7 @@
         },
         breakpoints: {
 			1024: {
-				slidesPerView: 5,
+				slidesPerView: 6,
 			},
 			768: {
 				slidesPerView: 4,
@@ -154,7 +154,7 @@
         },
         breakpoints: {
 			1024: {
-				slidesPerView: 5,
+				slidesPerView: 6,
 			},
 			768: {
 				slidesPerView: 4,
@@ -168,7 +168,7 @@
 		},
     });
 
-    // offered products slider
+    // best seller products slider
     var swiper = new Swiper('.categori-slieder', {
         slidesPerView: 6,
         spaceBetween: 10,
@@ -179,7 +179,7 @@
         },
         breakpoints: {
 			1024: {
-				slidesPerView: 3,
+				slidesPerView: 4,
 			},
 			768: {
 				slidesPerView: 3,
