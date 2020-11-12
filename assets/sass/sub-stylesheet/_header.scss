@@ -663,7 +663,7 @@ header {
                     top: 120%;
                     left: 0;
                     width: 100%;
-                    z-index: 9;
+                    z-index: 111;
                     opacity: 0;
                     transform: scaleX(0);
                     background: $white-color;
@@ -689,11 +689,12 @@ header {
                                         position: absolute;
                                         top: 0;
                                         left: 100%;
-                                        min-width: 500px;
+                                        min-width: 700px;
                                         height: 100%;
                                         padding: 20px;
                                         z-index: 2;
                                         background: $white-color;
+                                        border-radius: 0 10px 10px 0;
                                         border-top: 3px solid $theme-color;
                                         @extend %shadow;
                                         &::after {
@@ -708,14 +709,22 @@ header {
                                             background-image: url(../../assets/images/product-details/beats-headphones.png);
                                         }
                                         .menu-inner {
+                                            width: 100%;
                                             display: flex;
                                             justify-content: flex-start;
                                             ul.submenu {
                                                 margin: 0;
                                                 padding: 0;
-                                                width: 50%;
-                                                &.style-one {
-                                                    padding-right: 30px;
+                                                padding-right: 20px;
+                                                width: calc(100%  / 4);
+                                                &:last-child {
+                                                    padding-right: 0;
+                                                }
+                                                span {
+                                                    strong {
+                                                        color: #000;
+                                                        font-size: 12px;
+                                                    }
                                                 }
                                                 li {
                                                     list-style: none;
@@ -724,6 +733,8 @@ header {
                                                 }
                                                 a {
                                                     z-index: 9;
+                                                    padding: 5px 0;
+                                                    font-size: 12px;
                                                     &:hover {
                                                         color: #000;
                                                         font-weight: normal;
@@ -759,7 +770,7 @@ header {
                                         }
                                     }
                                     span {
-                                        svg {
+                                        svg, i {
                                             margin-right: 15px;
                                         }
                                     }

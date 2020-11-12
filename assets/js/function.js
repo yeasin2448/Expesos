@@ -117,6 +117,27 @@
         },
     });
 
+
+    //product slider activetion
+	var galleryThumbs = new Swiper('.gallery-thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 4,
+		freeMode: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+	  });
+	  var galleryTop = new Swiper('.gallery-top', {
+		spaceBetween: 10,
+		autoplay: true,
+		navigation: {
+		  nextEl: '.product-button-next',
+		  prevEl: '.product-button-prev',
+		},
+		thumbs: {
+		  swiper: galleryThumbs
+		}
+	  });
+
     // trending products slider
     var swiper = new Swiper('.trending-slider', {
         slidesPerView: 6,
@@ -195,7 +216,7 @@
 
     //sponser slider activation
 	var swiper = new Swiper('.sponsor-container', {
-		slidesPerView: 6,
+		slidesPerView: 1,
 		speed:1000,
 		autoplay:1000,
 		autoplay:true,

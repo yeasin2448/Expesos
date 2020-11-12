@@ -3,7 +3,7 @@
 // ============================================================================
 $(document).ready(function () {
   var mySwiper14 = new Swiper('.swiper-responsive-breakpoints', {
-    slidesPerView: 5,
+    slidesPerView: 1,
     spaceBetween: 55,
     // init: false,
     navigation: {
@@ -12,15 +12,15 @@ $(document).ready(function () {
     },
     breakpoints: {
       1300: {
-        slidesPerView: 4,
+        slidesPerView: 5,
         spaceBetween: 30,
       },
       900: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 55,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 30,
       }
     }

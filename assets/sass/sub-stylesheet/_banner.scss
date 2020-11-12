@@ -27,6 +27,9 @@
             }
         }
     }
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        z-index: -1;
+    }
     .card-slider {
         img {
             width: 100%;

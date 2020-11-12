@@ -461,7 +461,7 @@ form button.custom-btn {
   100% {
     -webkit-transform: scale(1, 1);
     opacity: 0; } }
-.flex-header, header .header-top .top-board ul.board-list, header .header-top .top-board ul.board-list li:nth-child(2) a, header .header-top .top-board ul.board-list li:nth-child(3) a, header .header-top .top-board ul.board-list li:nth-child(4) a, header .header-top .top-board ul.board-list li:nth-child(5) a, header .header-top .top-board ul.board-list li:nth-child(6) a, header .header-midel .midel-item, header .header-midel .midel-item .header-logo, header .header-midel .midel-item .max-icon ul.icon-list, header .header-midel .midel-item .max-icon .notification ul.notif-list li .notif-item .item-content, header .header-midel .midel-item .max-icon .notification ul.notif-list li .item-footer, header .header-midel .midel-item .max-icon .notification .appbar-footer .foot-item, header .header-bottom .bottom-item, header .header-bottom .bottom-item .vertical-menu button.btn, header .header-bottom .bottom-item .flex-menu ul.menu-item, .banner-area .banner-slider .swiper-wrapper .swiper-slide, .banner-area.style-one .banner-position, .page-header .page-linker ul, .special-product .section-wrapper .product-item .thumb-list ul, .sponsor-section .sponsor-wrapper, .news-letter .section-wrapper .subscribe-content, footer .contact-list ul.media-list, footer .help .payment-card ul.card-list, .woman-fashion .section-wrapper .fashion-thumb ul.thumb-list, .top-ranking .section-wrapper .ranking-item .inner-item, .shoping-cart .section-wrapper .cart-content .cart-item .cart-text, .shoping-cart .section-wrapper .item-contents, .shoping-cart .section-wrapper .item-contents .item-text, .user-acount .section-wrapper .tab-header, .user-acount .section-wrapper .tab-content #nav-address .user-description ul.des-head, .user-acount .section-wrapper .tab-content #nav-address .user-description ul.des-body, .user-acount .section-wrapper .tab-content #nav-orders .orders-content .content-item ul.order-list, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content .item-head, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content ul, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content ul a, .user-acount .section-wrapper .tab-content .item-contents, .user-acount .section-wrapper .tab-content .item-contents .item-text, .modal .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modals .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modul .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal_2 .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal_3 .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modals .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modul .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal_2 .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal_3 .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal .modal-dialog .modal-content.style-three .cart-content, .modals .modal-dialog .modal-content.style-three .cart-content, .modul .modal-dialog .modal-content.style-three .cart-content, .modal_2 .modal-dialog .modal-content.style-three .cart-content, .modal_3 .modal-dialog .modal-content.style-three .cart-content, .modal .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modals .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modul .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modal_2 .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modal_3 .modal-dialog .modal-content.style-three .cart-content .cart-text ul {
+.flex-header, header .header-top .top-board ul.board-list, header .header-top .top-board ul.board-list li:nth-child(2) a, header .header-top .top-board ul.board-list li:nth-child(3) a, header .header-top .top-board ul.board-list li:nth-child(4) a, header .header-top .top-board ul.board-list li:nth-child(5) a, header .header-top .top-board ul.board-list li:nth-child(6) a, header .header-midel .midel-item, header .header-midel .midel-item .header-logo, header .header-midel .midel-item .max-icon ul.icon-list, header .header-midel .midel-item .max-icon .notification ul.notif-list li .notif-item .item-content, header .header-midel .midel-item .max-icon .notification ul.notif-list li .item-footer, header .header-midel .midel-item .max-icon .notification .appbar-footer .foot-item, header .header-bottom .bottom-item, header .header-bottom .bottom-item .vertical-menu button.btn, header .header-bottom .bottom-item .flex-menu ul.menu-item, .banner-area .banner-slider .swiper-wrapper .swiper-slide, .banner-area.style-one .banner-position, .page-header .page-linker ul, .special-product .section-wrapper .product-item .thumb-list ul, .sponsor-section .sponsor-wrapper, .news-letter .section-wrapper .subscribe-content, footer .contact-list ul.media-list, footer .help .payment-card ul.card-list, .woman-fashion .section-wrapper .fashion-thumb ul.thumb-list, .top-ranking .section-wrapper .ranking-item .inner-item, .justForYou-are .section-wrapper .self-item .item-text ul.rating, .shoping-cart .section-wrapper .cart-content .cart-item .cart-text, .shoping-cart .section-wrapper .item-contents, .shoping-cart .section-wrapper .item-contents .item-text, .user-acount .section-wrapper .tab-header, .user-acount .section-wrapper .tab-content #nav-address .user-description ul.des-head, .user-acount .section-wrapper .tab-content #nav-address .user-description ul.des-body, .user-acount .section-wrapper .tab-content #nav-orders .orders-content .content-item ul.order-list, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content .item-head, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content ul, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content ul a, .user-acount .section-wrapper .tab-content .item-contents, .user-acount .section-wrapper .tab-content .item-contents .item-text, .modal .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modals .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modul .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal_2 .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal_3 .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modals .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modul .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal_2 .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal_3 .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal .modal-dialog .modal-content.style-three .cart-content, .modals .modal-dialog .modal-content.style-three .cart-content, .modul .modal-dialog .modal-content.style-three .cart-content, .modal_2 .modal-dialog .modal-content.style-three .cart-content, .modal_3 .modal-dialog .modal-content.style-three .cart-content, .modal .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modals .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modul .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modal_2 .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modal_3 .modal-dialog .modal-content.style-three .cart-content .cart-text ul {
   display: flex;
   flex-wrap: wrap; }
 
@@ -1074,7 +1074,7 @@ header .header-bottom {
         top: 120%;
         left: 0;
         width: 100%;
-        z-index: 9;
+        z-index: 111;
         opacity: 0;
         transform: scaleX(0);
         background: #fff;
@@ -1096,11 +1096,12 @@ header .header-bottom {
               position: absolute;
               top: 0;
               left: 100%;
-              min-width: 500px;
+              min-width: 700px;
               height: 100%;
               padding: 20px;
               z-index: 2;
               background: #fff;
+              border-radius: 0 10px 10px 0;
               border-top: 3px solid #ef9b0f; }
               header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu::after {
                 bottom: 0;
@@ -1112,20 +1113,27 @@ header .header-bottom {
                 background-position: left;
                 background-image: url(../../assets/images/product-details/beats-headphones.png); }
               header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner {
+                width: 100%;
                 display: flex;
                 justify-content: flex-start; }
                 header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner ul.submenu {
                   margin: 0;
                   padding: 0;
-                  width: 50%; }
-                  header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner ul.submenu.style-one {
-                    padding-right: 30px; }
+                  padding-right: 20px;
+                  width: calc(100%  / 4); }
+                  header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner ul.submenu:last-child {
+                    padding-right: 0; }
+                  header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner ul.submenu span strong {
+                    color: #000;
+                    font-size: 12px; }
                   header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner ul.submenu li {
                     list-style: none;
                     display: block;
                     border-bottom: none; }
                   header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner ul.submenu a {
-                    z-index: 9; }
+                    z-index: 9;
+                    padding: 5px 0;
+                    font-size: 12px; }
                     header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner ul.submenu a:hover {
                       color: #000;
                       font-weight: normal;
@@ -1152,7 +1160,7 @@ header .header-bottom {
               header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a:hover::after {
                 background: #ef9b0f;
                 transform: scale(1.1); }
-            header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a span svg {
+            header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a span svg, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a span i {
               margin-right: 15px; }
             header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::before, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::after {
               top: 1px;
@@ -1203,6 +1211,8 @@ header .header-bottom {
         @media (max-width: 575px) {
           .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content h3 {
             font-size: 25px; } }
+.banner-area .swiper-container-horizontal > .swiper-pagination-bullets {
+  z-index: -1; }
 .banner-area .card-slider img {
   width: 100%;
   max-height: 192px; }
@@ -1252,7 +1262,7 @@ header .header-bottom {
         color: #ef9b0f; }
 
 .trending-product {
-  padding: 40px 0;
+  padding: 17px 0;
   position: relative; }
   .trending-product .section-wrapper {
     overflow: hidden;
@@ -1260,7 +1270,7 @@ header .header-bottom {
     background: #fff; }
 
 .top-categories {
-  padding-bottom: 40px; }
+  padding-bottom: 17px; }
   .top-categories .section-wrapper {
     padding: 10px;
     border-radius: 5px;
@@ -1286,7 +1296,7 @@ header .header-bottom {
     width: 100%; }
 
 .special-product {
-  padding: 40px 0; }
+  padding: 17px 0; }
   .special-product .section-wrapper {
     padding: 10px 20px;
     border-radius: 5px;
@@ -1333,12 +1343,12 @@ header .header-bottom {
     padding: 10px; }
 
 .add-banner {
-  padding: 40px 0; }
+  padding: 17px 0; }
   .add-banner .add-banner-thumb img {
     width: 100%; }
 
 .sponsor-section {
-  padding-bottom: 30px; }
+  padding-bottom: 20px; }
   .sponsor-section .section-header {
     position: relative; }
     .sponsor-section .section-header h3 {
@@ -1578,7 +1588,7 @@ footer {
           padding-bottom: 20px; } }
 
 .woman-fashion {
-  padding-top: 40px; }
+  padding-top: 17px; }
   .woman-fashion .section-header h3 {
     color: #000;
     margin: 0;
@@ -1614,7 +1624,7 @@ footer {
   max-height: 280px; }
 
 .top-ranking {
-  padding: 40px 0; }
+  padding: 17px 0; }
   .top-ranking .section-wrapper {
     padding: 15px;
     border: 1px solid #808080;
@@ -1659,7 +1669,7 @@ footer {
           margin: 0; }
 
 .justForYou-are {
-  padding-bottom: 40px; }
+  padding-bottom: 17px; }
   .justForYou-are .section-wrapper {
     padding: 15px 30px;
     border-radius: 5px;
@@ -1678,8 +1688,12 @@ footer {
         transform: translateY(-5px); }
         .justForYou-are .section-wrapper .self-item:hover .item-thumb img {
           filter: grayscale(100%); }
+      .justForYou-are .section-wrapper .self-item .item-thumb img {
+        width: 100%; }
       .justForYou-are .section-wrapper .self-item .item-text {
-        padding-top: 10px; }
+        padding: 10px;
+        border-top: 0;
+        border: 1px solid #cec9c9; }
         .justForYou-are .section-wrapper .self-item .item-text h6 {
           margin: 0; }
           @media (min-width: 1200px) {
@@ -1688,6 +1702,93 @@ footer {
           @media (min-width: 992px) {
             .justForYou-are .section-wrapper .self-item .item-text h6 {
               font-size: 12px; } }
+        .justForYou-are .section-wrapper .self-item .item-text span {
+          font-weight: 600;
+          color: #ef9b0f;
+          display: inline-block;
+          padding: 5px 0; }
+        .justForYou-are .section-wrapper .self-item .item-text ul.rating {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          align-items: center; }
+          .justForYou-are .section-wrapper .self-item .item-text ul.rating li {
+            line-height: 1;
+            margin-right: 5px; }
+            .justForYou-are .section-wrapper .self-item .item-text ul.rating li:last-child {
+              margin-right: 0; }
+            .justForYou-are .section-wrapper .self-item .item-text ul.rating li i {
+              color: #faca51;
+              font-size: 10px; }
+            .justForYou-are .section-wrapper .self-item .item-text ul.rating li span {
+              font-weight: 400; }
+
+.product-variation .product-container {
+  position: relative;
+  overflow: hidden; }
+  .product-variation .product-container.gallery-top {
+    position: relative; }
+    .product-variation .product-container.gallery-top .swiper-wrapper .swiper-slide .thumb {
+      margin: 10px 5px;
+      padding: 100px;
+      background: #fff;
+      box-shadow: 0 0 10px 0 rgba(136, 136, 136, 0.1); }
+      @media (max-width: 575px) {
+        .product-variation .product-container.gallery-top .swiper-wrapper .swiper-slide .thumb {
+          padding: 50px; } }
+      .product-variation .product-container.gallery-top .swiper-wrapper .swiper-slide .thumb img {
+        height: 200px;
+        width: 200px; }
+    .product-variation .product-container.gallery-top:hover .product-button-next {
+      opacity: 1;
+      right: 8px;
+      visibility: visible; }
+    .product-variation .product-container.gallery-top:hover .product-button-prev {
+      opacity: 1;
+      left: 8px;
+      visibility: visible; }
+    .product-variation .product-container.gallery-top .product-button-next, .product-variation .product-container.gallery-top .product-button-prev {
+      position: absolute;
+      top: 50%;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #ef9b0f;
+      transform: translate(0, -50%);
+      border-radius: 5px;
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden; }
+    .product-variation .product-container.gallery-top .product-button-next {
+      right: -25px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      .product-variation .product-container.gallery-top .product-button-next i {
+        font-size: 25px;
+        color: #ef9b0f; }
+    .product-variation .product-container.gallery-top .product-button-prev {
+      left: -25px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      .product-variation .product-container.gallery-top .product-button-prev i {
+        font-size: 25px;
+        color: #ef9b0f; }
+  .product-variation .product-container.gallery-thumbs .swiper-wrapper .swiper-slide.swiper-slide-thumb-active .thumb-content img {
+    filter: grayscale(100%); }
+  .product-variation .product-container.gallery-thumbs .swiper-wrapper .swiper-slide .thumb-content {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(136, 136, 136, 0.1); }
+    .product-variation .product-container.gallery-thumbs .swiper-wrapper .swiper-slide .thumb-content img {
+      height: 80px;
+      width: 80px; }
 
 .shop-page {
   padding: 20px 0;
@@ -1917,7 +2018,7 @@ footer {
 
 /*=== cart-plus-minus end of  ===*/
 .shoping-cart {
-  padding-bottom: 40px; }
+  padding-bottom: 20px; }
   .shoping-cart .content-head .head-inner {
     padding: 20px;
     text-align: center;
@@ -2099,7 +2200,7 @@ footer {
           font-size: 12px; }
 
 .user-acount {
-  padding-bottom: 40px; }
+  padding-bottom: 20px; }
   .user-acount .section-head h4 {
     margin: 0;
     color: #646464; }
@@ -2346,7 +2447,7 @@ footer {
           font-size: 12px; }
 
 .trams-area {
-  padding-bottom: 40px; }
+  padding-bottom: 20px; }
   .trams-area .section-wrapper .accordion-item .accordion {
     margin-top: -1px; }
     .trams-area .section-wrapper .accordion-item .accordion .accordion__title {
@@ -2395,7 +2496,7 @@ footer {
         font-size: 12px; }
 
 .trams-area {
-  padding-bottom: 40px; }
+  padding-bottom: 20px; }
   .trams-area .section-wrapper .privacy-item .item-title h5 {
     margin: 0;
     color: #000;
@@ -2412,7 +2513,7 @@ footer {
       padding-bottom: 16px; }
 
 .return-refunds {
-  padding-bottom: 40px; }
+  padding-bottom: 20px; }
   .return-refunds .section-wrapper .ret-item .item-thumb {
     padding-bottom: 30px; }
     .return-refunds .section-wrapper .ret-item .item-thumb img {
@@ -2426,7 +2527,7 @@ footer {
     padding-bottom: 24px; }
 
 .order-traking {
-  padding-bottom: 40px; }
+  padding-bottom: 20px; }
   .order-traking .section-wrapper {
     margin: 0 auto;
     max-width: 800px; }
@@ -2453,7 +2554,7 @@ footer {
       border-radius: 0; }
 
 .faq-area {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   background: #fff; }
   .faq-area .section-wrapper .accordion-item .accordion {
     margin-top: -1px; }
@@ -2498,37 +2599,46 @@ footer {
       color: #fff;
       transform: rotate(180deg); }
 
-.login-form {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden; }
-  .login-form .log-content .card .card-header .card-title h4 {
-    margin: 0;
-    font-size: 18px; }
-  .login-form .log-content .card-body form a.btn, .login-form .log-content .card-body form button.btn {
-    border-radius: 5px; }
-  .login-form .log-content .login-footer .divider .divider-text {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    padding: 0 1rem;
-    color: #333;
-    position: relative;
-    display: inline-block; }
-    .login-form .log-content .login-footer .divider .divider-text::after, .login-form .log-content .login-footer .divider .divider-text::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      width: 100px;
-      border-top: 1px solid #aaa; }
-    .login-form .log-content .login-footer .divider .divider-text::before {
-      right: 100%; }
-    .login-form .log-content .login-footer .divider .divider-text::after {
-      left: 100%; }
+.login-area {
+  padding: 60px 0; }
+  .login-area .section-wrapper {
+    padding: 30px;
+    background: #fff; }
+    .login-area .section-wrapper .card {
+      border-radius: 0; }
+      .login-area .section-wrapper .card .card-body form {
+        text-align: center; }
+        .login-area .section-wrapper .card .card-body form .input-group input.form-control {
+          height: 48px;
+          border-radius: 0; }
+        .login-area .section-wrapper .card .card-body form button.btn {
+          border-radius: 0;
+          padding: 12px 24px;
+          width: 80%; }
+    .login-area .section-wrapper .creat-xpesos {
+      text-align: center; }
+      .login-area .section-wrapper .creat-xpesos h4 {
+        margin: 0;
+        padding-bottom: 24px;
+        color: #ef9b0f; }
+        @media (max-width: 767px) {
+          .login-area .section-wrapper .creat-xpesos h4 {
+            padding-top: 30px; } }
+      .login-area .section-wrapper .creat-xpesos p {
+        margin: 0 auto;
+        max-width: 430px;
+        padding-bottom: 160px; }
+      .login-area .section-wrapper .creat-xpesos .reg-btn a.btn, .login-area .section-wrapper .creat-xpesos .reg-btn button.btn {
+        border-radius: 0;
+        width: 80%;
+        justify-content: center;
+        padding: 12px 24px; }
+    .login-area .section-wrapper .reag-content {
+      margin: 0 auto;
+      max-width: 800px; }
 
-.bg-authentication {
-  background-color: #EFF2F7; }
-
-.back-menu h6 i {
+.back-menu i {
+  color: #ef9b0f;
   -webkit-animation: bounce-down 1.9s infinite;
   animation: bounce-down 1.9s infinite; }
 

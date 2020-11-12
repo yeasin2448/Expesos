@@ -1,6 +1,6 @@
 //*==== Trending area css start ====*//
 .trending-product {
-    padding: 40px 0;
+    padding: 17px 0;
     position: relative;
     .section-wrapper {
         overflow: hidden;
@@ -12,7 +12,7 @@
 
 //*==== Top Categories css start ====*//
 .top-categories {
-    padding-bottom: 40px;
+    padding-bottom: 17px;
     .section-wrapper {
         padding: 10px;
         border-radius: 5px;
@@ -63,7 +63,7 @@
 
 //*==== special product css start ====*//
 .special-product {
-    padding: 40px 0;
+    padding: 17px 0;
     .section-wrapper {
         padding: 10px 20px;
         border-radius: 5px;
@@ -129,7 +129,7 @@
 
 //*===== add banner css start ====*//
 .add-banner {
-    padding: 40px 0;
+    padding: 17px 0;
     .add-banner-thumb {
         img {
             width: 100%;
@@ -142,7 +142,7 @@
 
 //?===== sponsor area css start =====?//
 .sponsor-section {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     .section-header {
         position: relative;
         h3 {
@@ -485,7 +485,7 @@ footer {
 
 //*===== woman-fashion css start ====*//
 .woman-fashion {
-    padding-top: 40px;
+    padding-top: 17px;
     .section-header {
         h3 {
             color: #000;
@@ -560,7 +560,7 @@ footer {
 
 //*===== topraning area css start =====*//
 .top-ranking {
-    padding: 40px 0;
+    padding: 17px 0;
     .section-wrapper {
         padding: 15px;
         border: 1px solid #808080;
@@ -626,7 +626,7 @@ footer {
 
 //*===== just for you css start =====*//
 .justForYou-are {
-    padding-bottom: 40px;
+    padding-bottom: 17px;
     .section-wrapper {
         padding: 15px 30px;
         border-radius: 5px;
@@ -649,8 +649,15 @@ footer {
                     }
                 }
             }
+            .item-thumb {
+                img {
+                    width: 100%;
+                }
+            }
             .item-text {
-                padding-top: 10px;
+                padding: 10px;
+                border-top: 0;
+                border: 1px solid #cec9c9;
                 h6 {
                     margin: 0;
                     @include breakpoint (xl) {
@@ -660,12 +667,136 @@ footer {
                         font-size: 12px;
                     }
                 }
+                span {
+                    font-weight: 600;
+                    color: $theme-color;
+                    display: inline-block;
+                    padding: 5px 0;
+                }
+                ul.rating {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    @extend %flex;
+                    align-items: center;
+                    li {
+                        line-height: 1;
+                        margin-right: 5px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        i {
+                            color: #faca51;
+                            font-size: 10px;
+                        }
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+                }
             }
         }
     }
 }
 //*===== just for you css ensds =====*//
 
+//!===== product variation slider css ====!//
+.product-variation {
+    .product-container {
+        position: relative;
+        overflow: hidden;
+        &.gallery-top {
+            position: relative;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .thumb {
+                        margin: 10px 5px;
+                        padding: 100px;
+                        background: $white-color;
+                        box-shadow: 0 0 10px 0 rgba(136, 136, 136, 0.10);
+                        @include breakpoint (max-sm) {
+                            padding: 50px;
+                        }
+                        img {
+                            height: 200px;
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .product-button-next {
+                    opacity: 1;
+                    right: 8px;
+                    visibility: visible;
+                }
+                .product-button-prev {
+                    opacity: 1;
+                    left: 8px;
+                    visibility: visible;
+                }
+                
+            }
+            .product-button-next, .product-button-prev {
+                position: absolute;
+                top: 50%;
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                font-size: 20px;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid $theme-color;
+                transform: translate(0, -50%);
+                border-radius: 5px;
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .product-button-next {
+                right: -25px;
+                @include transition ($transition);
+                i {
+                    font-size: 25px;
+                    color: $theme-color;
+                }
+            }
+            .product-button-prev {
+                left: -25px;
+                @include transition ($transition);
+                i {
+                    font-size: 25px;
+                    color: $theme-color;
+                }
+            }
+        }
+        &.gallery-thumbs  {
+            .swiper-wrapper {
+                .swiper-slide {
+                    &.swiper-slide-thumb-active {
+                        .thumb-content {
+                                img {
+                                    filter: grayscale(100%)
+                                }
+                            }
+                    }
+                    .thumb-content {
+                        margin: 5px;
+                        padding: 10px;
+                        cursor: pointer;
+                        background: $white-color;
+                        box-shadow: 0 0 10px 0 rgba(136, 136, 136, 0.10);
+                        img {
+                           height: 80px;
+                           width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//!===== product variation slider css ====!//
 
 //?====== product categories pages css ends  ======?//
     
@@ -992,7 +1123,7 @@ footer {
 
 //*====== shoping cart css start ======*//
 .shoping-cart {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     .content-head {
         .head-inner {
             padding: 20px;
@@ -1276,7 +1407,7 @@ footer {
 
 //*===== user profile css start =====*//
 .user-acount {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     .section-head {
         h4 {
             margin: 0;
@@ -1675,7 +1806,7 @@ footer {
 
 //?===== trams page css sart ======?//
 .trams-area {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     .section-wrapper {
         .accordion-item {
             .accordion {
@@ -1751,7 +1882,7 @@ footer {
 
 //?===== privacy policy start ======?//
 .trams-area {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     .section-wrapper {
         .privacy-item {
             .item-title {
@@ -1784,7 +1915,7 @@ footer {
 
 //?===== return and refunds start ====?//
 .return-refunds {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     .section-wrapper {
         .ret-item {
             .item-thumb {
@@ -1812,7 +1943,7 @@ footer {
 
 //?===== order-traking css start ======?//
 .order-traking {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     .section-wrapper {
         margin: 0 auto;
         max-width: 800px;
@@ -1861,7 +1992,7 @@ footer {
 
 //?===== faq page css start =====?//
 .faq-area {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     background: $white-color;
     .section-wrapper {
         .accordion-item {
@@ -1931,68 +2062,71 @@ footer {
 
 
 //#==== loging form css start ====#//
-.login-form {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    .log-content {
-      .card {
-        .card-header {
-          .card-title {
+.login-area {
+    padding: 60px 0;
+    .section-wrapper {
+        padding: 30px;
+        background: $white-color;
+        .card {
+            border-radius: 0;
+            .card-body {
+                form {
+                    text-align: center;
+                    .input-group {
+                        input {
+                            &.form-control {
+                                height: 48px;
+                                border-radius: 0;
+                            }
+                        }
+                    }
+                    button.btn {
+                        border-radius: 0;
+                        padding: 12px 24px;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        .creat-xpesos {
+            text-align: center;
             h4 {
-              margin: 0;
-              font-size: 18px;
+                margin: 0;
+                padding-bottom: 24px;
+                color: $theme-color;
+                @include breakpoint (max-md) {
+                    padding-top: 30px;
+                }
             }
-          }
+            p {
+                margin: 0 auto;
+                max-width: 430px;
+                padding-bottom: 160px;
+            }
+            .reg-btn {
+                a.btn, button.btn {
+                    border-radius: 0;
+                    width: 80%;
+                    justify-content: center;
+                    padding: 12px 24px;
+                }
+            }
         }
-      }
-      .card-body {
-          form {
-              a.btn, button.btn {
-                  border-radius: 5px;
-              }
-          }
-      }
-      .login-footer {
-        .divider {
-          .divider-text {
-            font-size: 0.9375rem;
-            font-weight: 600;
-            padding: 0 1rem;
-            color: #333;
-            position: relative;
-            display: inline-block;
-            &::after, &::before {
-              content: '';
-              position: absolute;
-              top: 50%;
-              width: 100px;
-              border-top: 1px solid #aaa;
-            }
-            &::before {
-              right: 100%;
-            }
-            &::after {
-              left: 100%;
-            }
-          }
+        .reag-content {
+            margin: 0 auto;
+            max-width: 800px;
         }
-      }
     }
-  }
-  .bg-authentication {
-    background-color: #EFF2F7;
-  }
+}
   //#==== loging form css ends  ====#//
 
   //?=== back menu css start ===?//
 .back-menu {
-    h6 {
-      i {
+    i {
+        color: $theme-color;
         -webkit-animation: bounce-down 1.9s infinite;
         animation: bounce-down 1.9s infinite;
       }
-    }
   }
   
   @keyframes fadeEffect {
