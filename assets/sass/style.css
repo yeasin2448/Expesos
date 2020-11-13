@@ -2600,6 +2600,14 @@ footer {
       color: #fff;
       transform: rotate(180deg); }
 
+.bayer-area {
+  padding-bottom: 20px; }
+  .bayer-area .section-wrapper {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff; }
+
 .login-area {
   padding: 60px 0; }
   .login-area .section-wrapper {

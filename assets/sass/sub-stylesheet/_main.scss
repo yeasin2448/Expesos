@@ -2061,6 +2061,17 @@ footer {
 //?===== faq page css ends =====?//
 
 
+//?===== bayer area css start ===?//
+.bayer-area {
+    padding-bottom: 20px;
+    .section-wrapper {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        background: $white-color
+    }
+}
+
 //#==== loging form css start ====#//
 .login-area {
     padding: 60px 0;
@@ -2118,9 +2129,9 @@ footer {
         }
     }
 }
-  //#==== loging form css ends  ====#//
+//#==== loging form css ends  ====#//
 
-  //?=== back menu css start ===?//
+//?=== back menu css start ===?//
 .back-menu {
     i {
         color: $theme-color;
@@ -2128,6 +2139,7 @@ footer {
         animation: bounce-down 1.9s infinite;
       }
   }
+//?=== back menu css start ===?//
   
   @keyframes fadeEffect {
     from {opacity: 0;}
