@@ -2604,3 +2604,96 @@ footer {
     }
 }
 //*===== all modal css ends  =====*//
+
+
+//?==== scroolTop ======?//
+.scrollToTop {
+    position: fixed;
+    bottom: -30%;
+    right: 5%;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 24px;
+    animation: lab_top_up 5s linear infinite;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+    &:hover {
+        background: linear-gradient(to right, #a4ea58, #81e18f); 
+    }
+    i {
+        border-radius: 5px;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: $theme-color; 
+    }
+    .pluse_1, .pluse_2 {
+        @extend %absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: rgba(243, 186, 14, 0.102); 
+    }
+    .pluse_1::after, .pluse_1::before, .pluse_2::after, .pluse_2::before {
+        @extend %absolute;
+        background: #ffac28;
+        border-radius: 5px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .pluse_1::after, .pluse_2::after {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        margin-left: -30px;
+        margin-top: -30px; 
+    }
+    .pluse_1:before, .pluse_2:before {
+        width: 40px;
+        height: 40px; 
+    }
+    .pluse_1 {
+        -webkit-animation: pluse_animate 3s infinite linear;
+        animation: pluse_animate 3s infinite linear; 
+    }
+      
+    .pluse_2::before {
+        -webkit-animation: pluse_animate 3s infinite linear;
+        animation: pluse_animate 3s infinite linear;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        margin-left: 0;
+        margin-top: 0; 
+    }
+
+}
+//?==== scroolTop ======?//
+
+@keyframes pluse_animate {
+    0% {
+      opacity: 1;
+      -webkit-transform: translate(-50%, -50%) scale(0.3);
+      transform: translate(-50%, -50%) scale(0.3); 
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%) scale(2);
+      transform: translate(-50%, -50%) scale(2); 
+    } 
+}

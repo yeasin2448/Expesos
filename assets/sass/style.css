@@ -465,7 +465,7 @@ form button.custom-btn {
   display: flex;
   flex-wrap: wrap; }
 
-header .header-midel .midel-item .header-logo .header-left .side-menu .menu-bar a.bar-btn::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .crose-bar, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item li ul.m-submenu li::after, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item li ul.m-submenu li::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item a.icon-down::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item a.icon-down::after, header .header-midel .midel-item .max-icon ul.icon-list li a::after, header .header-midel .midel-item .max-icon .notification ul.notif-list li .item-footer button::before, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu::after, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::before, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::after, .sponsor-section .section-header::after, footer .contact-list ul a::before, footer .policy ul a::before, footer .quick-links ul a::before, footer .acount ul a::before, footer .help ul a::before, footer .contact-list ul.media-list a::after, .top-ranking .section-wrapper .ranking-item .inner-item::before, .user-acount .section-wrapper .tab-content #details .details-content form .input-group .country-flag::after, .modal .modal-dialog .modal-content button.close, .modals .modal-dialog .modal-content button.close, .modul .modal-dialog .modal-content button.close, .modal_2 .modal-dialog .modal-content button.close, .modal_3 .modal-dialog .modal-content button.close, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before {
+header .header-midel .midel-item .header-logo .header-left .side-menu .menu-bar a.bar-btn::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .crose-bar, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item li ul.m-submenu li::after, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item li ul.m-submenu li::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item a.icon-down::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item a.icon-down::after, header .header-midel .midel-item .max-icon ul.icon-list li a::after, header .header-midel .midel-item .max-icon .notification ul.notif-list li .item-footer button::before, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu::after, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::before, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::after, .sponsor-section .section-header::after, footer .contact-list ul a::before, footer .policy ul a::before, footer .quick-links ul a::before, footer .acount ul a::before, footer .help ul a::before, footer .contact-list ul.media-list a::after, .top-ranking .section-wrapper .ranking-item .inner-item::before, .user-acount .section-wrapper .tab-content #details .details-content form .input-group .country-flag::after, .modal .modal-dialog .modal-content button.close, .modals .modal-dialog .modal-content button.close, .modul .modal-dialog .modal-content button.close, .modal_2 .modal-dialog .modal-content button.close, .modal_3 .modal-dialog .modal-content button.close, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .scrollToTop .pluse_1, .scrollToTop .pluse_2, .scrollToTop .pluse_1::after, .scrollToTop .pluse_1::before, .scrollToTop .pluse_2::after, .scrollToTop .pluse_2::before {
   position: absolute;
   content: ''; }
 
@@ -2966,5 +2966,79 @@ footer {
             bottom: 30%;
             background: #fff;
             border: 5px solid #ef9b0f; }
+
+.scrollToTop {
+  position: fixed;
+  bottom: -30%;
+  right: 5%;
+  z-index: 9;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 24px;
+  animation: lab_top_up 5s linear infinite;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .scrollToTop:hover {
+    background: linear-gradient(to right, #a4ea58, #81e18f); }
+  .scrollToTop i {
+    border-radius: 5px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #ef9b0f; }
+  .scrollToTop .pluse_1, .scrollToTop .pluse_2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: rgba(243, 186, 14, 0.102); }
+  .scrollToTop .pluse_1::after, .scrollToTop .pluse_1::before, .scrollToTop .pluse_2::after, .scrollToTop .pluse_2::before {
+    background: #ffac28;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .scrollToTop .pluse_1::after, .scrollToTop .pluse_2::after {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    margin-left: -30px;
+    margin-top: -30px; }
+  .scrollToTop .pluse_1:before, .scrollToTop .pluse_2:before {
+    width: 40px;
+    height: 40px; }
+  .scrollToTop .pluse_1 {
+    -webkit-animation: pluse_animate 3s infinite linear;
+    animation: pluse_animate 3s infinite linear; }
+  .scrollToTop .pluse_2::before {
+    -webkit-animation: pluse_animate 3s infinite linear;
+    animation: pluse_animate 3s infinite linear;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    margin-left: 0;
+    margin-top: 0; }
+
+@keyframes pluse_animate {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(0.3);
+    transform: translate(-50%, -50%) scale(0.3); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(2); } }
 
 /*# sourceMappingURL=style.css.map */

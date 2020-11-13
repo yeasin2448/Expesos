@@ -364,6 +364,22 @@
       $accordion_wrapper.addClass($accordion_open);   // Add the accordion--open class.
     }
   });
+
+    // scroll up start here
+	$(function(){
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 300) {
+				$('.scrollToTop').css({'bottom':'2%', 'opacity':'1','transition':'all .5s ease'});
+			} else {
+				$('.scrollToTop').css({'bottom':'-30%', 'opacity':'0','transition':'all .5s ease'})
+			}
+		});
+		//Click event to scroll to top
+		$('.scrollToTop').on('click', function(){
+			$('html, body').animate({scrollTop : 0},500);
+			return false;
+		});
+	});
     
 
 })(jQuery);
