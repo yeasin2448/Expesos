@@ -1074,6 +1074,7 @@ header .header-bottom {
         top: 120%;
         left: 0;
         width: 100%;
+        height: 400px;
         z-index: 111;
         opacity: 0;
         transform: scaleX(0);
@@ -1097,9 +1098,10 @@ header .header-bottom {
               top: 0;
               left: 100%;
               min-width: 700px;
-              height: 100%;
+              height: 400px;
               padding: 20px;
               z-index: 2;
+              overflow: hidden;
               background: #fff;
               border-radius: 0 10px 10px 0;
               border-top: 3px solid #ef9b0f; }
@@ -1120,7 +1122,7 @@ header .header-bottom {
                   margin: 0;
                   padding: 0;
                   padding-right: 20px;
-                  width: calc(100%  / 4); }
+                  width: calc(100%  / 3); }
                   header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner ul.submenu:last-child {
                     padding-right: 0; }
                   header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner ul.submenu span strong {
@@ -1155,8 +1157,7 @@ header .header-bottom {
             transition: all 0.5s ease; }
             header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a:hover {
               color: #ef9b0f;
-              font-weight: 500;
-              text-decoration: underline; }
+              font-weight: 500; }
               header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a:hover::after {
                 background: #ef9b0f;
                 transform: scale(1.1); }
