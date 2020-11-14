@@ -248,12 +248,7 @@ button.btn {
     position: relative;
     @include transition ($transition);
     &:hover {
-        border: 1px solid $border-color;
         @extend %shadow;
-        -o-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
         .post-thumb {
             img {
                 -o-transform: scale(1.1);
@@ -301,9 +296,11 @@ button.btn {
         opacity: 0;
     }
     .post-thumb {
+        height: 200px;
         overflow: hidden;
         position: relative;
         img {
+            height: 100%;
             width: 100%;
             @include transition ($transition);
         }

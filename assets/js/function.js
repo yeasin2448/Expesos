@@ -141,7 +141,7 @@
     // trending products slider
     var swiper = new Swiper('.trending-slider', {
         slidesPerView: 6,
-        spaceBetween: 10,
+        spaceBetween: 15,
         autoplay: true,
         navigation: {
             nextEl: '.trending-button-next',
@@ -167,7 +167,7 @@
     // offered products slider
     var swiper = new Swiper('.offered-slider', {
         slidesPerView: 6,
-        spaceBetween: 10,
+        spaceBetween: 15,
         autoplay: true,
         navigation: {
             nextEl: '.offered-button-next',
@@ -192,7 +192,7 @@
     // best seller products slider
     var swiper = new Swiper('.categori-slieder', {
         slidesPerView: 6,
-        spaceBetween: 10,
+        spaceBetween: 15,
         autoplay: true,
         navigation: {
             nextEl: '.categories-button-next',

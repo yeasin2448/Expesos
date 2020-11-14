@@ -537,9 +537,6 @@ footer {
                         .cate-thumb {
                             img {
                                 min-height: 300px;
-                                @include breakpoint (lg) {
-                                    min-height: 400px;
-                                }
                             }
                         }
                         .post-item {
@@ -633,14 +630,9 @@ footer {
         border: 1px solid #808080;
         background: $white-color;
         .self-item {
-            padding: 7.5px;
+            padding: 0;
+            border: 1px solid #cec9c9;
             transition: all 0.3s ease-in-out;
-            @include breakpoint (xl) {
-                padding: 7.5px;
-            }
-            @include breakpoint (lg) {
-                padding: 7.5px 0;
-            }
             &:hover {
                 transform: translateY(-5px);
                 .item-thumb {
@@ -650,14 +642,14 @@ footer {
                 }
             }
             .item-thumb {
+                height: 200px;
                 img {
+                    height: 100%;
                     width: 100%;
                 }
             }
             .item-text {
                 padding: 10px;
-                border-top: 0;
-                border: 1px solid #cec9c9;
                 h6 {
                     margin: 0;
                     @include breakpoint (xl) {
