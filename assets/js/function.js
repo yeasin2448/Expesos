@@ -140,7 +140,7 @@
 
     // trending products slider
     var swiper = new Swiper('.trending-slider', {
-        slidesPerView: 6,
+        slidesPerView: 1,
         spaceBetween: 15,
         autoplay: true,
         navigation: {
@@ -148,25 +148,25 @@
             prevEl: '.trending-button-prev',
         },
         breakpoints: {
-			1024: {
-				slidesPerView: 6,
-			},
-			768: {
-				slidesPerView: 4,
-			},
-			576: {
-				slidesPerView: 3,
-			},
-            320: {
-                slidesPerView: 1,
-            }
-		},
+            575: {
+                slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 6,
+            },
+        },
     });
 
 
     // offered products slider
     var swiper = new Swiper('.offered-slider', {
-        slidesPerView: 6,
+        slidesPerView: 1,
         spaceBetween: 15,
         autoplay: true,
         navigation: {
@@ -174,19 +174,19 @@
             prevEl: '.offered-button-prev',
         },
         breakpoints: {
-			1024: {
-				slidesPerView: 6,
-			},
-			768: {
-				slidesPerView: 4,
-			},
-			576: {
-				slidesPerView: 3,
-			},
-			320: {
-				slidesPerView: 1,
-			}
-		},
+            575: {
+                slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 6,
+            },
+        },
     });
 
     // best seller products slider
@@ -365,6 +365,17 @@
     }
   });
 
+    //menu top fixed start for mobile menu & desktop menu
+    var fixed_top = $(".content-menu");
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 255) {
+            fixed_top.addClass("box-fixed");
+            $('body').addClass("body-padding");
+        } else {
+            fixed_top.removeClass("box-fixed");
+            $('body').removeClass("body-padding");
+        }
+    });
     // scroll up start here
 	$(function(){
 		$(window).scroll(function(){

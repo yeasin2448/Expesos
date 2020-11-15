@@ -342,7 +342,7 @@
                                         </div>
                                     </div>
                                     <div class="input-btn">
-                                        <button type="submit" class="btn"><i class="fa fa-user-plus mr-1 text-white"></i><span>Register</span></button>
+                                        <button type="submit" class="btn mb-3 mb-lg-0"><i class="fa fa-user-plus mr-1 text-white"></i><span>Register</span></button>
                                         <button type="submit" class="btn"><span><i class="fa fa-facebook-official mr-2"></i></span><span>Register With Facebook</span></button>
                                     </div>
                                 </form>
@@ -464,22 +464,22 @@
     <!-- footer area ends  -->
 
     <!--   Core JS Files   -->
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/vendors.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
     <script>
-/*-------------------------------------
-password Toggle Class
--------------------------------------*/
-$(".toggle-password").on('click', function() {
-    $(this).toggleClass("fa-eye fa-eye-slash");
-    var input = $($(this).attr("toggle"));
-    if (input.attr("type") == "password") {
-        input.attr("type", "text");
-    } else {
-        input.attr("type", "password");
-    }
-});
+    /*-------------------------------------
+    password Toggle Class
+    -------------------------------------*/
+    $(".toggle-password").on('click', function() {
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+    });
     </script>
 
 </body>
