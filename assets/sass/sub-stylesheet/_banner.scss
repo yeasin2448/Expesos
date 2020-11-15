@@ -69,6 +69,46 @@
             }
         }
     }
+    &.style-two {
+        .banner-position {
+            background-image: url(../../assets/images/banner/05.jpg);
+            .banner-content {
+                h3 {
+                    color: $white-color;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                form.search-key {
+                    @extend %flex;
+                    align-items: center;
+                    width: 300px;
+                    margin: 0 auto;
+                    @include breakpoint (md) {
+                        width: 500px;
+                    }
+                    @include breakpoint (sm) {
+                        width: 400px;
+                    }
+                    input {
+                        width: 80%;
+                        height: 50px;
+                        padding: 10px;
+                        padding-left: 20px;
+                        border: 1px solid $border-color;
+                        border-radius: 25px 0 0 25px;
+                        &::placeholder {
+                            font-size: 14px;
+                        }
+                    }
+                    button.btn {
+                        width: 20%;
+                        height: 50px;
+                        border-radius: 0 25px 25px 0;
+                    }
+                }
+            }
+        }
+    }
 }
 //*===== banner area End ====*//
 

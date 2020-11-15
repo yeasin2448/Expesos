@@ -639,13 +639,58 @@ footer {
                     img {
                         filter: grayscale(100%);
                     }
+                    .add-btn {
+                        bottom: 5px;
+                    }
+                    .add-wish {
+                        right: -20px;
+                    }
                 }
             }
             .item-thumb {
                 height: 200px;
+                overflow: hidden;
+                position: relative;
                 img {
                     height: 100%;
                     width: 100%;
+                }
+                .add-btn {
+                    position: absolute;
+                    bottom: -50px;
+                    left: 50%;
+                    width: 100%;
+                    text-align: center;
+                    transform: translateX(-50%);
+                    transition: all 0.3s ease-in-out;
+                    button.btn {
+                        span {
+                            font-size: 14px;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+                .add-wish {
+                    position: absolute;
+                    right: -60px;
+                    top: 0;
+                    transform: translateX(-50%);
+                    transition: all 0.3s ease-in-out;
+                    button {
+                        height: 40px;
+                        width: 40px;
+                        line-height: 50px;
+                        border-radius: 0 0 0 3px;
+                        background: #707070;
+                        &:focus {
+                            outline: 0;
+                            background: $theme-color;
+                        }
+                        i {
+                            font-size: 30px;
+                            color: $white-color;
+                        }
+                    }
                 }
             }
             .item-text {
@@ -2063,6 +2108,7 @@ footer {
         background: $white-color
     }
 }
+//?===== bayer area css ends  ===?//
 
 //#==== loging form css start ====#//
 .login-area {
@@ -2083,10 +2129,13 @@ footer {
                             }
                         }
                     }
-                    button.btn {
-                        border-radius: 0;
-                        padding: 12px 24px;
-                        width: 80%;
+                    .input-btn {
+                        @extend %flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        button.btn {
+                            border-radius: 5px;
+                        }
                     }
                 }
             }
@@ -2104,13 +2153,16 @@ footer {
             p {
                 margin: 0 auto;
                 max-width: 430px;
-                padding-bottom: 160px;
+            }
+            img {
+                padding: 60px 0;
             }
             .reg-btn {
+                @extend %flex;
+                align-items: center;
+                justify-content: space-between;
                 a.btn, button.btn {
-                    border-radius: 0;
-                    width: 80%;
-                    justify-content: center;
+                    border-radius: 5px;
                     padding: 12px 24px;
                 }
             }
@@ -2122,6 +2174,69 @@ footer {
     }
 }
 //#==== loging form css ends  ====#//
+
+//?===== contact us area start ====?//
+.contact-area {
+    padding: 40px 0;
+    .xpesos-hot-topics {
+        .content-header {
+            margin-bottom: 30px;
+            h3 {
+                margin: 0;
+                display: inline;
+                border-bottom: 3px solid $theme-color;
+            }
+        }
+        .content-wrap {
+           nav {
+               .nav-tabs {
+                   width: 100%;
+                   border: 1px solid #cecbcb;
+                    display: flex;
+                    flex-wrap: wrap;
+                   &:last-child {
+                       border-right: 0;
+                   }
+                   a.nav-link {
+                        text-align: center;
+                        line-height: 60px;
+                        border: 1px solid #cecbce;
+                            width: 100%;
+                        @include breakpoint (sm) {
+                            width: calc(100% / 2); 
+                        }
+                        @include breakpoint (md) {
+                            width: calc(100% / 3);
+                        }
+                        @include breakpoint (lg) {
+                            width: calc(100% / 6);
+                            border-right: 1px solid #cecbce;
+                        }
+                   }
+               }
+           }
+           .tab-content {
+               .tab-pane {
+                   padding: 30px;
+                   @extend %shadow;
+                   background: $white-color;
+                   ul.qr-list {
+                       margin: 0;
+                       padding: 0;
+                       @extend %flex;
+                       justify-content: space-between;
+                       align-items: center;
+                       li {
+                           padding: 10px;
+                           width: calc(100% / 3);
+                       }
+                   }
+               }
+           }
+        }
+    }
+}
+//?===== contact us area ends ====?//
 
 //?=== back menu css start ===?//
 .back-menu {

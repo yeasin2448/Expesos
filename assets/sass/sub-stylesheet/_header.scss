@@ -330,6 +330,9 @@ header {
                         padding-bottom: 5px;
                         border: 1px solid $theme-color;
                         border-radius: 20px 0 0 20px;
+                        &::placeholder {
+                            font-size: 14px;
+                        }
                     }
                     button {
                         padding: 5px 25px;
@@ -484,17 +487,17 @@ header {
                                         border-radius: 0 10px 10px 0;
                                         border-top: 3px solid $theme-color;
                                         @extend %shadow;
-                                        &::after {
-                                            @extend %absolute;
-                                            bottom: 0;
-                                            right: 0;
-                                            height: 210px;
-                                            width: 210px;
-                                            background-size: auto;
-                                            background-repeat: no-repeat;
-                                            background-position: left;
-                                            background-image: url(../../assets/images/product-details/beats-headphones.png);
-                                        }
+                                        // &::after {
+                                        //     @extend %absolute;
+                                        //     bottom: 0;
+                                        //     right: 0;
+                                        //     height: 210px;
+                                        //     width: 210px;
+                                        //     background-size: auto;
+                                        //     background-repeat: no-repeat;
+                                        //     background-position: left;
+                                        //     background-image: url(../../assets/images/product-details/beats-headphones.png);
+                                        // }
                                         .menu-inner {
                                             width: 100%;
                                             @extend %flex;
