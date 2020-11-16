@@ -140,7 +140,7 @@
 
     // trending products slider
     var swiper = new Swiper('.trending-slider', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 15,
         autoplay: true,
         navigation: {
@@ -166,7 +166,7 @@
 
     // offered products slider
     var swiper = new Swiper('.offered-slider', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 15,
         autoplay: true,
         navigation: {
@@ -209,7 +209,7 @@
 				slidesPerView: 2,
 			},
 			320: {
-				slidesPerView: 1,
+				slidesPerView: 2,
 			}
 		},
     });
@@ -365,7 +365,7 @@
     }
   });
 
-    //menu top fixed start for mobile menu & desktop menu
+    //menu top fixed start for categoris menu
     var fixed_top = $(".content-menu");
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 255) {
@@ -375,6 +375,12 @@
             fixed_top.removeClass("box-fixed");
             $('body').removeClass("body-padding");
         }
+    });
+
+    // signup form add
+    $(document).on('click', '#shipping' , function() {
+      $("#shipping").toggleClass("open");
+      $(".shipping-fild").toggleClass("open");
     });
     // scroll up start here
 	$(function(){

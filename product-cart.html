@@ -728,7 +728,8 @@
                                             <option value="3">Three</option>
                                             <option value="3">Three</option>
                                         </select>
-                                        <input type="text" class="input-text" value="" placeholder="Town / City" name="calc_shipping_city" id="calc_shipping_city" data-placeholder="Town / City">
+                                        <input type="text" class="input-text"  placeholder="Town / City" name="calc_shipping_city" id="calc_shipping_city" data-placeholder="Town / City">
+                                        <input type="text" class="input-text mt-4" placeholder="Postcode">
                                        <button type="button" class="btn mt-4 text-white rounded">update</button>
                                     </form>
                                 </div>
@@ -737,7 +738,7 @@
                     </div>
                     <div class="col-lg-4 col-12 mt-4 mt-lg-0">
                         <div class="order-content bg-white p-4">
-                            <h6 class="m-0 pb-3">Address</h6>
+                            <h6 class="m-0 pb-3">Billing Address</h6>
                             <form action="">
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control" name="frist-name" placeholder="Frist Name" />
@@ -791,7 +792,7 @@
                                 </div>
                                 <div class="input-group row mb-3">
                                     <div class="col-12">
-                                        <fieldset class="checkbox">
+                                        <fieldset class="checkbox" id="shipping">
                                             <div class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox">
                                                 <span class="vs-checkbox">
@@ -802,6 +803,58 @@
                                                 <span class="text-dark"> Ship to a different address?</span>
                                             </div>
                                         </fieldset>
+                                        <div action="" class="shipping-fild">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" name="frist-name" placeholder="Frist Name" />
+                                                <i class="fa fa-user"></i>
+                                                <label for="">Frist Name</label>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" name="last-name" placeholder="Last Name" />
+                                                <i class="fa fa-user"></i>
+                                                <label for="">Last Name</label>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" name="company-us" placeholder="company" />
+                                                <i class="fa fa-phone"></i>
+                                                <label for="">Company Name</label>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" name="country-name" placeholder="Country" />
+                                                <i class="fa fa-home"></i>
+                                                <label for="">Country</label>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" name="town-city-name" placeholder="town-city" />
+                                                <i class="fa fa-home"></i>
+                                                <label for="">Town /city</label>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" name="city-name" placeholder="City" />
+                                                <i class="fa fa-home"></i>
+                                                <label for="">City</label>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" name="State-name" placeholder="State" />
+                                                <i class="fa fa-home"></i>
+                                                <label for="">State</label>
+                                            </div>
+                                            <div class="input-group row mb-3">
+                                                <div class="col-12">
+                                                    <div class="checkbox">
+                                                        <div class="vs-checkbox-con vs-checkbox-primary">
+                                                            <input type="checkbox">
+                                                            <span class="vs-checkbox">
+                                                                <span class="vs-checkbox--check">
+                                                                    <i class="vs-icon fa fa-check"></i>
+                                                                </span>
+                                                            </span>
+                                                            <span class="text-dark"> Create an account?</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="input-btn">

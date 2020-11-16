@@ -201,6 +201,9 @@ button.btn {
 /*------ common slider arrow css start -------*/
 .arrow {
     position: relative;
+    @include breakpoint (max-sm) {
+        display: none;
+    } 
     .next, .prev {
        position: absolute;
        top: -45px;

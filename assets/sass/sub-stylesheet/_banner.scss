@@ -30,6 +30,11 @@
     .swiper-container-horizontal>.swiper-pagination-bullets {
         z-index: -1;
     }
+    .swiper-button-next, .swiper-button-prev {
+        @include breakpoint (max-sm) {
+            display: none;
+        }
+    }
     .card-slider {
         img {
             width: 100%;

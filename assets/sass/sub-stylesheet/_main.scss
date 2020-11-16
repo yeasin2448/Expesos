@@ -638,6 +638,9 @@ footer {
         border-radius: 5px;
         border: 1px solid #808080;
         background: $white-color;
+        @include breakpoint (max-sm) {
+            padding:  15px 10px;
+        }
         .self-item {
             padding: 0;
             border: 1px solid #cec9c9;
@@ -676,6 +679,9 @@ footer {
                         span {
                             font-size: 14px;
                             text-transform: capitalize;
+                            @include breakpoint (max-sm) {
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
@@ -706,6 +712,9 @@ footer {
                 padding: 10px;
                 h6 {
                     margin: 0;
+                    @include breakpoint (max-sm) {
+                        font-size: 12px;
+                    }
                     @include breakpoint (xl) {
                         font-size: 14px;
                     }
@@ -883,7 +892,7 @@ footer {
                 }
             }
             &.list {
-                .col-lg-4.col-md-6.col-12 {
+                .col-lg-4.col-md-6.col-6 {
                     flex: 0 0 100%;
                     max-width: 100%;
                 }
@@ -948,13 +957,16 @@ footer {
                         margin: 0;
                         margin-bottom: 5px;
                         a {
-                          font-size: 16px;
+                          font-size: 12px;
                           font-weight: 600;
                           color: #333333c9;
                           text-decoration: none;
                           transition: all 0.3s ease-in-out;
                             &:hover {
                                 color: $text-color;
+                            }
+                            @include breakpoint (sm) {
+                                font-size: 16px;
                             }
                         }
                     }
@@ -1445,6 +1457,19 @@ footer {
                         width: 80%;
                     }
                 }
+            }
+        }
+        #shipping {
+            
+        }
+        .shipping-fild {
+            margin-top: 40px;
+            transform: scale(0);
+            display: none;
+            transition: all 0.3s ease-in-out;
+            &.open {
+                display: block;
+                transform: scaleY(1.1);
             }
         }
         //? review and wishlist common
@@ -2391,7 +2416,7 @@ footer {
                 width: 930px;
             }
             @include breakpoint (xl) {
-                width: 1050px;
+                width: 1293px;
             }
             ul.menu-list {
                 padding: 0;
@@ -2399,7 +2424,7 @@ footer {
                 width: 100%;
                 @extend %flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
                 li {
                     @extend %flex;
                     align-items: center;
