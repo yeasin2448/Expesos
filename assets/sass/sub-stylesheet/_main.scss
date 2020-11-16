@@ -1392,6 +1392,61 @@ footer {
                 }
             }
         }
+        .coupon {
+            padding-top: 30px;
+            label {
+                color: #000;
+                font-size: 20px;
+                padding-bottom: 8px;
+                display: inline-block;
+            }
+            input {
+                width: 100%;
+                height: 45px;
+                padding-left: 10px;
+                border: 1px solid #000;
+            }
+        }
+        .Calculate-shipping {
+            padding-top: 30px;
+            span {
+                font-weight: 600;
+                font-size: 24px;
+                padding-bottom: 12px;
+                display: inline-block;
+            }
+            form {
+                select#inputGroupSelect01 {
+                    display: block;
+                    height: 40px;
+                    width: 100%;
+                    padding: 10px 20px 10px;
+                    margin-bottom: 14px;
+                    @include breakpoint (md) {
+                        width: 80%;
+                    }
+                }
+                select#inputGroupSelect02 {
+                    display: block;
+                    height: 40px;
+                    width: 100%;
+                    padding: 10px 20px 10px;
+                    margin-bottom: 14px;
+                    @include breakpoint (md) {
+                        width: 80%;
+                    }
+                }
+                input.input-text {
+                    height: 40px;
+                    width: 100%;
+                    padding: 10px 10px 10px 20px;
+                    border: 1px solid #e3e3e3;
+                    @include breakpoint (md) {
+                        width: 80%;
+                    }
+                }
+            }
+        }
         //? review and wishlist common
         .item-contents {
             @extend %flex;
@@ -2344,7 +2399,7 @@ footer {
                 width: 100%;
                 @extend %flex;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: center;
                 li {
                     @extend %flex;
                     align-items: center;
