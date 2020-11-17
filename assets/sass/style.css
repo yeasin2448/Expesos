@@ -1,12 +1,12 @@
 /*!
 <----------------------------------------
   Theme Name: Expesos
-  Theme URI: http://futureX.net
+  Theme URI: http://xpesos.net
   Author: infoinlet.net.
-  Author URI: http://futureX.net
-  Description: futureX is a Creative HTML5 Template for Saas, Startup & any ytpe of confarence.
+  Author URI: http://xpesos.net
+  Description: xpesos is a Creative HTML5 Template for Saas, Startup & any ytpe of confarence.
   Version: 1.0.0
-  Tags: app, futureXlanding page, app landing page, app showcase template, application services, gradient color, landing, marketing, responsive template, seo, software, Software Services, startup, tech, web application landing page.
+  Tags: app, xpesoslanding page, app landing page, app showcase template, application services, gradient color, landing, marketing, responsive template, seo, software, Software Services, startup, tech, web application landing page.
 ---------------------------------------->
 */
 /*
@@ -724,7 +724,7 @@ form button.custom-btn {
   }
 }
 
-.flex-header, header .header-top .top-board ul.board-list, header .header-top .top-board ul.board-list li:nth-child(2) a, header .header-top .top-board ul.board-list li:nth-child(3) a, header .header-top .top-board ul.board-list li:nth-child(4) a, header .header-top .top-board ul.board-list li:nth-child(5) a, header .header-top .top-board ul.board-list li:nth-child(6) a, header .header-midel .midel-item, header .header-midel .midel-item .header-logo, header .header-midel .midel-item .max-icon ul.icon-list, header .header-bottom .bottom-item, header .header-bottom .bottom-item .vertical-menu button.btn, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner, header .header-bottom .bottom-item .flex-menu ul.menu-item, .banner-area .banner-slider .swiper-wrapper .swiper-slide, .banner-area.style-one .banner-position, .banner-area.style-two .banner-position .banner-content form.search-key, .page-header .page-linker ul, .special-product .section-wrapper .product-item .thumb-list ul, .sponsor-section .sponsor-wrapper, .news-letter .section-wrapper .subscribe-content, footer .contact-list ul.media-list, footer .help .payment-card ul.card-list, .woman-fashion .section-wrapper .fashion-thumb ul.thumb-list, .top-ranking .section-wrapper .ranking-item .inner-item, .justForYou-are .section-wrapper .self-item .item-text ul.rating, .shoping-cart .section-wrapper .cart-content .cart-item .cart-text, .shoping-cart .section-wrapper .item-contents, .shoping-cart .section-wrapper .item-contents .item-text, .user-acount .section-wrapper .tab-header, .user-acount .section-wrapper .tab-content #nav-address .user-description ul.des-head, .user-acount .section-wrapper .tab-content #nav-address .user-description ul.des-body, .user-acount .section-wrapper .tab-content #nav-orders .orders-content .content-item ul.order-list, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content .item-head, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content ul, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content ul a, .user-acount .section-wrapper .tab-content .item-contents, .user-acount .section-wrapper .tab-content .item-contents .item-text, .contact-area .xpesos-hot-topics .content-wrap .tab-content .tab-pane ul.qr-list, .contact-us .section-wrapper ul.contact-item, .contact-us .section-wrapper ul.contact-item li a, .product-link .section-wrapper .content-menu ul.menu-list, .product-link .section-wrapper .content-menu ul.menu-list li, .product-link .section-wrapper .content-menu ul.menu-list li a, .product-link .section-wrapper .product-all-sublink .submenu-inner, .modal .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modals .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modul .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal_2 .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal_3 .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modals .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modul .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal_2 .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal_3 .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal .modal-dialog .modal-content.style-three .cart-content, .modals .modal-dialog .modal-content.style-three .cart-content, .modul .modal-dialog .modal-content.style-three .cart-content, .modal_2 .modal-dialog .modal-content.style-three .cart-content, .modal_3 .modal-dialog .modal-content.style-three .cart-content, .modal .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modals .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modul .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modal_2 .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modal_3 .modal-dialog .modal-content.style-three .cart-content .cart-text ul {
+.flex-header, header .header-top .top-board ul.board-list, header .header-top .top-board ul.board-list li:nth-child(2) a, header .header-top .top-board ul.board-list li:nth-child(3) a, header .header-top .top-board ul.board-list li:nth-child(4) a, header .header-top .top-board ul.board-list li:nth-child(5) a, header .header-top .top-board ul.board-list li:nth-child(6) a, header .header-midel .midel-item, header .header-midel .midel-item .header-logo, header .header-midel .midel-item .max-icon ul.icon-list, header .header-bottom .bottom-item, header .header-bottom .bottom-item .vertical-menu button.btn, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list li .mega-menu .menu-inner, header .header-bottom .bottom-item .flex-menu ul.menu-item, .banner-area .banner-slider .swiper-wrapper .swiper-slide, .banner-area.style-one .banner-position, .banner-area.style-two .banner-position .banner-content form.search-key, .page-header .page-linker ul, .special-product .section-wrapper .product-item .thumb-list ul, .sponsor-section .sponsor-wrapper, .news-letter .section-wrapper .subscribe-content, footer .contact-list ul.media-list, footer .help .payment-card ul.card-list, .woman-fashion .section-wrapper .fashion-thumb ul.thumb-list, .top-ranking .section-wrapper .ranking-item .inner-item, .justForYou-are .section-wrapper .self-item .item-text ul.rating, .shoping-cart .section-wrapper .cart-content .cart-item .cart-text, .shoping-cart .section-wrapper .item-contents, .shoping-cart .section-wrapper .item-contents .item-text, .user-acount .section-wrapper .tab-header, .user-acount .section-wrapper .tab-content #nav-address .user-description ul.des-head, .user-acount .section-wrapper .tab-content #nav-address .user-description ul.des-body, .user-acount .section-wrapper .tab-content #nav-orders .orders-content .content-item ul.order-list, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content .item-head, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content ul, .user-acount .section-wrapper .tab-content #nav-setting .setting-content .item-content ul a, .user-acount .section-wrapper .tab-content .item-contents, .user-acount .section-wrapper .tab-content .item-contents .item-text, .contact-area .xpesos-hot-topics .content-wrap .tab-content .tab-pane ul.qr-list, .contact-us .section-wrapper ul.contact-item, .contact-us .section-wrapper ul.contact-item li a, .absolute-start .section-wrapper .absolute-crount ul, .absolute-start .section-wrapper .vandor-card, .product-link .section-wrapper .content-menu ul.menu-list, .product-link .section-wrapper .content-menu ul.menu-list li, .product-link .section-wrapper .content-menu ul.menu-list li a, .product-link .section-wrapper .product-all-sublink .submenu-inner, .modal .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modals .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modul .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal_2 .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal_3 .modal-dialog .modal-content .modal-body .product-details-inner .cart-button, .modal .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modals .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modul .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal_2 .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal_3 .modal-dialog .modal-content.style-one .modal-body .remove-content .remove-btn ul, .modal .modal-dialog .modal-content.style-three .cart-content, .modals .modal-dialog .modal-content.style-three .cart-content, .modul .modal-dialog .modal-content.style-three .cart-content, .modal_2 .modal-dialog .modal-content.style-three .cart-content, .modal_3 .modal-dialog .modal-content.style-three .cart-content, .modal .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modals .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modul .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modal_2 .modal-dialog .modal-content.style-three .cart-content .cart-text ul, .modal_3 .modal-dialog .modal-content.style-three .cart-content .cart-text ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -732,7 +732,7 @@ form button.custom-btn {
       flex-wrap: wrap;
 }
 
-header .header-midel .midel-item .header-logo .header-left .side-menu .menu-bar a.bar-btn::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .crose-bar, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item li ul.m-submenu li::after, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item li ul.m-submenu li::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item a.icon-down::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item a.icon-down::after, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::before, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::after, .sponsor-section .section-header::after, footer .contact-list ul a::before, footer .policy ul a::before, footer .quick-links ul a::before, footer .acount ul a::before, footer .help ul a::before, footer .contact-list ul.media-list a::after, .top-ranking .section-wrapper .ranking-item .inner-item::before, .user-acount .section-wrapper .tab-content #details .details-content form .input-group .country-flag::after, .need-help .section-header::after, .product-link .section-wrapper .product-all-sublink .submenu-inner ul.submenu-list li a::after, .modal .modal-dialog .modal-content button.close, .modals .modal-dialog .modal-content button.close, .modul .modal-dialog .modal-content button.close, .modal_2 .modal-dialog .modal-content button.close, .modal_3 .modal-dialog .modal-content button.close, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .scrollToTop .pluse_1, .scrollToTop .pluse_2, .scrollToTop .pluse_1::after, .scrollToTop .pluse_1::before, .scrollToTop .pluse_2::after, .scrollToTop .pluse_2::before {
+header .header-midel .midel-item .header-logo .header-left .side-menu .menu-bar a.bar-btn::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .crose-bar, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item li ul.m-submenu li::after, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item li ul.m-submenu li::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item a.icon-down::before, header .header-midel .midel-item .header-logo .header-left .side-menu .menu-items .items-inner .menu-list ul.list-item a.icon-down::after, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::before, header .header-bottom .bottom-item .vertical-menu .drop-relative .drop-bg .list-menu ul.drop-list a::after, .sponsor-section .section-header::after, footer .contact-list ul a::before, footer .policy ul a::before, footer .quick-links ul a::before, footer .acount ul a::before, footer .help ul a::before, footer .contact-list ul.media-list a::after, .top-ranking .section-wrapper .ranking-item .inner-item::before, .user-acount .section-wrapper .tab-content #details .details-content form .input-group .country-flag::after, .need-help .section-header::after, .work-force .section-wrapper .line::after, .product-link .section-wrapper .product-all-sublink .submenu-inner ul.submenu-list li a::after, .modal .modal-dialog .modal-content button.close, .modals .modal-dialog .modal-content button.close, .modul .modal-dialog .modal-content button.close, .modal_2 .modal-dialog .modal-content button.close, .modal_3 .modal-dialog .modal-content button.close, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list::after, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modals .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modul .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal_2 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(1)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(2)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(3)::before, .modal_3 .modal-dialog .modal-content.style-five .modal-body .order-view ul.view-list li:nth-child(4)::before, .scrollToTop .pluse_1, .scrollToTop .pluse_2, .scrollToTop .pluse_1::after, .scrollToTop .pluse_1::before, .scrollToTop .pluse_2::after, .scrollToTop .pluse_2::before {
   position: absolute;
   content: '';
 }
@@ -1789,6 +1789,40 @@ header .header-bottom .bottom-item .flex-menu ul.menu-item a i {
   border-radius: 0 25px 25px 0;
 }
 
+.banner-area.style-three {
+  min-height: 500px;
+  background-image: url(../../assets/images/banner/06.png);
+}
+
+.banner-area.style-three .banner-position {
+  background-image: none;
+}
+
+.banner-area.style-three .banner-position .banner-content a.btn {
+  background: #fff;
+}
+
+@media (min-width: 576px) {
+  .banner-area.style-three .banner-position .banner-content a.btn {
+    padding: 20px 60px;
+  }
+}
+
+.banner-area.style-three .banner-position .banner-content a.btn span {
+  font-size: 20px;
+  color: #000;
+}
+
+@media (max-width: 575px) {
+  .banner-area.style-three .banner-position .banner-content a.btn span {
+    font-size: 16px;
+  }
+}
+
+.banner-area.style-three .banner-position .banner-content a.btn .btn-ripple {
+  background: #ebd15e;
+}
+
 .page-header .page-linker {
   padding: 20px 0;
 }
@@ -1847,27 +1881,23 @@ header .header-bottom .bottom-item .flex-menu ul.menu-item a i {
 }
 
 .top-categories .section-wrapper {
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   background: #fff;
 }
 
-.top-categories .section-wrapper .categori-slieder {
+.top-categories .section-wrapper .cate-thumb {
   overflow: hidden;
 }
 
-.top-categories .section-wrapper .categori-slieder .swiper-wrapper .swiper-slide .cate-thumb {
-  overflow: hidden;
-}
-
-.top-categories .section-wrapper .categori-slieder .swiper-wrapper .swiper-slide .cate-thumb:hover img {
+.top-categories .section-wrapper .cate-thumb:hover img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.top-categories .section-wrapper .categori-slieder .swiper-wrapper .swiper-slide .cate-thumb img {
+.top-categories .section-wrapper .cate-thumb img {
   width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -4617,6 +4647,289 @@ footer .help .payment-card ul.card-list li:last-child {
   color: #fff;
   cursor: pointer;
   background: #ef9b0f;
+}
+
+.why-sell-on {
+  padding: 60px 0;
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .why-sell-on {
+    padding: 120px 0;
+  }
+}
+
+.why-sell-on .section-header {
+  text-align: center;
+}
+
+.why-sell-on .section-header p {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.why-sell-on .section-header span {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  color: #000;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .why-sell-on .section-header span {
+    font-size: 31px;
+  }
+}
+
+.why-sell-on .section-wrapper {
+  padding-top: 80px;
+}
+
+.why-sell-on .section-wrapper .sellon-item {
+  text-align: center;
+}
+
+.why-sell-on .section-wrapper .sellon-item .item-text h6 {
+  margin: 0;
+  padding: 15px 0;
+}
+
+@media (min-width: 576px) {
+  .why-sell-on .section-wrapper .sellon-item .item-text h6 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.why-sell-on .section-wrapper .sellon-item .item-text p {
+  margin: 0 auto;
+  max-width: 340px;
+  margin-bottom: 16px;
+}
+
+.section-headers {
+  text-align: center;
+}
+
+.section-headers p {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.section-headers span {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  color: #000;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .section-headers span {
+    font-size: 31px;
+  }
+}
+
+.work-force {
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .work-force {
+    padding: 120px 0;
+  }
+}
+
+.work-force .section-wrapper {
+  padding-top: 80px;
+}
+
+.work-force .section-wrapper .line {
+  position: relative;
+}
+
+.work-force .section-wrapper .line span.crount {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  border-radius: 100%;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border: 1px solid #ef9b0f;
+  display: inline-block;
+}
+
+.work-force .section-wrapper .line::after {
+  width: 2px;
+  height: 450px;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  background: #ef9b0f;
+}
+
+@media (min-width: 1200px) {
+  .work-force .section-wrapper .line::after {
+    height: 350px;
+  }
+}
+
+.work-force .section-wrapper span.crount {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  border-radius: 100%;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border: 1px solid #ef9b0f;
+  display: inline-block;
+}
+
+.absolute-start {
+  padding: 60px 0;
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .absolute-start {
+    padding: 120px 0;
+  }
+}
+
+.absolute-start .section-wrapper .absolute-crount {
+  padding: 60px 0;
+}
+
+.absolute-start .section-wrapper .absolute-crount ul {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+}
+
+.absolute-start .section-wrapper .absolute-crount ul li {
+  margin: 5px;
+}
+
+.absolute-start .section-wrapper .absolute-crount ul li .money-trak {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  line-height: 85px;
+  border-radius: 100%;
+  border: 1px solid #ef9b0f;
+}
+
+.absolute-start .section-wrapper .absolute-crount ul li .money-trak p {
+  margin: 0;
+}
+
+.absolute-start .section-wrapper .absolute-list {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+.absolute-start .section-wrapper .absolute-list span {
+  font-weight: 600;
+  color: #000;
+}
+
+.absolute-start .section-wrapper .absolute-list ul {
+  text-align: left;
+  padding-top: 20px;
+}
+
+.absolute-start .section-wrapper .absolute-list ul li {
+  margin-bottom: 16px;
+}
+
+.absolute-start .section-wrapper .absolute-list ul li:last-child {
+  margin-bottom: 0;
+}
+
+.absolute-start .section-wrapper .vandor-card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 20px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  background: #f6f6f6;
+}
+
+@media (max-width: 575px) {
+  .absolute-start .section-wrapper .vandor-card {
+    display: block;
+  }
+}
+
+.absolute-start .section-wrapper .vandor-card .card-thumb {
+  width: 30%;
+}
+
+@media (max-width: 575px) {
+  .absolute-start .section-wrapper .vandor-card .card-thumb {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+}
+
+.absolute-start .section-wrapper .vandor-card .card-text {
+  width: calc(100% - 30%);
+}
+
+@media (max-width: 575px) {
+  .absolute-start .section-wrapper .vandor-card .card-text {
+    width: 100%;
+  }
+}
+
+.absolute-start .section-wrapper .vandor-card .card-text p {
+  text-align: left;
+}
+
+.absolute-start .section-wrapper p {
+  text-align: center;
+}
+
+.faq-stuff-area {
+  padding: 120px 0;
+}
+
+.faq-stuff-area .section-wrapper {
+  padding-top: 80px;
+}
+
+.faq-stuff-area .section-wrapper .post-item {
+  padding: 30px;
+}
+
+.faq-stuff-area .section-wrapper .post-item .post-text h4 {
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .product-link {

@@ -114,6 +114,31 @@
             }
         }
     }
+    &.style-three {
+        min-height: 500px;
+        background-image: url(../../assets/images/banner/06.png);
+        .banner-position {
+            background-image: none;
+            .banner-content {
+                a.btn {
+                    background: $white-color;
+                    @include breakpoint (sm) {
+                        padding: 20px 60px;
+                    }
+                    span {
+                        font-size: 20px;
+                        color: #000;
+                        @include breakpoint (max-sm) {
+                            font-size: 16px;
+                        }
+                    }
+                    .btn-ripple {
+                        background: rgb(235, 209, 94);
+                    }
+                }
+            }
+        }
+    }
 }
 //*===== banner area End ====*//
 

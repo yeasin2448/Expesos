@@ -21,27 +21,20 @@
         }
     }
     .section-wrapper {
-        padding: 10px;
+        padding: 10px 20px;
         border-radius: 5px;
         background: $white-color;
-        .categori-slieder {
+        .cate-thumb {
             overflow: hidden;
-            .swiper-wrapper {
-                .swiper-slide {
-                    .cate-thumb {
-                        overflow: hidden;
-                        &:hover {
-                            img {
-                                filter: grayscale(100%);
-                                transform: scale(1.1);
-                            }
-                        }
-                        img {
-                            width: 100%;
-                            transition: all 0.3s ease-in-out;
-                        }
-                    }
+            &:hover {
+                img {
+                    filter: grayscale(100%);
+                    transform: scale(1.1);
                 }
+            }
+            img {
+                width: 100%;
+                transition: all 0.3s ease-in-out;
             }
         }
     }
@@ -2482,6 +2475,241 @@ footer {
     }
 }
 //?===== resolution-center css ends  ======?//
+
+//?==== sellon xpesos pages css start =====?//
+
+//*==== why xpesos css start ====*//
+.why-sell-on {
+    padding: 60px 0;
+    background: $white-color;
+    @include breakpoint (md) {
+        padding: $common-padding;
+    }
+    .section-header {
+        text-align: center;
+        p {
+            margin: 0;
+            padding-bottom: 16px;
+        }
+        span {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            display: block;
+            color: #000;
+            text-align: center;
+            @include breakpoint (sm) {
+                font-size: 31px;
+            }
+        }
+    }
+    .section-wrapper {
+        padding-top: 80px;
+        .sellon-item {
+            text-align: center;
+            .item-text {
+                h6 {
+                    margin: 0;
+                    padding: 15px 0;
+                    @include breakpoint (sm) {
+                        font-size: 24px;
+                        font-weight: 500;
+                    }
+                }
+                p {
+                    margin: 0 auto;
+                    max-width: 340px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
+.section-headers {
+    text-align: center;
+    p {
+        margin: 0;
+        padding-bottom: 16px;
+    }
+    span {
+        font-size: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        display: block;
+        color: #000;
+        text-align: center;
+        @include breakpoint (sm) {
+            font-size: 31px;
+        }
+    }
+}
+//*==== why xpesos css ends  ====*//
+
+//*==== how xpesos work start =====*//
+.work-force {
+    padding: 60px 0;
+    @include breakpoint (md) {
+        padding: $common-padding;
+    }
+    .section-wrapper {
+        padding-top: 80px;
+        .line {
+            position: relative;
+            span.crount {
+                height: 80px;
+                width: 80px;
+                line-height: 80px;
+                border-radius: 100%;
+                font-size: 20px;
+                color: #000;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                background: $white-color;
+                border: 1px solid $theme-color;
+                display: inline-block;
+            }
+            &::after {
+                @extend %absolute;
+                width: 2px;
+                height: 450px;
+                top: 0;
+                left: 50%;
+                z-index: -1;
+                background: $theme-color;
+                @include breakpoint (xl) {
+                    height: 350px;
+                }
+            }
+        }
+        span.crount {
+            height: 80px;
+            width: 80px;
+            line-height: 80px;
+            border-radius: 100%;
+            font-size: 20px;
+            color: #000;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            background: $white-color;
+            border: 1px solid $theme-color;
+            display: inline-block;
+        }
+    }
+}
+//*==== how xpesos work ends =====*//
+
+//*===== absolute-start css ======*//
+.absolute-start {
+    padding: 60px 0;
+    background: $white-color;
+    @include breakpoint (md) {
+        padding: $common-padding;
+    }
+    .section-wrapper {
+        .absolute-crount {
+            padding: 60px 0;
+            ul {
+                padding: 0;
+                margin: 0 auto;
+                list-style: none;
+                @extend %flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 500px;
+                li {
+                    margin: 5px;
+                    .money-trak {
+                        height: 150px;
+                        width: 150px;
+                        text-align: center;
+                        line-height: 85px;
+                        border-radius: 100%;
+                        border: 1px solid $theme-color;
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .absolute-list {
+            margin: 0 auto;
+            text-align: center;
+            max-width: 600px;
+            span {
+                font-weight: 600;
+                color: #000;
+            }
+            ul {
+                text-align: left;
+                padding-top: 20px;
+                li {
+                    margin-bottom: 16px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .vandor-card {
+            @extend %flex;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 30px 20px;
+            padding-top: 40px;
+            margin-bottom: 40px;
+            border-radius: 5px;
+            background: #f6f6f6;
+            @include breakpoint (max-sm) {
+                display: block;
+            }
+            .card-thumb {
+                width: 30%;
+                @include breakpoint (max-sm) {
+                    width: 100%;
+                    padding-bottom: 16px;
+                }
+            }
+            .card-text {
+                width: calc(100% - 30%);
+                @include breakpoint (max-sm) {
+                    width: 100%;
+                }
+                p {
+                    text-align: left;
+                }
+            }
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+//*===== absolute-start css ======*//
+
+//*==== faq and stuff area css start ===?//
+.faq-stuff-area {
+    padding: $common-padding;
+    .section-wrapper {
+        padding-top: 80px;
+        .post-item {
+            padding: 30px;
+            .post-text {
+                h4 {
+                    margin: 0;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+//*==== faq and stuff area css ends  ===?//
+
+//?==== sellon xpesos pages css ends  =====?//
 
 //?==== product link css start =====?//
 .product-link {

@@ -189,31 +189,6 @@
         },
     });
 
-    // best seller products slider
-    var swiper = new Swiper('.categori-slieder', {
-        slidesPerView: 6,
-        spaceBetween: 15,
-        autoplay: true,
-        navigation: {
-            nextEl: '.categories-button-next',
-            prevEl: '.categories-button-prev',
-        },
-        breakpoints: {
-			1024: {
-				slidesPerView: 4,
-			},
-			768: {
-				slidesPerView: 3,
-			},
-			576: {
-				slidesPerView: 2,
-			},
-			320: {
-				slidesPerView: 2,
-			}
-		},
-    });
-
     //sponser slider activation
 	var swiper = new Swiper('.sponsor-container', {
 		slidesPerView: 1,
