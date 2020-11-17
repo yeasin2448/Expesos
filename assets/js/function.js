@@ -371,8 +371,39 @@
 			$('html, body').animate({scrollTop : 0},500);
 			return false;
 		});
+  });
+
+  /********************* Bookmark & Search ***********************/
+  // This variable is used for mouseenter and mouseleave events of search list
+  var $filename = $(".search-input input").data("search"),
+    navLinkSearch = $(".nav-link-search"),
+    searchInput = $(".search-input"),
+    searchInputInputfield = $(".search-input input"),
+    searchList = $(".search-input .search-list"),
+    bookmarkSearchList = $(".bookmark-input .search-list");
+
+	// Navigation Search area Open
+	navLinkSearch.on("click", function () {
+		var $this = $(this);
+		var searchInput = $(this).parent(".nav-search").find(".search-input");
+		searchInput.addClass("open");
+		searchInputInputfield.focus();
+		searchList.find("li").remove();
+		bookmarkInput.removeClass("show");
 	});
-    
+
+  // Navigation Search area Close
+  $(".search-input-close i").on("click", function () {
+    var $this = $(this),
+      searchInput = $(this).closest(".search-input");
+    if (searchInput.hasClass("open")) {
+      searchInput.removeClass("open");
+      searchInputInputfield.val("");
+      searchInputInputfield.blur();
+      searchList.removeClass("show");
+      appContent.removeClass("show-overlay");
+    }
+  });
 
 })(jQuery);
 

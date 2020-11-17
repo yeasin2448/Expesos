@@ -2399,8 +2399,11 @@ footer {
 
 //?===== still help area start =====?//
 .need-help {
-    padding: 60px;
+    padding: 30px 0;
     background: #f6f6f6;
+    @include breakpoint (md) {
+        padding: 60px 0;
+    }
     .section-header {
         text-align: center;
         position: relative;
@@ -2710,6 +2713,323 @@ footer {
 //*==== faq and stuff area css ends  ===?//
 
 //?==== sellon xpesos pages css ends  =====?//
+
+//*==== about xpesos pages css start ======*//
+
+.about-xpesos {
+    padding: 60px;
+    background: $white-color;
+    @include breakpoint (md) {
+        padding: $common-padding;
+    }
+    .section-wrapper {
+        margin: 0 auto;
+        max-width: 800px;
+        span {
+            color: #000;
+            font-size: 18px;
+            line-height: 40px;
+            font-weight: 400;
+            padding-bottom: 30px;
+            display: inline-block;
+            @include breakpoint (md) {
+                font-size: 38px;
+            }
+        }
+        p {
+            margin: 0;
+
+        }
+    }
+}
+
+//?====== counter area css ======?//
+.counter-up {
+    padding: 60px 0;
+    ul.counter-wrapper {
+        margin: 0;
+        @extend %flex;
+        justify-content: center;
+        li.counter-box {
+            text-align: center;
+            list-style: none;
+            margin: 15px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            .counter-content {
+                width: 200px;
+                display: inline-block;
+                padding: 15px 15px 10px;
+                background: #f4f4f9;
+                border-radius: 3px;
+                i {
+                    display: block;
+                    color: $theme-color;
+                    font-size: 45px;
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-size: 35px;
+                    font-weight: 400;
+                    color: #000;
+                }
+                p {
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 14px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+//?====== counter area css ======?//
+
+//?====== xpesos jurney css ======?//
+.xpesos-jurney {
+    padding: 60px 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../assets/images/banner/07.jpg);
+    @include breakpoint (md) {
+        padding: $common-padding;
+    }
+    .section-header {
+        padding-bottom: 60px;
+    }
+    .section-wrapper {
+        ul.line-cart {
+            padding: 0;
+            position: relative;
+            margin-bottom: 60px;
+            @extend %flex;
+            justify-content: space-between;
+            align-items: center;
+            &::before {
+                @extend %absolute;
+                top: 50%;
+                left: 0;
+                height: 4px;
+                width: 100%;
+                background: $theme-color;
+            }
+            li {
+                list-style: none;
+                height: 40px;
+                width: 40px;
+                cursor: pointer;
+                border-radius: 100%;
+                position: relative;
+                background: $theme-color;
+                &:nth-child(1) {
+                    &::after {
+                        content: "2018";
+                    }
+                }
+                &:nth-child(2) {
+                    &::after {
+                        content: "2019";
+                    }
+                }
+                &:nth-child(3) {
+                    &::after {
+                        content: "2020";
+                    }
+                }
+                &::after {
+                    @extend %absolute;
+                    top: -70%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+        }
+        .xpesos-year {
+            padding: 20px;
+            @extend %flex;
+            align-items: center;
+            border-radius: 5px;
+            @extend %shadow;
+            position: relative;
+            background: $white-color;
+            &::after {
+                @extend %absolute;
+                border-width: 0 11px 44px;
+                border-style: solid;
+                border-color: transparent transparent #fff transparent;
+                position: absolute;
+                bottom: 100%;
+                left: 75px;
+            }
+            .year-logo {
+                width: 20%;
+            }
+            .year-text {
+                padding-left: 10px;
+                width: calc(100% - 20%);
+            }
+        }
+        .col-md-4.col-12:nth-child(1) .xpesos-year{
+            &::after {
+                left: 10px;
+            }
+        }
+        .col-md-4.col-12:nth-child(2) .xpesos-year{
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .col-md-4.col-12:nth-child(3) .xpesos-year{
+            &::after {
+                left: auto;
+                right: 10px;
+            }
+        }
+    }
+}
+//?===== xpesos jurney css =====?//
+
+//?=====  xpesos team css start =====?//
+.xpesos-team {
+    padding: 60px 0;
+    overflow: hidden;
+    @include breakpoint(md) {
+        padding: $common-padding;
+    }
+    .section-heading {
+        padding-bottom: 60px;
+    }
+    .section-wrapper {
+        .team-content {
+            padding: 40px 30px;
+            background: $white-color;
+            transition: all 0.5s ease-in-out;
+            box-shadow: 0 0 6px rgba(8, 136, 136, 0.08);
+            @include breakpoint (max-xl) {
+                margin-bottom: 30px;
+            }
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 10px rgba(136, 136, 136, 0.10);
+                .team-thumb {
+                    img {
+                        transform: scale(1.1);
+                    }
+                    &::after {
+                        transform: scale(1);
+                    }
+                }
+                .team-text {
+                    h4 {
+                        color: $primary-color;
+                    }
+                }
+            }
+            .team-thumb {
+                height: 210px;
+                width: 210px;
+                margin: auto;
+                border-radius: 100%;
+                position: relative;
+                overflow: hidden;
+                &::after {
+                    @extend %absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    display: inherit;
+                    transform: scale(0);
+                    opacity: 0.70;
+                    transition:  all 0.3s ease-in-out;
+                    background: linear-gradient(to right,  $theme-color, $primary-color);
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            .team-text {
+                h4 {
+                    margin: 0;
+                    padding-top: 20px;
+                    transition: all 0.3s ease-in-out;
+                    @include breakpoint (sm) {
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    margin: 0;
+                    padding-bottom: 10px;
+                    color: #716c80;
+                }
+                ul.tema-icon {
+                    margin: 0;
+                    @extend %flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    li {
+                        padding: 0 10px;
+                        list-style: none; 
+                        &:nth-child(1) {
+                            a {
+                                i {
+                                    color: $twitter;
+                                }
+                            }
+                        } 
+                        &:nth-child(2) {
+                            a {
+                                i {
+                                    color: $pinterest;
+                                }
+                            }
+                        } 
+                        &:nth-child(3) {
+                            a {
+                                i {
+                                    color: $instagram;
+                                }
+                            }
+                        } 
+                        &:nth-child(4) {
+                            a {
+                                i {
+                                    color: $skype;
+                                }
+                            }
+                        } 
+                        &:nth-child(5) {
+                            a {
+                                i {
+                                    color: $linkedin;
+                                }
+                            }
+                        } 
+                    }
+                    a{
+                        i {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//?=====  xpesos team css ends  =====?//
+
+
+//*==== about xpesos pages css start ======*//
+
 
 //?==== product link css start =====?//
 .product-link {

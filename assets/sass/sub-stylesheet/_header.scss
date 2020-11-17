@@ -61,6 +61,7 @@ header {
         }
     }
     .header-midel {
+        position: relative;
         .midel-item {
             padding: 10px 0;
             @extend %flex;
@@ -81,7 +82,7 @@ header {
                     padding-right: 10px;
                     @include breakpoint (max-mobile) {
                         img {
-                            width: 100px;
+                            width: 80px;
                         }
                     }
                     @include breakpoint (md) {
@@ -349,7 +350,16 @@ header {
                     align-items: center;
                     li {
                         list-style: none;
-                        padding-right: 25px;
+                        padding-right: 10px;
+                        @include breakpoint (sm) {
+                            padding-right: 25px;
+                        }
+                        &.search-icon {
+                            display: block;
+                            @include breakpoint (lg) {
+                                display: none;
+                            }
+                        }
                         &:last-child {
                             padding-right: 0;
                             a {
@@ -365,8 +375,77 @@ header {
                             }
                         }
                         &:nth-child(1) {
+                            .nav-search {
+                                display: block;
+                                @include breakpoint (lg) {
+                                    display: none;
+                                }
+                                a {
+                                    i {
+                                        font-size: 20px;
+                                        color: #867e7e;
+                                    }
+                                }
+                                .search-input{
+                                    display: none;
+                                    &.open {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        background: #FFFFFF;
+                                        right: 0;
+                                        height: 100%;
+                                        // width: 100%;
+                                        z-index: 1000;
+                                        display: block;
+                                    
+                                        .search-input-close {
+                                            display: block;
+                                        }
+                                        .search-input-icon {
+                                            display: block;
+                                            margin-top: 3px;
+                                        }
+                                    }
+                                    input {
+                                        height: 100%;
+                                        width: 100%;
+                                        padding-left: 40px;
+                                        border-color: $theme-color;
+                                        &:focus {
+                                            outline: none;
+                                        }
+                                    }
+                                    .search-input-icon {
+                                        z-index: 2;
+                                        display: none;
+                                        position: absolute;
+                                        left: 1rem;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        cursor: pointer;
+                                        i {
+                                            color: $theme-color;
+                                        }
+                                    }
+                                    .search-input-close {
+                                        z-index: 1;
+                                        display: none;
+                                        position: absolute;
+                                        right: 2rem;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        cursor: pointer;
+                                        i {
+                                            color: $theme-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
                             @include breakpoint (max-sm) {
-                                padding-right: 15px;
+                                padding-right: 5px;
                             }
                             a {
                                 span {
@@ -377,11 +456,6 @@ header {
                                         display: inline-block;
                                     }
                                 }
-                            }
-                        }
-                        &:nth-child(2) {
-                            a {
-
                             }
                         }
                         a {

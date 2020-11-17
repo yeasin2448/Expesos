@@ -139,6 +139,13 @@
             }
         }
     }
+    &.style-four {
+        min-height: 450px;
+        background-image: url(../../assets/images/banner/06.jpg);
+        .banner-position {
+            background-image: none;
+        }
+    }
 }
 //*===== banner area End ====*//
 
