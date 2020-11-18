@@ -5,14 +5,16 @@
         position: relative;
         .swiper-wrapper {
             .swiper-slide {
-                min-height: 400px;
                 @extend %flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 10px;
                 width: 100%!important;
+                @include breakpoint (max-sm) {
+                    min-height: 200px;
+                }
                 @include breakpoint (md) {
-                    max-height: 400px;
+                    min-height: 400px;
                 }
                 .banner-content {
                     text-align: center;
@@ -46,10 +48,13 @@
             @extend %flex;
             justify-content: center;
             align-items: center;
-            min-height: 400px;
+            min-height: 200px;
             background: center;
             background-position: center;
             background-image: url(../../assets/images/banner/04.jpg);
+            @include breakpoint (sm) {
+                min-height: 400px;
+            }
             .banner-content {
                 h4 {
                     margin: 0;
@@ -115,11 +120,17 @@
         }
     }
     &.style-three {
-        min-height: 500px;
+        min-height: 200px;
         background-image: url(../../assets/images/banner/06.png);
-        .banner-position {
+        @include breakpoint (md) {
             min-height: 500px;
+        }
+        .banner-position {
+            min-height: 200px;
             background-image: none;
+            @include breakpoint (md) {
+                min-height: 500px;
+            }
             .banner-content {
                 a.btn {
                     background: $white-color;
@@ -141,8 +152,11 @@
         }
     }
     &.style-four {
-        min-height: 450px;
+        min-height: 200px;
         background-image: url(../../assets/images/banner/06.jpg);
+        @include breakpoint (md) {
+            min-height: 450px;
+        }
         .banner-position {
             background-image: none;
         }

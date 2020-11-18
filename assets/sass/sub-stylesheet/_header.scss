@@ -345,12 +345,13 @@ header {
             .max-icon {
                 ul.icon-list {
                     margin: 0;
+                    padding: 0;
                     @extend %flex;
                     justify-content: flex-start;
                     align-items: center;
                     li {
                         list-style: none;
-                        padding-right: 10px;
+                        padding-right: 15px;
                         @include breakpoint (sm) {
                             padding-right: 25px;
                         }
@@ -487,6 +488,15 @@ header {
                     }
                 }
             }
+        }
+        &.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            @extend %shadow;
+            z-index: 111;
+            background: $white-color;
         }
     }
     .header-bottom {

@@ -1,6 +1,6 @@
 /*!
 <----------------------------------------
-  Theme Name: Expesos
+  Theme Name: xpesos
   Theme URI: http://xpesos.net
   Author: infoinlet.net.
   Author URI: http://xpesos.net
@@ -27,9 +27,6 @@
 /*--------------------------------------------------------------
 Typography
 --------------------------------------------------------------*/
-html {
-    scroll-behavior: smooth;
-}
 * {
     padding: 0;
     margin: 0;
@@ -302,9 +299,18 @@ button.btn {
         opacity: 0;
     }
     .post-thumb {
-        height: 200px;
+        height: 120px;
         overflow: hidden;
         position: relative;
+        @include breakpoint (max-mobile) {
+            height: 80px;
+        }
+        @include breakpoint (sm) {
+            height: 120px;
+        }
+        @include breakpoint (md) {
+            height: 200px;
+        }
         img {
             height: 100%;
             width: 100%;

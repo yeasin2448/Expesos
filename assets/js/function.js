@@ -140,7 +140,7 @@
 
     // trending products slider
     var swiper = new Swiper('.trending-slider', {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
         spaceBetween: 15,
         autoplay: true,
         navigation: {
@@ -149,7 +149,7 @@
         },
         breakpoints: {
             575: {
-                slidesPerView: 2,
+                slidesPerView: 2.5,
             },
             640: {
               slidesPerView: 3,
@@ -166,7 +166,7 @@
 
     // offered products slider
     var swiper = new Swiper('.offered-slider', {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
         spaceBetween: 15,
         autoplay: true,
         navigation: {
@@ -175,7 +175,7 @@
         },
         breakpoints: {
             575: {
-                slidesPerView: 2,
+                slidesPerView: 2.5,
             },
             640: {
               slidesPerView: 3,
@@ -227,7 +227,7 @@
 			$('html, body').animate({scrollTop : 0},500);
 			return false;
 		});
-    });
+  });
 
 
 
@@ -341,16 +341,15 @@
   });
 
     //menu top fixed start for categoris menu
-    var fixed_top = $(".content-menu");
+    var fixed_top = $(".header-midel");
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 255) {
-            fixed_top.addClass("box-fixed");
-            $('body').addClass("body-padding");
+        if ($(this).scrollTop() > 65) {
+            fixed_top.addClass("fixed animated fadeInDown");
         } else {
-            fixed_top.removeClass("box-fixed");
-            $('body').removeClass("body-padding");
+            fixed_top.removeClass("fixed fadeInDown");
         }
     });
+
 
     // signup form add
     $(document).on('click', '#shipping' , function() {
@@ -358,20 +357,20 @@
       $(".shipping-fild").toggleClass("open");
     });
     // scroll up start here
-	$(function(){
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > 300) {
-				$('.scrollToTop').css({'bottom':'2%', 'opacity':'1','transition':'all .5s ease'});
-			} else {
-				$('.scrollToTop').css({'bottom':'-30%', 'opacity':'0','transition':'all .5s ease'})
-			}
-		});
-		//Click event to scroll to top
-		$('.scrollToTop').on('click', function(){
-			$('html, body').animate({scrollTop : 0},500);
-			return false;
-		});
-  });
+    $(function(){
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 300) {
+          $('.scrollToTop').css({'bottom':'2%', 'opacity':'1','transition':'all .5s ease'});
+        } else {
+          $('.scrollToTop').css({'bottom':'-30%', 'opacity':'0','transition':'all .5s ease'})
+        }
+      });
+      //Click event to scroll to top
+      $('.scrollToTop').on('click', function(){
+        $('html, body').animate({scrollTop : 0},500);
+        return false;
+      });
+    });
 
   /********************* Bookmark & Search ***********************/
   // This variable is used for mouseenter and mouseleave events of search list
@@ -405,6 +404,10 @@
     }
   });
 
-})(jQuery);
+  // all product link add active class
+  $(document).on('click', '.menu-list li', function(){
+    $(this).addClass('active').siblings().removeClass('active')
+  })
 
+})(jQuery);
 
