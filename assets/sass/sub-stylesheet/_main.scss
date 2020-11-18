@@ -2599,6 +2599,11 @@ footer {
             border: 1px solid $theme-color;
             display: inline-block;
         }
+        .work-thumb {
+            @include breakpoint (max-sm) {
+                text-align: center;
+            }
+        }
     }
 }
 //*==== how xpesos work ends =====*//
@@ -2618,9 +2623,12 @@ footer {
                 margin: 0 auto;
                 list-style: none;
                 @extend %flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 max-width: 500px;
+                @include breakpoint (sm) {
+                    justify-content: space-between;
+                }
                 li {
                     margin: 5px;
                     .money-trak {
@@ -2717,7 +2725,7 @@ footer {
 //*==== about xpesos pages css start ======*//
 
 .about-xpesos {
-    padding: 60px;
+    padding: 60px 0;
     background: $white-color;
     @include breakpoint (md) {
         padding: $common-padding;
@@ -2913,7 +2921,7 @@ footer {
             transition: all 0.5s ease-in-out;
             box-shadow: 0 0 6px rgba(8, 136, 136, 0.08);
             @include breakpoint (max-xl) {
-                margin-bottom: 30px;
+                margin-bottom: 10px;
             }
             &:hover {
                 transform: translateY(-5px);
