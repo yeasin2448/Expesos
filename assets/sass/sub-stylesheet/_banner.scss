@@ -153,6 +153,8 @@
     }
     &.style-four {
         min-height: 200px;
+        background-size: cover;
+        background-position: center;
         background-image: url(../../assets/images/banner/06.jpg);
         @include breakpoint (md) {
             min-height: 450px;
