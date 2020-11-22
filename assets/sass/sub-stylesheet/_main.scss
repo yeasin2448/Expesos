@@ -1493,9 +1493,6 @@ footer {
                 }
             }
         }
-        #shipping {
-            
-        }
         .shipping-fild {
             margin-top: 40px;
             transform: scale(0);
@@ -1525,17 +1522,30 @@ footer {
                 }
             }
             .item-thumb {
-                height: 80px;
-                width: 15%;
+                height: 100px;
+                width: 20%;
+                @include breakpoint (sm) {
+                    height: 120px;
+                }
+                @include breakpoint (md) {
+                    height: 150px;
+                    width: 15%;
+                }
                 img {
                     height: 100%;
                 }
             }
             .item-text {
-                width: calc(100% - 15%);
+                width: calc(100% - 20%);
                 @extend %flex;
                 justify-content: space-between;
                 align-items: flex-start;
+                @include breakpoint (max-md) {
+                    padding-left: 14px;
+                }
+                @include breakpoint (sm) {
+                    width: calc(100% - 15%);
+                }
                 .text-left {
                     h6 {
                         margin: 0;
@@ -1932,16 +1942,24 @@ footer {
                 }
                 .item-thumb {
                     height: 80px;
-                    width: 15%;
+                    width: 20%;
+                    @include breakpoint (sm) {
+                        width: 15%;
+                    }
                     img {
                         height: 100%;
                     }
                 }
                 .item-text {
-                    width: calc(100% - 15%);
+                    width: calc(100% - 20%);
                     @extend %flex;
                     justify-content: space-between;
                     align-items: flex-start;
+                    padding-left: 10px;
+                    @include breakpoint (sm) {
+                        padding-left: 0;
+                        width: calc(100% - 15%);
+                    }
                     .text-left {
                         @include breakpoint (max-sm) {
                             margin-bottom: 14px;

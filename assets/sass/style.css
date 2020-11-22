@@ -3763,8 +3763,21 @@ footer .help .payment-card ul.card-list li:last-child {
 }
 
 .shoping-cart .section-wrapper .item-contents .item-thumb {
-  height: 80px;
-  width: 15%;
+  height: 100px;
+  width: 20%;
+}
+
+@media (min-width: 576px) {
+  .shoping-cart .section-wrapper .item-contents .item-thumb {
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .shoping-cart .section-wrapper .item-contents .item-thumb {
+    height: 150px;
+    width: 15%;
+  }
 }
 
 .shoping-cart .section-wrapper .item-contents .item-thumb img {
@@ -3772,13 +3785,25 @@ footer .help .payment-card ul.card-list li:last-child {
 }
 
 .shoping-cart .section-wrapper .item-contents .item-text {
-  width: calc(100% - 15%);
+  width: calc(100% - 20%);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .shoping-cart .section-wrapper .item-contents .item-text {
+    padding-left: 14px;
+  }
+}
+
+@media (min-width: 576px) {
+  .shoping-cart .section-wrapper .item-contents .item-text {
+    width: calc(100% - 15%);
+  }
 }
 
 .shoping-cart .section-wrapper .item-contents .item-text .text-left h6 {
@@ -4224,7 +4249,13 @@ footer .help .payment-card ul.card-list li:last-child {
 
 .user-acount .section-wrapper .tab-content .item-contents .item-thumb {
   height: 80px;
-  width: 15%;
+  width: 20%;
+}
+
+@media (min-width: 576px) {
+  .user-acount .section-wrapper .tab-content .item-contents .item-thumb {
+    width: 15%;
+  }
 }
 
 .user-acount .section-wrapper .tab-content .item-contents .item-thumb img {
@@ -4232,13 +4263,21 @@ footer .help .payment-card ul.card-list li:last-child {
 }
 
 .user-acount .section-wrapper .tab-content .item-contents .item-text {
-  width: calc(100% - 15%);
+  width: calc(100% - 20%);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 10px;
+}
+
+@media (min-width: 576px) {
+  .user-acount .section-wrapper .tab-content .item-contents .item-text {
+    padding-left: 0;
+    width: calc(100% - 15%);
+  }
 }
 
 @media (max-width: 575px) {
