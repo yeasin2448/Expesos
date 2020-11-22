@@ -700,6 +700,9 @@ footer {
                     transform: translateX(-50%);
                     transition: all 0.3s ease-in-out;
                     button.btn {
+                        @include breakpoint (max-sm) {
+                            padding: 5px 10px;
+                        }
                         span {
                             font-size: 14px;
                             text-transform: capitalize;
@@ -716,18 +719,31 @@ footer {
                     transform: translateX(-50%);
                     transition: all 0.3s ease-in-out;
                     button {
-                        height: 40px;
-                        width: 40px;
-                        line-height: 50px;
+                        height: 30px;
+                        width: 30px;
+                        line-height: 30px;
                         border-radius: 0 0 0 3px;
                         background: #707070;
+                        @include breakpoint (sm) {
+                            height: 40px;
+                            width: 40px;
+                            line-height: 40px;
+                        }
+                        span {
+                            @include breakpoint (max-sm) {
+                                font-size: 12px;
+                            }
+                        }
                         &:focus {
                             outline: 0;
                             background: $theme-color;
                         }
                         i {
-                            font-size: 30px;
+                            font-size: 20px;
                             color: $white-color;
+                            @include breakpoint (sm) {
+                                font-size: 30px;
+                            }
                         }
                     }
                 }
@@ -1225,8 +1241,11 @@ footer {
             background: $white-color;
             span {
                 display: inline-flex;
-                font-size: 14px;
+                font-size: 12px;
                 align-items: center;
+                @include breakpoint (sm) {
+                    font-size: 14px;
+                }
                 svg {
                     margin-right: 10px;
                 }
@@ -1319,6 +1338,9 @@ footer {
                         span {
                             font-size: 14px;
                             display: inline-block;
+                            @include breakpoint (max-mobile) {
+                                font-size: 9px;
+                            }
                             strong {
                                 color: #000;
                             }
@@ -2265,8 +2287,11 @@ footer {
 .login-area {
     padding: 60px 0;
     .section-wrapper {
-        padding: 30px;
+        padding: 15px;
         background: $white-color;
+        @include breakpoint (sm) {
+            padding: 30px;
+        }
         .card {
             border-radius: 0;
             .card-body {
@@ -2394,7 +2419,13 @@ footer {
                        align-items: center;
                        li {
                            padding: 10px;
-                           width: calc(100% / 3);
+                           width: 100%;
+                           @include breakpoint (sm) {
+                               width: calc(100% / 2);
+                           }
+                           @include breakpoint (md) {
+                               width: calc(100% / 3);
+                           }
                        }
                    }
                }
@@ -3649,7 +3680,10 @@ footer {
                 }
                 .password-content {
                     form {
-                        padding: 25px;
+                        padding: 10px;
+                        @include breakpoint (sm) {
+                            padding: 25px;
+                        }
                         .form-group {
                             label {
                                 font-size: 12px;

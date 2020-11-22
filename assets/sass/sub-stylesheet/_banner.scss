@@ -10,11 +10,8 @@
                 align-items: center;
                 border-radius: 10px;
                 width: 100%!important;
-                @include breakpoint (max-sm) {
+                @include breakpoint (max-lg) {
                     min-height: 200px;
-                }
-                @include breakpoint (md) {
-                    min-height: 400px;
                 }
                 .banner-content {
                     text-align: center;
@@ -91,7 +88,7 @@
                 form.search-key {
                     @extend %flex;
                     align-items: center;
-                    width: 300px;
+                    width: 250px;
                     margin: 0 auto;
                     @include breakpoint (md) {
                         width: 500px;

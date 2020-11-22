@@ -268,6 +268,14 @@ button.btn {
                 bottom: 10px;
                 button.btn {
                     background: $theme-color;
+                    @include breakpoint (max-sm) {
+                        padding: 5px;
+                    }
+                    span {
+                        @include breakpoint (max-sm) {
+                            font-size: 10px;
+                        }
+                    }
                 }
             }
         }
@@ -328,6 +336,11 @@ button.btn {
                 line-height: 40px;
                 cursor: pointer;
                 border-radius: 0 0 0 5px;
+                @include breakpoint (max-sm) {
+                    height: 30px;
+                    width: 30px;
+                    line-height: 30px;
+                }
                 &:focus {
                     outline: none;
                     background-color: $theme-color!important;
@@ -437,7 +450,7 @@ form {
                 font-size: 14px;
                 padding-left: 35px;
                 border: 1px solid $theme-color;
-                border-radius: 5px;
+                border-radius: 4px!important;
                 background: transparent;
                 transition: all 0.3s ease-in-out;
                 &::placeholder {

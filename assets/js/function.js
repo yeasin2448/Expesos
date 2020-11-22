@@ -121,10 +121,15 @@
     //product slider activetion
 	var galleryThumbs = new Swiper('.gallery-thumbs', {
 		spaceBetween: 10,
-		slidesPerView: 4,
+		slidesPerView: 3,
 		freeMode: true,
 		watchSlidesVisibility: true,
-		watchSlidesProgress: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        575: {
+          slidesPerView: 4,
+        }
+    },
 	  });
 	  var galleryTop = new Swiper('.gallery-top', {
 		spaceBetween: 10,
