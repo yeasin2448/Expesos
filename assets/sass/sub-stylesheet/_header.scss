@@ -497,6 +497,9 @@ header {
             @extend %shadow;
             z-index: 111;
             background: $white-color;
+            .header-serch {
+                background: $white-color;
+            }
         }
     }
     .header-bottom {
@@ -689,6 +692,46 @@ header {
                             font-size: 18px;
                             margin-left: 5px;
                             color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //add mobile search
+    .header-serch{
+        padding: 10px;
+        background: #f2f3f7;
+        form {
+            .flex-width {
+                @extend %flex;
+                align-items: center;
+                .input-group {
+                    width: 80%;
+                    @include breakpoint (sm) {
+                        width: 85%;
+                    }
+                    .form-control {
+                        height: 48px;
+                        border-radius: 4px 0 0 4px !important;
+                    }
+                }
+                .input-btn {
+                    width: 20%;
+                    @include breakpoint (sm) {
+                        width: 15%;
+                    }
+                    button.btn {
+                        width: 100%;
+                        height: 48px;
+                        border-radius: 0 4px 4px 0;
+                        span {
+                            i {
+                                font-size: 15px;
+                                @include breakpoint (sm) {
+                                    font-size: 20px;
+                                }
+                            }
                         }
                     }
                 }
