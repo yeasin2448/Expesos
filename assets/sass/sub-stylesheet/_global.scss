@@ -143,6 +143,11 @@ video {
 	@include transition($transition);
 }
 
+//==== all section overflow
+section {
+    overflow: hidden;
+}
+
 /*======= all custom btn css =======*/
 button.btn {
     display: inline-table;
