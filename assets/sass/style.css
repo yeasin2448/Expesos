@@ -4847,6 +4847,10 @@ footer .help .payment-card ul.card-list li:last-child {
   }
 }
 
+.login-area .section-wrapper .creat-xpesos.style-one img {
+  padding: 132px 0;
+}
+
 .login-area .section-wrapper .reag-content {
   margin: 0 auto;
   max-width: 800px;
@@ -6408,6 +6412,18 @@ footer .help .payment-card ul.card-list li:last-child {
   font-size: 12px;
   height: 40px;
   border-radius: 3px;
+}
+
+.modal .modal-dialog .modal-content.style-four .password-content form.set-password, .modals .modal-dialog .modal-content.style-four .password-content form.set-password, .modul .modal-dialog .modal-content.style-four .password-content form.set-password, .modal_2 .modal-dialog .modal-content.style-four .password-content form.set-password, .modal_3 .modal-dialog .modal-content.style-four .password-content form.set-password {
+  display: none;
+}
+
+.modal .modal-dialog .modal-content.style-four .password-content form.set-password.show, .modals .modal-dialog .modal-content.style-four .password-content form.set-password.show, .modul .modal-dialog .modal-content.style-four .password-content form.set-password.show, .modal_2 .modal-dialog .modal-content.style-four .password-content form.set-password.show, .modal_3 .modal-dialog .modal-content.style-four .password-content form.set-password.show {
+  display: block;
+}
+
+.modal .modal-dialog .modal-content.style-four .password-content .remove, .modals .modal-dialog .modal-content.style-four .password-content .remove, .modul .modal-dialog .modal-content.style-four .password-content .remove, .modal_2 .modal-dialog .modal-content.style-four .password-content .remove, .modal_3 .modal-dialog .modal-content.style-four .password-content .remove {
+  display: none;
 }
 
 .modal .modal-dialog .modal-content.style-five .modal-body, .modals .modal-dialog .modal-content.style-five .modal-body, .modul .modal-dialog .modal-content.style-five .modal-body, .modal_2 .modal-dialog .modal-content.style-five .modal-body, .modal_3 .modal-dialog .modal-content.style-five .modal-body {

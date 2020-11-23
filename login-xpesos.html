@@ -375,12 +375,17 @@
                             </button>
                             <div class="modal-body">
                                 <div class="password-content">
-                                    <form action="">
+                                    <form action="" class="forget-password">
                                         <div class="input-group mb-4">
                                             <label for="courent-passowrd">Current Email</label>
                                             <input type="email" name="passWord" class="form-control" id="curent_email" placeholder="Enter Email">
                                             <i class="fa fa-user"></i>
                                         </div>
+                                        <div class="tab-btn">
+                                            <button type="button" class="btn remove-btn rounded-0"><span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="14.804" height="15.215" viewBox="0 0 14.804 15.215"> <g id="Group_602" data-name="Group 602" transform="translate(0.5 0.5)"> <path id="Path_2113" data-name="Path 2113" d="M16.77,18.715H6.034A1.557,1.557,0,0,1,4.5,17.135V6.079A1.557,1.557,0,0,1,6.034,4.5H14.47L18.3,8.449v8.687A1.557,1.557,0,0,1,16.77,18.715Z" transform="translate(-4.5 -4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2114" data-name="Path 2114" d="M17.456,23.477V19.5H10.5v3.977" transform="translate(-7.343 -9.262)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2115" data-name="Path 2115" d="M10.5,4.5V9.4h4.171" transform="translate(-6.059 -4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> </g> </svg> </span><span>Sent</span></button>
+                                        </div>
+                                    </form>
+                                    <form action="" class="set-password">
                                         <div class="input-group mb-4">
                                             <label for="courent-passowrd">New password*</label>
                                             <input type="password" name="passWord" class="form-control" id="new_password" placeholder="***************">
@@ -524,6 +529,12 @@
             } else {
                 input.attr("type", "password");
             }
+    });
+
+    // all categoris button toggle
+     $(document).on('click','.remove-btn',function(){
+        $(".set-password").toggleClass("show")
+        $(".forget-password").addClass("remove")
     });
     </script>
 

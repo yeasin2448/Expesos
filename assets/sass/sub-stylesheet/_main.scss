@@ -2357,6 +2357,11 @@ footer {
                     }
                 }
             }
+            &.style-one {
+                img {
+                    padding: 132px 0;
+                }
+            }
         }
         .reag-content {
             margin: 0 auto;
@@ -3695,6 +3700,15 @@ footer {
                                 border-radius: 3px;
                             }
                         }
+                        &.set-password {
+                            display: none;
+                            &.show {
+                                display: block;
+                            }
+                        }
+                    }
+                    .remove {
+                        display: none;
                     }
                 }
             }
