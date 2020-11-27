@@ -5,15 +5,28 @@
         position: relative;
         .swiper-wrapper {
             .swiper-slide {
+                height: 200px;
                 @extend %flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 10px;
                 width: 100%!important;
-                @include breakpoint (max-lg) {
-                    min-height: 200px;
+                @include breakpoint (sm) {
+                    height: 300px;
+                }
+                @include breakpoint (lg) {
+                    height: 450px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
                 }
                 .banner-content {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     text-align: center;
                     h3 {
                         margin: 0;
@@ -27,7 +40,7 @@
         }
     }
     .swiper-container-horizontal>.swiper-pagination-bullets {
-        z-index: -1;
+        
     }
     .swiper-button-next, .swiper-button-prev {
         @include breakpoint (max-sm) {
@@ -35,9 +48,13 @@
         }
     }
     .card-slider {
+        height: 142px;
+        @include breakpoint (lg) {
+            height: 216px;
+        }
         img {
             width: 100%;
-            max-height: 192px;
+            height: 100%;
         }
     }
     &.style-one {
@@ -117,28 +134,31 @@
         }
     }
     &.style-three {
-        min-height: 200px;
-        background-image: url(../../assets/images/banner/06.png);
-        @include breakpoint (md) {
-            min-height: 500px;
+        position: relative;
+        img {
+            width: 100%;
         }
         .banner-position {
-            min-height: 200px;
+            min-height: 0;
             background-image: none;
-            @include breakpoint (md) {
-                min-height: 500px;
-            }
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             .banner-content {
                 a.btn {
                     background: $white-color;
-                    @include breakpoint (sm) {
+                    @include breakpoint (md) {
+                        padding: 12px 30px;
+                    }
+                    @include breakpoint (lg) {
                         padding: 20px 60px;
                     }
                     span {
-                        font-size: 20px;
+                        font-size: 16px;
                         color: #000;
-                        @include breakpoint (max-sm) {
-                            font-size: 16px;
+                        @include breakpoint (mobile) {
+                            font-size: 10px;
                         }
                     }
                     .btn-ripple {
