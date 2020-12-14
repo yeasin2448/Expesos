@@ -145,6 +145,7 @@ video {
 
 //==== all section overflow
 section {
+    position: relative;
     overflow: hidden;
 }
 
@@ -202,14 +203,14 @@ button.btn {
 
 /*------ common slider arrow css start -------*/
 .arrow {
-    position: relative;
-    @include breakpoint (max-sm) {
+    @include breakpoint (max-lg) {
         display: none;
     } 
     .next, .prev {
        position: absolute;
-       top: -45px;
+       top: 50%;
        z-index: 9;
+       transform: translateY(-50%);
        text-align: center;
        cursor: pointer;
        &:hover {
@@ -223,7 +224,7 @@ button.btn {
        &.swiper-button-disabled {
            cursor: no-drop;
            span {
-               background: #cc1010;
+               background: #ffffff78;
                i {
                    color: #333;
                }
@@ -233,6 +234,7 @@ button.btn {
            height: 32px;
            width: 32px;
            line-height: 32px;
+           border-radius: 100%;
            background: #e1e1e1;
            display: inline-block;
            @include transition ($transition);
@@ -242,10 +244,10 @@ button.btn {
        }
    }
    .next {
-       right: 0;
+       right: 40px;
    }
    .prev {
-       right: 40px;
+       left: 40px;
    }
 }
 /*------ common slider arrow css ends -------*/
@@ -635,13 +637,6 @@ form {
 //? common social media
 .btn-facebook {
     background: $facebook;
-    &:hover {
-        background: $white-color;
-        border: 1px solid $facebook !important;
-        i {
-            color: $facebook;
-        }
-    }
     i {
         color: $white-color;
     }
@@ -653,23 +648,10 @@ form {
     i {
         color: $white-color
     }
-    &:hover {
-        background: $white-color;
-        i {
-            color: $twitter;
-        }
-    }
 }
 
 .btn-twitter-sm {
     background: $twitter;
-    &:hover {
-        background: $white-color;
-        border: 1px solid $twitter;
-        i {
-            color: $twitter;
-        }
-    }
     i {
         color: $white-color;
     }
@@ -677,13 +659,6 @@ form {
 
 .btn-google {
     background: $google;
-    &:hover {
-        background: $white-color;
-        border: 1px solid $google !important;
-        i {
-            color: $google;
-        }
-    }
     i {
         color: $white-color;
     }
@@ -691,13 +666,6 @@ form {
 
 .btn-github {
     background: slategray;
-    &:hover {
-        background: $white-color;
-        border: 1px solid $google !important;
-        i {
-            color: $google;
-        }
-    }
     i {
         color: $white-color;
     }
@@ -706,13 +674,6 @@ form {
 
 .btn-linkedin {
     background: $linkedin;
-    &:hover {
-        background: $white-color;
-        border: 1px solid $linkedin !important;
-        i {
-            color: $linkedin;
-        }
-    }
     i {
         color: $white-color;
     }

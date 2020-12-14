@@ -38,10 +38,10 @@ button.btn-icon {
   cursor : pointer;
 }
 .img-container   {
-  height: 100px!important;
+  height: 80px!important;
 }
 .img-container img {
-  height: 100px;
+  height: 100%;
 }
 
 .swiper-button-prev, .swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-container-rtl .swiper-button-next {

@@ -312,10 +312,10 @@
                         <div class="card mb-0 pt-3 pb-2">
                             <div class="card-header p-0 pl-4">
                                 <div class="card-title">
-                                    <h4 class="mb-2 m-0 text-bold-600" style="font-size: smaller;">Login</h4>
+                                    <h4 class="mb-2 m-0">Login</h4>
                                 </div>
                             </div>
-                            <p class="px-2 pl-4">Welcome back, please login to your account.</p>
+                            <p class="px-2 pl-4">Log in your account.</p>
                             <div class="card-content">
                                 <div class="card-body pt-1">
                                     <form>
@@ -330,7 +330,7 @@
                                             <i toggle="#password" class="view_pass fa fa-fw fa-eye toggle-password field-icon"></i>
                                             <label for="user-password">Password</label>
                                         </div>
-                                        <div class="input-group d-flex justify-content-between align-items-center mb-4">
+                                        <div class="input-group d-flex justify-content-between align-items-center mb-2">
                                             <div class="text-left">
                                                 <div class="checkbox">
                                                     <div class="vs-checkbox-con vs-checkbox-primary">
@@ -344,11 +344,15 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="text-right"><a href="#0" class="card-link text-primary" data-toggle="modal" data-target="#exampleModal">Forgot Password?</a></div>
+                                            <div class="text-right"><a href="forget-password.html" class="card-link text-primary">Forgot Password?</a></div>
                                         </div>
                                         <div class="input-btn">
-                                            <button type="submit" class="btn mb-3 mb-lg-0"><i class="fa fa-key text-white mr-1 mr-2"></i><span>Login</span></button>
-                                            <button type="button" class="btn"><span class="mr-2"><i class="fa fa-facebook-official"></i></span><span>Login with Facebook</span></button>
+                                            <button type="submit" class="btn mb-3"><i class="fa fa-key text-white mr-1 mr-2"></i><span>Login</span></button>
+                                            <button type="button" class="btn btn-facebook mb-3"><span class="mr-2"><i class="fa fa-facebook-official"></i></span><span>Login with Facebook</span></button>
+                                            <button type="button" class="btn btn-google"><span class="mr-2"><i class="fa fa-google"></i></span><span>Login with Google</span></button>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <p>If you don't have an user account yet, please create an account to <a href="sign-up.html" class="card-link text-info">register</a></p>
                                         </div>
                                     </form>
                                 </div>
@@ -360,48 +364,6 @@
                             <h4>Create your xpesos account</h4>
                             <p>Create your xpesos customer account in just a few clicks! You can register either using your e-mail address or through your Facebook account.</p>
                             <img src="assets/images/logo/logo.png" alt="">
-                            <div class="reg-btn">
-                                <a href="sign-up.html" class="btn mb-3 mb-lg-0"><span><i class="fa fa-user mr-2"></i></span><span>Register</span></a>
-                                <button type="button" class="btn"><span class="mr-2"><i class="fa fa-facebook-official"></i></span><span>Login with Facebook</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content style-four">
-                            <button type="button" class="close" data-dismiss="modal">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8.849 8.849"> <g id="Group_1481" data-name="Group 1481" transform="translate(-96.393 -936.586)"> <line id="Line_211" data-name="Line 211" x1="8" y1="8" transform="translate(96.817 937.011)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line> <line id="Line_212" data-name="Line 212" y1="2.332" x2="2.332" transform="translate(96.817 942.679)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line> <line id="Line_213" data-name="Line 213" y1="2.332" x2="2.332" transform="translate(102.484 937.011)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line></g> </svg></span>
-                            </button>
-                            <div class="modal-body">
-                                <div class="password-content">
-                                    <form action="" class="forget-password">
-                                        <div class="input-group mb-4">
-                                            <label for="courent-passowrd">Current Email</label>
-                                            <input type="email" name="passWord" class="form-control" id="curent_email" placeholder="Enter Email">
-                                            <i class="fa fa-user"></i>
-                                        </div>
-                                        <div class="tab-btn">
-                                            <button type="button" class="btn remove-btn rounded-0"><span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="14.804" height="15.215" viewBox="0 0 14.804 15.215"> <g id="Group_602" data-name="Group 602" transform="translate(0.5 0.5)"> <path id="Path_2113" data-name="Path 2113" d="M16.77,18.715H6.034A1.557,1.557,0,0,1,4.5,17.135V6.079A1.557,1.557,0,0,1,6.034,4.5H14.47L18.3,8.449v8.687A1.557,1.557,0,0,1,16.77,18.715Z" transform="translate(-4.5 -4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2114" data-name="Path 2114" d="M17.456,23.477V19.5H10.5v3.977" transform="translate(-7.343 -9.262)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2115" data-name="Path 2115" d="M10.5,4.5V9.4h4.171" transform="translate(-6.059 -4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> </g> </svg> </span><span>Sent</span></button>
-                                        </div>
-                                    </form>
-                                    <form action="" class="set-password">
-                                        <div class="input-group mb-4">
-                                            <label for="courent-passowrd">New password*</label>
-                                            <input type="password" name="passWord" class="form-control" id="new_password" placeholder="***************">
-                                            <i class="fa fa-lock"></i>
-                                        </div>
-                                        <div class="input-group mb-4">
-                                            <label for="courent-passowrd">Retype password*</label>
-                                            <input type="password" name="passWord" class="form-control" id="new_password" placeholder="***************">
-                                            <i class="fa fa-lock"></i>
-                                        </div>
-                                        <div class="tab-btn">
-                                            <button type="submit" class="btn rounded-0"><span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="14.804" height="15.215" viewBox="0 0 14.804 15.215"> <g id="Group_602" data-name="Group 602" transform="translate(0.5 0.5)"> <path id="Path_2113" data-name="Path 2113" d="M16.77,18.715H6.034A1.557,1.557,0,0,1,4.5,17.135V6.079A1.557,1.557,0,0,1,6.034,4.5H14.47L18.3,8.449v8.687A1.557,1.557,0,0,1,16.77,18.715Z" transform="translate(-4.5 -4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2114" data-name="Path 2114" d="M17.456,23.477V19.5H10.5v3.977" transform="translate(-7.343 -9.262)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2115" data-name="Path 2115" d="M10.5,4.5V9.4h4.171" transform="translate(-6.059 -4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> </g> </svg> </span><span>set</span></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

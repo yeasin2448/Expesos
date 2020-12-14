@@ -39,11 +39,8 @@
             }
         }
     }
-    .swiper-container-horizontal>.swiper-pagination-bullets {
-        
-    }
     .swiper-button-next, .swiper-button-prev {
-        @include breakpoint (max-sm) {
+        @include breakpoint (max-lg) {
             display: none;
         }
     }

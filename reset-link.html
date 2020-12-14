@@ -308,41 +308,14 @@
         <div class="container">
             <div class="section-wrapper">
                 <div class="row">
-                    <div class="col-md-6 col-12">
+                    <div class="col-12">
                         <div class="card mb-0 pt-3 pb-2">
-                            <div class="card-header p-0 pl-4">
-                                <div class="card-title">
-                                    <h4 class="mb-2 m-0">Register</h4>
-                                </div>
-                            </div>
-                            <p class="px-2 pl-4">Register An Account</p>
                             <div class="card-content">
                                 <div class="card-body pt-1">
-                                    <form action="index.html">
-                                        <div class="input-group mb-4">
-                                            <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required>
-                                            <i class="fa fa-user"></i>
-                                            <label for="inputEmail">Email Address</label>
-                                        </div>
-                                        <div class="input-group ml-1 text-left">
-                                            <p>A password will be sent to your email address.</p>
-                                            <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="privacy-policy.html" class="text-info font-weight-bold">privacy policy</a>.</p>
-                                        </div>
-                                        <div class="input-btn">
-                                            <button type="submit" class="btn mb-3"><i class="fa fa-user-plus mr-1 text-white"></i><span>Register</span></button>
-                                            <button type="submit" class="btn btn-facebook mb-3"><span><i class="fa fa-facebook-official mr-1"></i></span><span>Register With Facebook</span></button>
-                                            <button type="submit" class="btn btn-google"><span><i class="fa fa-google mr-2"></i></span><span>Register With Google</span></button>
-                                        </div>
-                                    </form>
+                                    <div class="woocommerce-message">Password reset email has been sent.	</div>
+                                    <p>A password reset email has been sent to the email address on file for your account, but may take several minutes to show up in your inbox. Please wait at least 10 minutes before attempting another reset.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="creat-xpesos style-one">
-                            <h4>Create your xpesos account</h4>
-                            <p>Create your xpesos customer account in just a few clicks! You can register either using your e-mail address or through your Facebook account.</p>
-                            <img src="assets/images/logo/logo.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -470,6 +443,12 @@
             } else {
                 input.attr("type", "password");
             }
+    });
+
+    // all categoris button toggle
+     $(document).on('click','.remove-btn',function(){
+        $(".set-password").toggleClass("show")
+        $(".forget-password").addClass("remove")
     });
     </script>
 

@@ -141,13 +141,39 @@
 		thumbs: {
 		  swiper: galleryThumbs
 		}
-	  });
+    });
+    
+
+    // recent viewed items slider
+    var swiper = new Swiper('.recent-viewed-slider', {
+      slidesPerView: 2.5,
+      spaceBetween: 15,
+      autoplay: false,
+      navigation: {
+          nextEl: '.recent-button-next',
+          prevEl: '.recent-button-prev',
+      },
+      breakpoints: {
+          575: {
+              slidesPerView: 2.5,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 6,
+          },
+      },
+    });
 
     // trending products slider
     var swiper = new Swiper('.trending-slider', {
         slidesPerView: 2.5,
         spaceBetween: 15,
-        autoplay: true,
+        autoplay: false,
         navigation: {
             nextEl: '.trending-button-next',
             prevEl: '.trending-button-prev',
@@ -168,12 +194,111 @@
         },
     });
 
+    // electronic slider
+    var swiper = new Swiper('.electronic-slider', {
+      slidesPerView: 2.5,
+      spaceBetween: 15,
+      autoplay: false,
+      navigation: {
+          nextEl: '.electronic-button-next',
+          prevEl: '.electronic-button-prev',
+      },
+      breakpoints: {
+          575: {
+              slidesPerView: 2.5,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 6,
+          },
+      },
+    });
+
+    // fashion slider
+    var swiper = new Swiper('.fashion-slider', {
+      slidesPerView: 2.5,
+      spaceBetween: 15,
+      autoplay: false,
+      navigation: {
+          nextEl: '.fashion-button-next',
+          prevEl: '.fashion-button-prev',
+      },
+      breakpoints: {
+          575: {
+              slidesPerView: 2.5,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 6,
+          },
+      },
+    });
+
+    // frequently-Searched slider
+    var swiper = new Swiper('.frequent-slider', {
+      slidesPerView: 2.5,
+      spaceBetween: 15,
+      autoplay: false,
+      navigation: {
+          nextEl: '.frequent-button-next',
+          prevEl: '.frequent-button-prev',
+      },
+      breakpoints: {
+          575: {
+              slidesPerView: 2.5,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 6,
+          },
+      },
+    });
+
+     // top selling slider
+     var swiper = new Swiper('.top-selling-slider', {
+      slidesPerView: 2.5,
+      spaceBetween: 15,
+      autoplay: false,
+      navigation: {
+          nextEl: '.top-selling-button-next',
+          prevEl: '.top-selling-button-prev',
+      },
+      breakpoints: {
+          575: {
+              slidesPerView: 2.5,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 6,
+          },
+      },
+    });
 
     // offered products slider
     var swiper = new Swiper('.offered-slider', {
         slidesPerView: 2.5,
         spaceBetween: 15,
-        autoplay: true,
+        autoplay: false,
         navigation: {
             nextEl: '.offered-button-next',
             prevEl: '.offered-button-prev',
