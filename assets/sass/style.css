@@ -140,8 +140,9 @@ video {
   transition: all 0.5s ease; }
 
 section {
-  position: relative;
   overflow: hidden; }
+  section .section-wrapper {
+    position: relative; }
 
 /*======= all custom btn css =======*/
 button.btn {
@@ -216,9 +217,9 @@ button.btn {
     .arrow .next span i, .arrow .prev span i {
       font-size: 20px; }
 .arrow .next {
-  right: 40px; }
+  right: 10px; }
 .arrow .prev {
-  left: 40px; }
+  left: 10px; }
 
 /*------ common slider arrow css ends -------*/
 /*==== common item css start =====*/
