@@ -235,7 +235,6 @@ button.btn {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
   .post-item:hover .post-thumb .post-wish {
-    transform: scale3d(1.1);
     right: 0; }
   .post-item:hover .post-thumb .post-cart {
     opacity: 1;
@@ -288,28 +287,37 @@ button.btn {
       transition: all 0.5s ease; }
     .post-item .post-thumb .post-wish {
       position: absolute;
-      top: 0;
       right: -50px;
-      transform: scale3d(0);
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
+      top: 0;
+      transition: all 0.3s ease-in-out; }
       .post-item .post-thumb .post-wish button {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        cursor: pointer;
-        border-radius: 0 0 0 5px; }
-        @media (max-width: 575px) {
+        height: 30px;
+        width: 30px;
+        outline: 0;
+        line-height: 30px;
+        border-radius: 0 0 0 3px;
+        background: #efefef; }
+        @media (min-width: 576px) {
           .post-item .post-thumb .post-wish button {
-            height: 30px;
-            width: 30px;
-            line-height: 30px; } }
-        .post-item .post-thumb .post-wish button:focus {
-          outline: none;
-          background-color: #ef9b0f !important; }
-          .post-item .post-thumb .post-wish button:focus span svg path {
+            height: 40px;
+            width: 40px;
+            line-height: 40px; } }
+        .post-item .post-thumb .post-wish button span {
+          position: relative;
+          z-index: 9; }
+          @media (max-width: 575px) {
+            .post-item .post-thumb .post-wish button span {
+              font-size: 12px; } }
+        .post-item .post-thumb .post-wish button.active {
+          background: #ef9b0f; }
+          .post-item .post-thumb .post-wish button.active span svg path {
             fill: #fff; }
+        .post-item .post-thumb .post-wish button i {
+          font-size: 20px;
+          color: #fff; }
+          @media (min-width: 576px) {
+            .post-item .post-thumb .post-wish button i {
+              font-size: 30px; } }
     .post-item .post-thumb .post-cart {
       position: absolute;
       bottom: -38px;
@@ -379,6 +387,8 @@ form .input-group {
     height: 40px;
     font-size: 14px;
     padding-left: 35px;
+    z-index: 999;
+    position: relative;
     border: 1px solid #ef9b0f;
     border-radius: 4px !important;
     background: transparent;
@@ -402,12 +412,12 @@ form .input-group {
     top: 50%;
     left: 10px;
     color: #ef9b0f;
-    z-index: 9;
     transform: translateY(-50%); }
     form .input-group i.view_pass {
       left: auto;
       right: 10px;
-      cursor: pointer; }
+      cursor: pointer;
+      z-index: 999; }
   form .input-group label {
     position: absolute;
     font-size: 12px;
@@ -416,7 +426,6 @@ form .input-group {
     opacity: 0;
     padding: 0 5px;
     background: #fff;
-    z-index: 111;
     transition: all 0.3s ease-in-out; }
     form .input-group label.control-label {
       opacity: 1;
@@ -454,7 +463,8 @@ form button.custom-btn {
   top: -12px;
   left: 10px;
   opacity: 1;
-  padding: 5px; }
+  padding: 5px;
+  z-index: 111; }
 
 /*======= all scrollbar css =====*/
 ::-webkit-scrollbar-track {
@@ -1781,6 +1791,8 @@ footer {
             .justForYou-are .section-wrapper .self-item .item-thumb .add-wish button:focus {
               outline: 0;
               background: #ef9b0f; }
+              .justForYou-are .section-wrapper .self-item .item-thumb .add-wish button:focus span svg path {
+                fill: #fff; }
             .justForYou-are .section-wrapper .self-item .item-thumb .add-wish button i {
               font-size: 20px;
               color: #fff; }
@@ -3933,5 +3945,23 @@ footer {
     opacity: 0;
     -webkit-transform: translate(-50%, -50%) scale(2);
     transform: translate(-50%, -50%) scale(2); } }
+@-webkit-keyframes collection {
+  0% {
+    opacity: 1; }
+  40% {
+    opacity: 1; }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0; } }
+@keyframes collection {
+  0% {
+    opacity: 1; }
+  40% {
+    opacity: 1; }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -738,6 +738,13 @@ footer {
                         &:focus {
                             outline: 0;
                             background: $theme-color;
+                            span {
+                                svg {
+                                    path {
+                                        fill: $white-color;
+                                    }
+                                }
+                            }
                         }
                         i {
                             font-size: 20px;
@@ -3899,5 +3906,32 @@ footer {
       opacity: 0;
       -webkit-transform: translate(-50%, -50%) scale(2);
       transform: translate(-50%, -50%) scale(2); 
+    } 
+}
+
+@-webkit-keyframes collection {
+    0% {
+      opacity: 1; 
+    }
+    40% {
+      opacity: 1; 
+    }
+    100% {
+      width: 200%;
+      height: 200%;
+      opacity: 0; 
+    } 
+}
+  @keyframes collection {
+    0% {
+      opacity: 1; 
+    }
+    40% {
+      opacity: 1; 
+    }
+    100% {
+      width: 200%;
+      height: 200%;
+      opacity: 0; 
     } 
 }

@@ -269,7 +269,6 @@ button.btn {
                 transform: scale(1.1);
             }
             .post-wish {
-                transform: scale3d(1.1);
                 right: 0;
             }
             .post-cart {
@@ -335,24 +334,30 @@ button.btn {
         }
         .post-wish {
             position: absolute;
-            top: 0;
             right: -50px;
-            transform: scale3d(0);
-            @include transition ($transition);
+            top: 0;
+            transition: all 0.3s ease-in-out;
             button {
-                height: 40px;
-                width: 40px;
-                line-height: 40px;
-                cursor: pointer;
-                border-radius: 0 0 0 5px;
-                @include breakpoint (max-sm) {
-                    height: 30px;
-                    width: 30px;
-                    line-height: 30px;
+                height: 30px;
+                width: 30px;
+                outline: 0;
+                line-height: 30px;
+                border-radius: 0 0 0 3px;
+                background: #efefef;
+                @include breakpoint (sm) {
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
                 }
-                &:focus {
-                    outline: none;
-                    background-color: $theme-color!important;
+                span {
+                    position: relative;
+                    z-index: 9;
+                    @include breakpoint (max-sm) {
+                        font-size: 12px;
+                    }
+                }
+                &.active {
+                    background: $theme-color;
                     span {
                         svg {
                             path {
@@ -361,7 +366,15 @@ button.btn {
                         }
                     }
                 }
+                i {
+                    font-size: 20px;
+                    color: $white-color;
+                    @include breakpoint (sm) {
+                        font-size: 30px;
+                    }
+                }
             }
+
         }
         .post-cart {
             position: absolute;
@@ -458,6 +471,8 @@ form {
                 height: 40px;
                 font-size: 14px;
                 padding-left: 35px;
+                z-index: 999;
+                position: relative;
                 border: 1px solid $theme-color;
                 border-radius: 4px!important;
                 background: transparent;
@@ -492,12 +507,12 @@ form {
             top: 50%;
             left: 10px;
             color: $theme-color;
-            z-index: 9;
             transform: translateY(-50%);
             &.view_pass {
                 left: auto;
                 right: 10px;
                 cursor: pointer;
+                z-index: 999;
             }
         }
         label {
@@ -508,7 +523,6 @@ form {
             opacity: 0;
             padding: 0 5px;
             background: #fff;
-            z-index: 111;
             transition: all 0.3s ease-in-out;
             &.control-label {
                 opacity: 1;
@@ -563,6 +577,7 @@ form {
     left: 10px;
     opacity: 1;
     padding: 5px;
+    z-index: 111;
 }
 //#==== form css end ====#//
 
