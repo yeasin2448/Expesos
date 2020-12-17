@@ -341,7 +341,22 @@
 				slidesPerView: 2,
 			}
 		}
-	});
+  });
+  
+  // vendon testimonial avtivation
+  var swiper = new Swiper('.vendor-slider', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints : {
+      767 : {
+        slidesPerView: 2,
+      }
+    }
+  });
   
 	// scroll up start here
 	$(function(){

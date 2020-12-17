@@ -2815,6 +2815,87 @@ footer {
 }
 //*===== absolute-start css ======*//
 
+//?==== vendor slider css ===?//
+.vendor-testimonial {
+    padding: 60px 0;
+    background: #f6f6f6;
+    @include breakpoint (sm) {
+        padding: $common-padding;
+    }
+    .section-header {
+        text-align: center;
+        span {
+            color: #333;
+            font-weight: 600;
+        }
+        h3 {
+            font-weight: 400;
+            margin: 0 auto;
+            max-width: 800px;
+            @include breakpoint (max-sm) {
+                font-size: 20px;
+            }
+        }
+    }
+    .section-wrapper {
+        padding-top: 100px;
+        .vendor-slider {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .testimonial-item {
+                        padding: 20px;
+                        position: relative;
+                        background: $white-color;
+                        @include breakpoint (sm) {
+                            padding: 30px;
+                        }
+                        .test-thumb {
+                            position: relative;
+                            top: -70px;
+                            height: 100px;
+                            width: 100px;
+                            z-index: 9;
+                            border-radius: 100%;
+                        }
+                        .test-icon {
+                            position: absolute;
+                            top: 20px;
+                            right: 20px;
+                            i {
+                                color: #02f36f;
+                                font-size: 40px;
+                            }
+                        }
+                        .test-text {
+                            h4{
+                                margin: 0;
+                            }
+                            p {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-button-next, .swiper-button-prev {
+                top: 60%;
+                color: #666161;
+                display: none;
+                @include breakpoint (sm) {
+                    display: block;
+                }
+            }
+            .swiper-button-next {
+                right: -30px;
+            }
+            .swiper-button-prev {
+                left: -30px;
+            }
+        }
+    }
+}
+//?==== vendor slider css ===?//
+
 //*==== faq and stuff area css start ===?//
 .faq-stuff-area {
     padding: $common-padding;
@@ -2829,7 +2910,7 @@ footer {
     .section-wrapper {
         padding-top: 80px;
         .post-item {
-            padding: 30px;
+            padding: 10px 10px 20px;
             .post-text {
                 h4 {
                     margin: 0;
@@ -2843,6 +2924,7 @@ footer {
         .contact-us  {
             text-align: center;
             padding-top: 15px;
+            padding-bottom: 0;
             .roulder {
                 border: 1px solid #afa5a5;
             }
