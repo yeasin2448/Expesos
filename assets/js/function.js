@@ -65,11 +65,6 @@
             menu.css({ left: newpos });    
         }
     });
-
-    // all wish-list button toggle
-    $(document).on('click','.post-wish',function(){
-        $("button").toggleClass("active")
-    });
     
     // mouse hover event
     $('.list-menu ul li').hover(function() {

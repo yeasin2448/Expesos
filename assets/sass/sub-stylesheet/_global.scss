@@ -270,6 +270,7 @@ button.btn {
             }
             .post-wish {
                 right: 0;
+                z-index: 111;
             }
             .post-cart {
                 opacity: 1;
@@ -342,6 +343,8 @@ button.btn {
                 width: 30px;
                 outline: 0;
                 line-height: 30px;
+                position: relative;
+                z-index: 111;
                 border-radius: 0 0 0 3px;
                 background: #efefef;
                 @include breakpoint (sm) {
@@ -351,12 +354,12 @@ button.btn {
                 }
                 span {
                     position: relative;
-                    z-index: 9;
+                    z-index: -1;
                     @include breakpoint (max-sm) {
                         font-size: 12px;
                     }
                 }
-                &.active {
+                &:focus {
                     background: $theme-color;
                     span {
                         svg {
@@ -430,7 +433,7 @@ button.btn {
             margin: 0;
             color: #000;
             font-size: 16px;
-            font-weight: 700;
+            font-weight: 600;
         }
     }
 }
@@ -471,7 +474,7 @@ form {
                 height: 40px;
                 font-size: 14px;
                 padding-left: 35px;
-                z-index: 999;
+                z-index: 9;
                 position: relative;
                 border: 1px solid $theme-color;
                 border-radius: 4px!important;
