@@ -5368,6 +5368,13 @@ footer .help .payment-card ul.card-list li:last-child {
   padding: 80px 0;
 }
 
+@media (min-width: 576px) {
+  .faq-stuff-area .section-headers p {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+}
+
 .faq-stuff-area .section-wrapper {
   padding-top: 80px;
 }
@@ -5383,6 +5390,64 @@ footer .help .payment-card ul.card-list li:last-child {
 
 .faq-stuff-area .section-wrapper .post-item .post-text p {
   font-weight: 400;
+}
+
+.faq-stuff-area .section-wrapper .contact-us {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.faq-stuff-area .section-wrapper .contact-us .roulder {
+  border: 1px solid #afa5a5;
+}
+
+.faq-stuff-area .section-wrapper .contact-us .ct-text {
+  padding: 45px 0;
+}
+
+.faq-stuff-area .section-wrapper .contact-us .ct-text p {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: 1.5px;
+}
+
+.making-money {
+  position: relative;
+}
+
+.making-money img {
+  width: 100%;
+}
+
+.making-money .section-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.making-money .section-wrapper h3 {
+  margin: 0;
+  color: #fff;
+  padding-bottom: 36px;
+}
+
+.making-money .section-wrapper button.btn {
+  border-radius: 5px;
+  background: #fff;
+}
+
+.making-money .section-wrapper button.btn span {
+  color: #ef9b0f;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .making-money .section-wrapper button.btn span {
+    font-size: 18px;
+  }
 }
 
 .about-xpesos {

@@ -41,7 +41,7 @@ button.btn-icon {
   height: 80px!important;
 }
 .img-container img {
-  height: 100%;
+  height: auto;
 }
 
 .swiper-button-prev, .swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-container-rtl .swiper-button-next {

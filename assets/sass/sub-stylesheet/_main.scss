@@ -2818,6 +2818,14 @@ footer {
 //*==== faq and stuff area css start ===?//
 .faq-stuff-area {
     padding: $common-padding;
+    .section-headers  {
+        p {
+           @include breakpoint (sm) {
+            font-size: 24px;
+            letter-spacing: 1.5px;
+           }
+        }
+    }
     .section-wrapper {
         padding-top: 80px;
         .post-item {
@@ -2832,9 +2840,56 @@ footer {
                 }
             }
         }
+        .contact-us  {
+            text-align: center;
+            padding-top: 15px;
+            .roulder {
+                border: 1px solid #afa5a5;
+            }
+            .ct-text {
+                padding: 45px 0;
+                p {
+                    margin: 0;
+                    font-size: 26px;
+                    letter-spacing: 1.5px;
+                }
+            }
+
+        }
     }
 }
 //*==== faq and stuff area css ends  ===?//
+
+//?==== making-money css start =====?//
+.making-money {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .section-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        h3 {
+            margin: 0;
+            color: $white-color;
+            padding-bottom: 36px;
+        }
+        button.btn {
+            border-radius: 5px;
+            background: $white-color;
+            span {
+                color: $theme-color;
+                font-weight: 600;
+                @include breakpoint (sm){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
 
 //?==== sellon xpesos pages css ends  =====?//
 
