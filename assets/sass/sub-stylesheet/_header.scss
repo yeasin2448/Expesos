@@ -719,6 +719,20 @@ header {
                     }
                 }
             }
+            .curency-btn {
+                .input-group {
+                    select.form-select {
+                        color: $white-color;
+                        border-radius: 3px;
+                        &:focus {
+                            outline: none;
+                        }
+                        option {
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
         }
     }
     //add mobile search

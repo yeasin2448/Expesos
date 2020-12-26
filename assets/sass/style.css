@@ -1103,6 +1103,13 @@ header .header-bottom {
           font-size: 18px;
           margin-left: 5px;
           color: #ef9b0f; }
+    header .header-bottom .bottom-item .curency-btn .input-group select.form-select {
+      color: #fff;
+      border-radius: 3px; }
+      header .header-bottom .bottom-item .curency-btn .input-group select.form-select:focus {
+        outline: none; }
+      header .header-bottom .bottom-item .curency-btn .input-group select.form-select option {
+        color: #fff; }
 header .header-serch {
   padding: 10px;
   margin-bottom: 10px;
