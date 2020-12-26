@@ -594,6 +594,19 @@ button.btn, .post-item:hover, header .header-midel .midel-item .header-logo .hea
   padding-right: 5px !important;
   padding-left: 5px !important; }
 
+header .curency-btn {
+  padding: 5px 0;
+  background: #fff; }
+  header .curency-btn .input-group {
+    margin: auto;
+    max-width: 100px; }
+    header .curency-btn .input-group select.form-select {
+      color: #fff;
+      border-radius: 3px; }
+      header .curency-btn .input-group select.form-select:focus {
+        outline: none; }
+      header .curency-btn .input-group select.form-select option {
+        color: #fff; }
 header .header-top {
   display: none;
   padding: 10px 0;

@@ -1,5 +1,23 @@
 //*======= header css start =====*//
 header {
+    .curency-btn {
+        padding: 5px 0;
+        background: $white-color;
+        .input-group {
+            margin: auto;
+            max-width: 100px;
+            select.form-select {
+                color: $white-color;
+                border-radius: 3px;
+                &:focus {
+                    outline: none;
+                }
+                option {
+                    color: $white-color;
+                }
+            }
+        }
+    }
     .header-top {
         display: none;
         padding: 10px 0;
