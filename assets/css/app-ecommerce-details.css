@@ -11,6 +11,10 @@ i.font-large-2 {
   font-size: 70px;
 }
 
+.seller-btn button {
+  background: deepskyblue;
+}
+
 button.btn-icon {
   height: 40px;
   width: 40px;

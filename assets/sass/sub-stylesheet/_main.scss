@@ -1244,6 +1244,183 @@ footer {
 
 //?====== product cart page css start =====?//
 
+//!===== product details extara contetn css ===!//
+.menu-details {
+    .review {
+        .review-tab-content {
+            .review-menu {
+                border-bottom: 1px solid #ebebeb;
+                button {
+                    color: #000;
+                    padding: 18px 20px;
+                    margin-right: 8px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    background: $white-color;
+                    @include breakpoint(max-md) {
+                        margin-top: 10px;
+                    }
+                    @include breakpoint (max-mobile) {
+                        padding: 15px 14px;
+                    }
+                    &.tablinks {
+                        &.active {
+                            border-bottom: 2px solid $theme-color;
+                        }
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .tabcontent {
+                width: 100%;
+                margin-top: 15px;
+                padding: 20px;
+                -webkit-animation: fadeEffect 1s;
+                animation: fadeEffect 1s;
+
+                .post-text {
+                    h4 {
+                        margin: 0;
+                        text-transform: capitalize;
+                        padding-bottom: 10px;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                    .inner-text {
+                        padding-top: 30px;
+                        h4 {
+                            margin: 0;
+                            padding-bottom: 10px;
+                        }
+                        p {
+                            margin: 0;
+                            padding-bottom: 15px;
+                        }
+                    }
+                    img {
+                        float: right;
+                        padding: 0 20px;
+                        width: 450px;
+                        @include breakpoint (max-lg) {
+                            width: 250px;
+                        }
+                    }
+                }
+                .food-specification {
+                    padding-top: 30px;
+                    table {
+                        width: 100%;
+                        @include breakpoint (xl) {
+                            width: 50%;
+                        }
+                        tbody {
+                            border: 1.5px solid $border-color;
+                            tr {
+                                border-left:none;
+                                border-bottom: 1.5px solid $border-color;
+                                th {
+                                    padding: 10px;
+                                    font-weight: 400;
+                                    border-right: 1.5px solid $border-color;
+                                }
+                                td {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .review-list {
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            list-style: none;
+                            padding: 15px 20px;
+                            margin: 10px 0;
+                            background: $white-color;
+                            border-radius: 3px;
+                            box-shadow: 0 0 10px 0 rgba(136, 136, 136, 0.10);
+                            .rating {
+                                span {
+                                    color: $primary-color;
+                                }
+                            }
+                            p {
+                                margin: 0;
+                                padding-top: 5px;
+                            }
+                            h5 {
+
+                            }
+                        }
+                    }
+                }
+                .review-form {
+                    .comment-respos {
+                        h5 {
+                            margin: 0;
+                            font-weight: normal;
+                            padding-bottom: 20px;
+                        }
+                        form {
+                            p {
+                                display: flex;
+                                width: 100%;
+                                @include breakpoint (mobile) {
+                                    display: block;
+                                }
+                                del {
+                                    span {
+                                        i {
+                                            color: $primary-color;
+                                            transition: all 0.3s ease-in-out;
+                                            &:hover {
+                                                color: $theme-color;
+                                            }
+                                        }
+                                    }
+                                }
+                                label {
+                                    flex: 0 0 30%;
+                                    font-weight: 400;
+                                    vertical-align: middle;
+                                    max-width: 30%;
+                                }
+                                textarea {
+                                    width: 100%;
+                                    border-radius: 3px;
+                                    border: 1px solid $border-color;
+                                }
+                                input {
+                                    width: 100%;
+                                    border-radius: 3px;
+                                    border: 1px solid $border-color;
+                                }
+                                button {
+                                    padding: 10px 30px;
+                                    margin-left: 30%;
+                                    font-weight: bold;
+                                    @include breakpoint (mobile) {
+                                        float: left;
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+//!===== product details extara contetn css ===!//
+
 
 //*====== shoping cart css start ======*//
 .shoping-cart {
