@@ -1785,10 +1785,15 @@ footer {
         border-bottom: 0;
         h3 {
             margin: 0;
+            font-size: 22px;
             font-weight: 500;
+            @include breakpoint (md) {
+                font-size: 26px;
+            }
         }
     }
     .card {
+        margin-bottom: 15px;
         border-radius: 5px!important;
         .card-header {
             h2 {
@@ -1796,13 +1801,6 @@ footer {
                     padding: 10px 0;
                     box-shadow: none;
                     background: transparent;
-                    &.collapsed {
-                        span {
-                            i {
-                                transform: rotate(180deg);
-                            }
-                        }
-                    }
                     &:hover {
                         span {
                             color: $theme-color;

@@ -2538,15 +2538,18 @@ footer {
   border-bottom: 0; }
   .accordion .card-header h3 {
     margin: 0;
+    font-size: 22px;
     font-weight: 500; }
+    @media (min-width: 768px) {
+      .accordion .card-header h3 {
+        font-size: 26px; } }
 .accordion .card {
+  margin-bottom: 15px;
   border-radius: 5px !important; }
   .accordion .card .card-header h2 button.btn {
     padding: 10px 0;
     box-shadow: none;
     background: transparent; }
-    .accordion .card .card-header h2 button.btn.collapsed span i {
-      transform: rotate(180deg); }
     .accordion .card .card-header h2 button.btn:hover span {
       color: #ef9b0f; }
       .accordion .card .card-header h2 button.btn:hover span i {
