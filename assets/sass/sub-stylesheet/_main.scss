@@ -1653,22 +1653,17 @@ footer {
             }
         }
         .coupon {
-            padding-top: 30px;
-            label {
-                color: #000;
-                font-size: 20px;
-                padding-bottom: 8px;
-                display: inline-block;
-            }
             input {
                 width: 100%;
                 height: 45px;
                 padding-left: 10px;
                 border: 1px solid #000;
             }
+            button.btn {
+                height: 45px;
+            }
         }
         .Calculate-shipping {
-            padding-top: 30px;
             span {
                 font-weight: 600;
                 font-size: 24px;
@@ -1708,7 +1703,6 @@ footer {
             }
         }
         .shipping-fild {
-            margin-top: 40px;
             transform: scale(0);
             display: none;
             transition: all 0.3s ease-in-out;
@@ -1783,6 +1777,52 @@ footer {
     }
 }
 //*====== shoping cart css ends  ======*//
+
+//!==== cart accordion css start =====!//
+.accordion {
+    .card-header {
+        margin-bottom: 30px;
+        border-bottom: 0;
+        h3 {
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+    .card {
+        border-radius: 5px!important;
+        .card-header {
+            h2 {
+                button.btn {
+                    padding: 10px 0;
+                    box-shadow: none;
+                    background: transparent;
+                    &.collapsed {
+                        span {
+                            i {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                    &:hover {
+                        span {
+                            color: $theme-color;
+                            i {
+                                color: $theme-color
+                            }
+                        }
+                    }
+                    span {
+                        color: #000;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}
+//!==== cart accordion css ends  =====!//
 
 //?====== product cart page css ends  =====?// 
 

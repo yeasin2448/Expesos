@@ -328,8 +328,8 @@
             </div>
             <div class="section-wrapper">
                 <div class="row">
-                    <div class="col-lg-9 col-12">
-                        <div class="cart-content">
+                    <div class="col-12">
+                        <div class="cart-content mb-4">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
                                   <thead>
@@ -405,24 +405,55 @@
                                 <a href="#payment" class="btn"><span class="mr-2"><svg id="Component_99_2" data-name="Component 99 – 2" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"> <path id="Path_2111" data-name="Path 2111" d="M7.5,18h7.016" transform="translate(-6.663 -10.738)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/> <path id="Path_2112" data-name="Path 2112" d="M18,7.5l2.725,4.225L18,15.951" transform="translate(-11.214 -4.416)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/> <g id="Rectangle_1496" data-name="Rectangle 1496" fill="none" stroke="#fff" stroke-width="1"> <rect width="15" height="15" rx="2" stroke="none"/> <rect x="0.5" y="0.5" width="14" height="14" rx="1.5" fill="none"/> </g> </svg> </span><span>PLACE ORDER</span></a>
                             </div>
                         </div> 
-                        <div class="row">
-                            <div class="col-md-6 col-12">
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card-header">
+                            <h3>What would you like to do next?</h3>
+                            <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span>Coupon Discount</span><span><i class="fa fa-angle-down ml-3"></i></span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
                                 <div class="coupon">
-                                    <label for="coupon_code">Coupon Discount</label>
-                                    <input type="text" name="coupon_code" class="input-text mb-4" id="coupon_code" value="" placeholder="Coupon code">
-                                    <button type="submit" class="btn rounded"><span>Apply coupon</span></button>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-12">
+                                            <input type="text" name="coupon_code" class="input-text mb-4" id="coupon_code" value="" placeholder="Coupon code">
+                                        </div>
+                                        <div class="col-sm-2 col-12">
+                                            <button type="submit" class="btn rounded"><span>Apply coupon</span></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span>Calculate shipping</span><span><i class="fa fa-angle-down ml-3"></i></span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
                                 <div class="Calculate-shipping ml-sm-4 ml-0">
                                     <span>Calculate shipping</span>
                                     <form action="" name="Calculate">
-                                        <select class="custom-select" id="inputGroupSelect01">
+                                        <select class="custom-select border" id="inputGroupSelect01">
                                             <option selected>Nigeria</option>
                                             <option value="1">Nigeria</option>
                                             <option value="2">United Kingdom (UK)</option>
                                         </select>
-                                        <select class="custom-select" id="inputGroupSelect02">
+                                        <select class="custom-select border" id="inputGroupSelect02">
                                             <option selected>One</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -433,217 +464,251 @@
                                         </select>
                                         <input type="text" class="input-text"  placeholder="Town / City" name="calc_shipping_city" id="calc_shipping_city" data-placeholder="Town / City">
                                         <input type="text" class="input-text mt-4" placeholder="Postcode">
-                                       <button type="button" class="btn mt-4 text-white rounded">update</button>
+                                       <button type="button" class="btn d-block mt-4 text-white rounded">update</button>
                                     </form>
                                 </div>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-12 mt-4 mt-lg-0">
-                        <div class="order-content bg-white p-4">
-                            <h6 class="m-0 pb-3">Billing Address</h6>
-                            <form action="">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" name="frist-name" placeholder="Frist Name" />
-                                    <i class="fa fa-user"></i>
-                                    <label for="">Frist Name</label>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" name="last-name" placeholder="Last Name" />
-                                    <i class="fa fa-user"></i>
-                                    <label for="">Last Name</label>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" name="contact-us" placeholder="Contact" />
-                                    <i class="fa fa-phone"></i>
-                                    <label for="">Contact</label>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input type="email" class="form-control" name="email-id" placeholder="Email" />
-                                    <i class="fa fa-user"></i>
-                                    <label for="">Email</label>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" name="country-name" placeholder="Country" />
-                                    <i class="fa fa-home"></i>
-                                    <label for="">Country</label>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" name="city-name" placeholder="City" />
-                                    <i class="fa fa-home"></i>
-                                    <label for="">City</label>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" name="State-name" placeholder="State" />
-                                    <i class="fa fa-home"></i>
-                                    <label for="">State</label>
-                                </div>
-                                <div class="input-group row mb-3">
-                                    <div class="col-12">
-                                        <div class="checkbox">
-                                            <div class="vs-checkbox-con vs-checkbox-primary">
-                                                <input type="checkbox">
-                                                <span class="vs-checkbox">
-                                                    <span class="vs-checkbox--check">
-                                                        <i class="vs-icon fa fa-check"></i>
-                                                    </span>
-                                                </span>
-                                                <span class="text-dark"> Create an account?</span>
+
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span>Billing Address</span><span><i class="fa fa-angle-down ml-3"></i></span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="order-content p-4">
+                                    <form action="">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="frist-name" placeholder="Frist Name" />
+                                            <i class="fa fa-user"></i>
+                                            <label for="">Frist Name</label>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="last-name" placeholder="Last Name" />
+                                            <i class="fa fa-user"></i>
+                                            <label for="">Last Name</label>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="contact-us" placeholder="Contact" />
+                                            <i class="fa fa-phone"></i>
+                                            <label for="">Contact</label>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="email" class="form-control" name="email-id" placeholder="Email" />
+                                            <i class="fa fa-user"></i>
+                                            <label for="">Email</label>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="country-name" placeholder="Country" />
+                                            <i class="fa fa-home"></i>
+                                            <label for="">Country</label>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="city-name" placeholder="City" />
+                                            <i class="fa fa-home"></i>
+                                            <label for="">City</label>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="State-name" placeholder="State" />
+                                            <i class="fa fa-home"></i>
+                                            <label for="">State</label>
+                                        </div>
+                                        <div class="input-group row mb-3">
+                                            <div class="col-12">
+                                                <div class="checkbox">
+                                                    <div class="vs-checkbox-con vs-checkbox-primary">
+                                                        <input type="checkbox">
+                                                        <span class="vs-checkbox">
+                                                            <span class="vs-checkbox--check">
+                                                                <i class="vs-icon fa fa-check"></i>
+                                                            </span>
+                                                        </span>
+                                                        <span class="text-dark"> Create an account?</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="input-group row mb-3">
-                                    <div class="col-12">
-                                        <fieldset class="checkbox" id="shipping">
-                                            <div class="vs-checkbox-con vs-checkbox-primary">
-                                                <input type="checkbox">
-                                                <span class="vs-checkbox">
-                                                    <span class="vs-checkbox--check">
-                                                        <i class="vs-icon fa fa-check"></i>
-                                                    </span>
-                                                </span>
-                                                <span class="text-dark"> Ship to a different address?</span>
-                                            </div>
-                                        </fieldset>
-                                        <div action="" class="shipping-fild">
-                                            <h6>Shipping Address</h6>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" name="frist-name" placeholder="Frist Name" />
-                                                <i class="fa fa-user"></i>
-                                                <label for="">Frist Name</label>
-                                            </div>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" name="last-name" placeholder="Last Name" />
-                                                <i class="fa fa-user"></i>
-                                                <label for="">Last Name</label>
-                                            </div>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" name="company-us" placeholder="company" />
-                                                <i class="fa fa-phone"></i>
-                                                <label for="">Company Name</label>
-                                            </div>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" name="country-name" placeholder="Country" />
-                                                <i class="fa fa-home"></i>
-                                                <label for="">Country</label>
-                                            </div>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" name="town-city-name" placeholder="town-city" />
-                                                <i class="fa fa-home"></i>
-                                                <label for="">Town /city</label>
-                                            </div>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" name="city-name" placeholder="City" />
-                                                <i class="fa fa-home"></i>
-                                                <label for="">City</label>
-                                            </div>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" name="State-name" placeholder="State" />
-                                                <i class="fa fa-home"></i>
-                                                <label for="">State</label>
-                                            </div>
-                                            <div class="input-group row mb-3">
-                                                <div class="col-12">
-                                                    <div class="checkbox">
-                                                        <div class="vs-checkbox-con vs-checkbox-primary">
-                                                            <input type="checkbox">
-                                                            <span class="vs-checkbox">
-                                                                <span class="vs-checkbox--check">
-                                                                    <i class="vs-icon fa fa-check"></i>
-                                                                </span>
+                                        <div class="input-group row mb-3">
+                                            <div class="col-12">
+                                                <fieldset class="checkbox" id="shipping">
+                                                    <div class="vs-checkbox-con vs-checkbox-primary">
+                                                        <input type="checkbox">
+                                                        <span class="vs-checkbox">
+                                                            <span class="vs-checkbox--check">
+                                                                <i class="vs-icon fa fa-check"></i>
                                                             </span>
-                                                            <span class="text-dark"> Create an account?</span>
+                                                        </span>
+                                                        <span class="text-dark"> Ship to a different address?</span>
+                                                    </div>
+                                                </fieldset>
+                                                <div action="" class="shipping-fild">
+                                                    <h6>Shipping Address</h6>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" name="frist-name" placeholder="Frist Name" />
+                                                        <i class="fa fa-user"></i>
+                                                        <label for="">Frist Name</label>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" name="last-name" placeholder="Last Name" />
+                                                        <i class="fa fa-user"></i>
+                                                        <label for="">Last Name</label>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" name="company-us" placeholder="company" />
+                                                        <i class="fa fa-phone"></i>
+                                                        <label for="">Company Name</label>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" name="country-name" placeholder="Country" />
+                                                        <i class="fa fa-home"></i>
+                                                        <label for="">Country</label>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" name="town-city-name" placeholder="town-city" />
+                                                        <i class="fa fa-home"></i>
+                                                        <label for="">Town /city</label>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" name="city-name" placeholder="City" />
+                                                        <i class="fa fa-home"></i>
+                                                        <label for="">City</label>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" name="State-name" placeholder="State" />
+                                                        <i class="fa fa-home"></i>
+                                                        <label for="">State</label>
+                                                    </div>
+                                                    <div class="input-group row mb-3">
+                                                        <div class="col-12">
+                                                            <div class="checkbox">
+                                                                <div class="vs-checkbox-con vs-checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <span class="vs-checkbox">
+                                                                        <span class="vs-checkbox--check">
+                                                                            <i class="vs-icon fa fa-check"></i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="text-dark"> Create an account?</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="input-btn">
+                                            <button type="submit" class="btn rounded"><span>Submit</span></button>
+                                        </div>
+                                      </form>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span>Shipping Method</span><span><i class="fa fa-angle-down ml-3"></i></span>
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="shiping-content bg-white p-4 mt-4">
+                                            <ul class="shiping-list p-0 m-0 list-unstyled">
+                                                <li>
+                                                    <label class="radio transition-on"><input type="radio" data-role="radio" data-caption="Flat Shipping." name="r1" checked="" data-role-radio="true" class=""><span class="check"></span><span class="caption ml-2 text-dark font-weight-bold">Flat Shipping.</span></label>
+                                                    <span></span>
+                                                    <p> Let’s you charge a fixed rate for shipping.</p>
+                                                </li>
+                                                <li>
+                                                    <label class="radio transition-on"><input type="radio" data-role="radio" data-caption="Local Pickup." name="r1" data-role-radio="true" class=""><span class="check"></span><span class="caption ml-2 text-dark font-weight-bold">Local Pickup.</span></label>
+                                                    <span></span>
+                                                    <p>Allow customers to pickup orders themselves. By default, when using local pickup store base taxes will apply regardless of customer address.</p>
+                                                </li>
+                                                <li>
+                                                    <label class="radio transition-on"><input type="radio" data-role="radio" data-caption="Free Shipping." name="r1" data-role-radio="true" class=""><span class="check"></span><span class="caption ml-2 text-dark font-weight-bold">Free Shipping.</span></label>
+                                                    <span></span>
+                                                    <p>Free shipping is a special method which can be triggered with coupons and minimum spends.</p>
+                                                </li>
+                                            </ul>
+                                            <div class="cart-button">
+                                                <button type="submit" class="btn rounded"><span class="mr-2"><svg id="Component_99_2" data-name="Component 99 – 2" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 15"> <path id="Path_2111" data-name="Path 2111" d="M7.5,18h7.016" transform="translate(-6.663 -10.738)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2112" data-name="Path 2112" d="M18,7.5l2.725,4.225L18,15.951" transform="translate(-11.214 -4.416)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <g id="Rectangle_1496" data-name="Rectangle 1496" fill="none" stroke="#fff" stroke-width="1"> <rect width="15" height="15" rx="2" stroke="none"></rect> <rect x="0.5" y="0.5" width="14" height="14" rx="1.5" fill="none"></rect> </g> </svg> </span><span>CHECKOUT</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="cart-price mt-4">
+                                            <div class="price-titel">
+                                                <h6>PRICE DETAILS</h6>
+                                            </div>
+                                            <ul class="price-list">
+                                                <li><span>Price (2 items)</span><span>$1,840</span></li>
+                                                <li><span>Shipping</span><span>$960</span></li>
+                                                <li><span>Total Payable</span><span>$2,860</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="payment-content bg-white p-4 mt-4">
+                                            <form>
+                                                <ul class="card-list mb-3 list-unstyled d-flex justify-content-center">
+                                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/01.png" alt=""></a></li>
+                                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/02.png" alt=""></a></li>
+                                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/03.png" alt=""></a></li>
+                                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/04.png" alt=""></a></li>
+                                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/05.png" alt=""></a></li>
+                                                </ul>
+                                                <div class="row">
+                                                    <form action="">
+                                                        <div class="input-group mb-4">
+                                                            <input type="number" class="form-control pl-2" placeholder="Card Number" />
+                                                            <label for="card-numer">Card Namber</label>
+                                                        </div>
+                                                        <div class="input-group mb-4">
+                                                            <input type="text" class="form-control pl-2" placeholder="Expiration Date (MM/YY)" />
+                                                            <label for="card-numer">Expiration</label>
+                                                        </div> 
+                                                        <div class="input-group mb-4">
+                                                            <input type="text" class="form-control pl-2" placeholder="CVC" />
+                                                            <label for="card-numer">Expiration</label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <ul class="payment-check list-unstyled d-flex">
+                                                    <li class="mr-2"><label class="checkbox transition-on" for="checkbox-1605286659536313"><input type="checkbox" data-role="checkbox" data-role-checkbox="true" id="checkbox-1605286659536313" class=""><span class="check"></span><span class="caption"></span></label></li>
+                                                    <li>Save This Card</li>
+                                                </ul>
+                                                <div class="input-group mb-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="exampleRadios1">
+                                                          <img src="assets/images/footer/06.png" style="height: 40px;" alt="">
+                                                        </label>
+                                                      </div>                                      
+                                                </div>
+                                                <div class="cart-button">
+                                                    <button type="button" class="btn rounded"><span class="mr-2"><svg id="Component_99_2" data-name="Component 99 – 2" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"> <path id="Path_2111" data-name="Path 2111" d="M7.5,18h7.016" transform="translate(-6.663 -10.738)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2112" data-name="Path 2112" d="M18,7.5l2.725,4.225L18,15.951" transform="translate(-11.214 -4.416)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <g id="Rectangle_1496" data-name="Rectangle 1496" fill="none" stroke="#fff" stroke-width="1"> <rect width="15" height="15" rx="2" stroke="none"></rect> <rect x="0.5" y="0.5" width="14" height="14" rx="1.5" fill="none"></rect> </g> </svg> </span><span>CHECKOUT</span></button>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="input-btn">
-                                    <button type="submit" class="btn rounded-0 w-100"><span>Submit</span></button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="shiping-content bg-white p-4 mt-4">
-                            <h6 class="m-0 mb-3">Shipping Method</h6>
-                            <ul class="shiping-list p-0 m-0 list-unstyled">
-                                <li>
-                                    <label class="radio transition-on"><input type="radio" data-role="radio" data-caption="Flat Shipping." name="r1" checked="" data-role-radio="true" class=""><span class="check"></span><span class="caption ml-2 text-dark font-weight-bold">Flat Shipping.</span></label>
-                                    <span></span>
-                                    <p> Let’s you charge a fixed rate for shipping.</p>
-                                </li>
-                                <li>
-                                    <label class="radio transition-on"><input type="radio" data-role="radio" data-caption="Local Pickup." name="r1" data-role-radio="true" class=""><span class="check"></span><span class="caption ml-2 text-dark font-weight-bold">Local Pickup.</span></label>
-                                    <span></span>
-                                    <p>Allow customers to pickup orders themselves. By default, when using local pickup store base taxes will apply regardless of customer address.</p>
-                                </li>
-                                <li>
-                                    <label class="radio transition-on"><input type="radio" data-role="radio" data-caption="Free Shipping." name="r1" data-role-radio="true" class=""><span class="check"></span><span class="caption ml-2 text-dark font-weight-bold">Free Shipping.</span></label>
-                                    <span></span>
-                                    <p>Free shipping is a special method which can be triggered with coupons and minimum spends.</p>
-                                </li>
-                            </ul>
-                            <div class="cart-button">
-                                <button type="submit" class="btn rounded-0 w-100"><span class="mr-2"><svg id="Component_99_2" data-name="Component 99 – 2" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 15"> <path id="Path_2111" data-name="Path 2111" d="M7.5,18h7.016" transform="translate(-6.663 -10.738)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2112" data-name="Path 2112" d="M18,7.5l2.725,4.225L18,15.951" transform="translate(-11.214 -4.416)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <g id="Rectangle_1496" data-name="Rectangle 1496" fill="none" stroke="#fff" stroke-width="1"> <rect width="15" height="15" rx="2" stroke="none"></rect> <rect x="0.5" y="0.5" width="14" height="14" rx="1.5" fill="none"></rect> </g> </svg> </span><span>CHECKOUT</span></button>
+                              </div>
                             </div>
                         </div>
-                        <div class="cart-price mt-4">
-                            <div class="price-titel">
-                                <h6>PRICE DETAILS</h6>
-                            </div>
-                            <ul class="price-list">
-                                <li><span>Price (2 items)</span><span>$1,840</span></li>
-                                <li><span>Shipping</span><span>$960</span></li>
-                                <li><span>Total Payable</span><span>$2,860</span></li>
-                            </ul>
-                        </div>
-                        <div class="payment-content bg-white p-4 mt-4">
-                            <form>
-                                <ul class="card-list mb-3 list-unstyled d-flex justify-content-center">
-                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/01.png" alt=""></a></li>
-                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/02.png" alt=""></a></li>
-                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/03.png" alt=""></a></li>
-                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/04.png" alt=""></a></li>
-                                    <li class="mr-3"><a href="#0"><img src="assets/images/footer/05.png" alt=""></a></li>
-                                </ul>
-                                <div class="row">
-                                    <form action="">
-                                        <div class="input-group mb-4">
-                                            <input type="number" class="form-control pl-2" placeholder="Card Number" />
-                                            <label for="card-numer">Card Namber</label>
-                                        </div>
-                                        <div class="input-group mb-4">
-                                            <input type="text" class="form-control pl-2" placeholder="Expiration Date (MM/YY)" />
-                                            <label for="card-numer">Expiration</label>
-                                        </div> 
-                                        <div class="input-group mb-4">
-                                            <input type="text" class="form-control pl-2" placeholder="CVC" />
-                                            <label for="card-numer">Expiration</label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <ul class="payment-check list-unstyled d-flex">
-                                    <li class="mr-2"><label class="checkbox transition-on" for="checkbox-1605286659536313"><input type="checkbox" data-role="checkbox" data-role-checkbox="true" id="checkbox-1605286659536313" class=""><span class="check"></span><span class="caption"></span></label></li>
-                                    <li>Save This Card</li>
-                                </ul>
-                                <div class="input-group mb-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="exampleRadios1">
-                                          <img src="assets/images/footer/06.png" style="height: 40px;" alt="">
-                                        </label>
-                                      </div>                                      
-                                </div>
-                                <div class="cart-button">
-                                    <button type="button" class="btn w-100 rounded-0"><span class="mr-2"><svg id="Component_99_2" data-name="Component 99 – 2" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"> <path id="Path_2111" data-name="Path 2111" d="M7.5,18h7.016" transform="translate(-6.663 -10.738)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <path id="Path_2112" data-name="Path 2112" d="M18,7.5l2.725,4.225L18,15.951" transform="translate(-11.214 -4.416)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path> <g id="Rectangle_1496" data-name="Rectangle 1496" fill="none" stroke="#fff" stroke-width="1"> <rect width="15" height="15" rx="2" stroke="none"></rect> <rect x="0.5" y="0.5" width="14" height="14" rx="1.5" fill="none"></rect> </g> </svg> </span><span>CHECKOUT</span></button>
-                                </div>
-                            </form>
-                        </div>
+
                     </div>
                 </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="quick_view">
+                <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="quick_view">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
                         <div class="modal-content style-one">
                             <div class="modal-body">
@@ -692,7 +757,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

@@ -2449,53 +2449,45 @@ footer {
           .shoping-cart .section-wrapper .cart-price ul li:last-child span {
             font-weight: 700;
             color: #000; }
-  .shoping-cart .section-wrapper .coupon {
-    padding-top: 30px; }
-    .shoping-cart .section-wrapper .coupon label {
-      color: #000;
-      font-size: 20px;
-      padding-bottom: 8px;
-      display: inline-block; }
-    .shoping-cart .section-wrapper .coupon input {
-      width: 100%;
-      height: 45px;
-      padding-left: 10px;
-      border: 1px solid #000; }
-  .shoping-cart .section-wrapper .Calculate-shipping {
-    padding-top: 30px; }
-    .shoping-cart .section-wrapper .Calculate-shipping span {
-      font-weight: 600;
-      font-size: 24px;
-      padding-bottom: 12px;
-      display: inline-block; }
-    .shoping-cart .section-wrapper .Calculate-shipping form select#inputGroupSelect01 {
-      display: block;
-      height: 40px;
-      width: 100%;
-      padding: 10px 20px 10px;
-      margin-bottom: 14px; }
-      @media (min-width: 768px) {
-        .shoping-cart .section-wrapper .Calculate-shipping form select#inputGroupSelect01 {
-          width: 80%; } }
-    .shoping-cart .section-wrapper .Calculate-shipping form select#inputGroupSelect02 {
-      display: block;
-      height: 40px;
-      width: 100%;
-      padding: 10px 20px 10px;
-      margin-bottom: 14px; }
-      @media (min-width: 768px) {
-        .shoping-cart .section-wrapper .Calculate-shipping form select#inputGroupSelect02 {
-          width: 80%; } }
-    .shoping-cart .section-wrapper .Calculate-shipping form input.input-text {
-      height: 40px;
-      width: 100%;
-      padding: 10px 10px 10px 20px;
-      border: 1px solid #e3e3e3; }
-      @media (min-width: 768px) {
-        .shoping-cart .section-wrapper .Calculate-shipping form input.input-text {
-          width: 80%; } }
+  .shoping-cart .section-wrapper .coupon input {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px solid #000; }
+  .shoping-cart .section-wrapper .coupon button.btn {
+    height: 45px; }
+  .shoping-cart .section-wrapper .Calculate-shipping span {
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 12px;
+    display: inline-block; }
+  .shoping-cart .section-wrapper .Calculate-shipping form select#inputGroupSelect01 {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 10px 20px 10px;
+    margin-bottom: 14px; }
+    @media (min-width: 768px) {
+      .shoping-cart .section-wrapper .Calculate-shipping form select#inputGroupSelect01 {
+        width: 80%; } }
+  .shoping-cart .section-wrapper .Calculate-shipping form select#inputGroupSelect02 {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 10px 20px 10px;
+    margin-bottom: 14px; }
+    @media (min-width: 768px) {
+      .shoping-cart .section-wrapper .Calculate-shipping form select#inputGroupSelect02 {
+        width: 80%; } }
+  .shoping-cart .section-wrapper .Calculate-shipping form input.input-text {
+    height: 40px;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #e3e3e3; }
+    @media (min-width: 768px) {
+      .shoping-cart .section-wrapper .Calculate-shipping form input.input-text {
+        width: 80%; } }
   .shoping-cart .section-wrapper .shipping-fild {
-    margin-top: 40px;
     transform: scale(0);
     display: none;
     transition: all 0.3s ease-in-out; }
@@ -2540,6 +2532,30 @@ footer {
         .shoping-cart .section-wrapper .item-contents .item-text .text-right h6 {
           margin: 0;
           font-size: 12px; }
+
+.accordion .card-header {
+  margin-bottom: 30px;
+  border-bottom: 0; }
+  .accordion .card-header h3 {
+    margin: 0;
+    font-weight: 500; }
+.accordion .card {
+  border-radius: 5px !important; }
+  .accordion .card .card-header h2 button.btn {
+    padding: 10px 0;
+    box-shadow: none;
+    background: transparent; }
+    .accordion .card .card-header h2 button.btn.collapsed span i {
+      transform: rotate(180deg); }
+    .accordion .card .card-header h2 button.btn:hover span {
+      color: #ef9b0f; }
+      .accordion .card .card-header h2 button.btn:hover span i {
+        color: #ef9b0f; }
+    .accordion .card .card-header h2 button.btn span {
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: capitalize; }
 
 .user-acount {
   padding-bottom: 20px; }
