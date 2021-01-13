@@ -12,10 +12,16 @@
                 border-radius: 10px;
                 width: 100%!important;
                 @include breakpoint (sm) {
-                    height: 300px;
+                    height: 250px;
+                }
+                @include breakpoint (md) {
+                    height: 290px;
                 }
                 @include breakpoint (lg) {
-                    height: 450px;
+                    height: 333px;
+                }
+                @include breakpoint (xl) {
+                    height: 400px;
                 }
                 img {
                     width: 100%;
@@ -46,8 +52,14 @@
     }
     .card-slider {
         height: 142px;
+        @include breakpoint (md) {
+            height: 137px;
+        }
         @include breakpoint (lg) {
-            height: 216px;
+            height: 158px;
+        }
+        @include breakpoint (xl) {
+            height: 190px;
         }
         img {
             width: 100%;

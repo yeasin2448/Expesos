@@ -517,29 +517,6 @@ header {
             background: $white-color;
             .header-serch {
                 margin-bottom: 0;
-                background: linear-gradient(to right, #ef9b0f 0, #ffc107b8 100%);
-                form {
-                    .flex-width {
-                        .input-group {
-                            .form-control {
-                                border-color: $white-color;
-                                &::placeholder {
-                                    color: $white-color;
-                                }
-                            }
-                        }
-                        .input-btn {
-                            button.btn {
-                                background: $white-color;
-                                span {
-                                    i {
-                                        color: $theme-color;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
             }
         }
     }

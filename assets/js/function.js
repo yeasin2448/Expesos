@@ -321,7 +321,7 @@
 
     //sponser slider activation
 	var swiper = new Swiper('.sponsor-container', {
-		slidesPerView: 1,
+		slidesPerView: 2,
 		speed:1000,
 		autoplay:1000,
 		autoplay:true,

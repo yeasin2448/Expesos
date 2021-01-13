@@ -286,10 +286,13 @@
                     display: block;
                     @include breakpoint (sm) {
                         display: flex;
+                        width: 500px;
                     } 
                     .input-group {
+                        @include breakpoint (sm) {
+                            width: 70%;
+                        }
                         input {
-                            width: 60%;
                             &:focus {
                                 border-color: $white-color;
                                 &::placeholder {
@@ -307,6 +310,7 @@
                         border-radius: 4px;
                         @include breakpoint (sm) {
                             margin-top: 0;
+                            width: 30%;
                             border-radius: 0 5px 5px 0; 
                         }
                     }
@@ -514,18 +518,36 @@ footer {
                 justify-content: center;
                 align-items: center;
                 list-style: none;
+                width: 100%;
                 li {
                     text-align: center;
-                    margin: 12px;
+                    padding-bottom: 12px;
+                    width: calc(100% / 4);
+                    @include breakpoint (max-xs) {
+                        width: calc(100% / 3);
+                    }
+                    @include breakpoint (sm) {
+                        width: calc(100% / 6);
+                    }
+                    @include breakpoint (lg) {
+                        width: calc(100% / 8);
+                    }
                     img {
-                        height: 100px;
-                        width: 100px;
-                        padding-bottom: 8px;
+                        height: 70px;
+                        width: 70px;
+                        margin: 5px;
+                        @include breakpoint (sm) {
+                            height: 100px;
+                            width: 100px;
+                        }
                     }
                     span {
-                        font-size: 12px;
+                        font-size: 10px;
                         display: block;
                         text-transform: capitalize;
+                        @include breakpoint (sm) {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -653,12 +675,11 @@ footer {
 .justForYou-are {
     padding-bottom: 17px;
     .section-wrapper {
-        padding: 15px 30px;
+        padding: 15px 24px;
         border-radius: 5px;
-        border: 1px solid #808080;
         background: $white-color;
         @include breakpoint (max-sm) {
-            padding:  15px 10px;
+            padding:  15px 20px;
         }
         .self-item {
             padding: 0;
@@ -1785,8 +1806,11 @@ footer {
         border-bottom: 0;
         h3 {
             margin: 0;
-            font-size: 22px;
+            font-size: 18px;
             font-weight: 500;
+            @include breakpoint (sm) {
+                font-size: 22px;
+            }
             @include breakpoint (md) {
                 font-size: 26px;
             }
