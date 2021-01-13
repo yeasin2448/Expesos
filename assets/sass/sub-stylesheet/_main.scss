@@ -1295,6 +1295,15 @@ footer {
                     }
                 }
             }
+            .nav-tabs {
+                .nav-item {
+                    a.nav-link  {
+                        @include breakpoint (max-sm) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
             .tabcontent {
                 width: 100%;
                 margin-top: 15px;
@@ -1439,6 +1448,11 @@ footer {
         }
     }
     
+}
+.card-body h3 {
+    @include breakpoint (max-sm) {
+        font-size: 20px;
+    }
 }
 //!===== product details extara contetn css ===!//
 

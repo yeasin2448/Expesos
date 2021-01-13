@@ -3637,6 +3637,12 @@ footer .help .payment-card ul.card-list li:last-child {
   outline: none;
 }
 
+@media (max-width: 575px) {
+  .menu-details .review .review-tab-content .nav-tabs .nav-item a.nav-link {
+    font-size: 12px;
+  }
+}
+
 .menu-details .review .review-tab-content .tabcontent {
   width: 100%;
   margin-top: 15px;
@@ -3798,6 +3804,12 @@ footer .help .payment-card ul.card-list li:last-child {
   .menu-details .review .review-tab-content .tabcontent .review-form .comment-respos form p button {
     float: left;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .card-body h3 {
+    font-size: 20px;
   }
 }
 

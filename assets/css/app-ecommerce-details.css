@@ -7,6 +7,10 @@
   background-color : #F7F7F7;
 }
 
+.app-ecommerce-details .item-features h5 {
+    font-size: 14px;
+}
+
 i.font-large-2 {
   font-size: 70px;
 }
